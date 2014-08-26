@@ -8,26 +8,12 @@ layout: default
 
   <nav class="nav-menu">
     <dl>
-      <dt>The Basics</dt>
-        <dd>
-          <a class="post-link" href="#">Submit your app</a>
-        </dd>
-        <dd>
-          <a class="post-link" href="#">Build an app</a>
-        </dd>
-        <dd>
-          <a class="post-link" href="#">Shopify Embedded App SDK</a>
-        </dd>
-      <dt>Embedded App SDK</dt>
-        <dd>
-          <a class="post-link" href="#">Examples</a>
-        </dd>
-        <dd>
-          <a class="post-link" href="#">Features</a>
-        </dd>
-        <dd>
-          <a class="post-link" href="#">Getting started</a>
-        </dd>
+      {% for nav in site.data.navs %}
+        <dt> {{ nav.title }} </dt>
+        {% for subcategory in nav.subcategory %}
+          <dd>{{subcategory.name}}</dd>
+        {% endfor %}
+      {% endfor %}
     </dl>
   </nav>
   <div class="content-wrapper">

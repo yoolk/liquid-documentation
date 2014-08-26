@@ -1,0 +1,17 @@
+- title: cat1
+  subcategory:
+    - name: post1.1
+    - name: post1.2
+    - name: post1.3
+
+- title: cat2
+  subcategory:
+    - name: post2.1
+    - name: post2.2
+    - name: post2.3
+
+- title: cat3
+  subcategory:
+    - name: post3.1
+    - name: post3.2
+    - name: post3.3
