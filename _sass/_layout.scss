@@ -16,11 +16,18 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    color: $logo-color;
+    font-weight: bold;
 
     &,
     &:visited {
         color: $grey-color-dark;
     }
+}
+
+.yoolk-logo {
+  float: left;
+  margin-right: 5px;
 }
 
 .site-nav {
