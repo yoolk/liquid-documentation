@@ -11,7 +11,9 @@ layout: default
       {% for nav in site.data.navs %}
         <dt> {{ nav.title }} </dt>
         {% for subcategory in nav.subcategory %}
-          <dd>{{subcategory.name}}</dd>
+          <dd>
+            <a href="{{subcategory.href}}">{{subcategory.name}}</a>
+          </dd>
         {% endfor %}
       {% endfor %}
     </dl>

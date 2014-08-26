@@ -1,17 +1,26 @@
 - title: cat1
   subcategory:
     - name: post1.1
+      href: "/post1/1/"
     - name: post1.2
+      href: "/post1/2/"
     - name: post1.3
+      href: "/post1/3/"
 
 - title: cat2
   subcategory:
     - name: post2.1
+      href: "/post2/1/"
     - name: post2.2
+      href: "/post2/2/"
     - name: post2.3
+      href: "/post2/3/"
 
 - title: cat3
   subcategory:
     - name: post3.1
+      href: "/post3/1/"
     - name: post3.2
+      href: "/post3/2/"
     - name: post3.3
+      href: "/post3/2/"
