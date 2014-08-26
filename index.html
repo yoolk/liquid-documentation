@@ -4,9 +4,38 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Liquid Documentation</h1>
 
-  <ul class="post-list">
+  <nav class="nav-menu">
+    <dl>
+      <dt>The Basics</dt>
+        <dd>
+          <a class="post-link" href="#">Submit your app</a>
+        </dd>
+        <dd>
+          <a class="post-link" href="#">Build an app</a>
+        </dd>
+        <dd>
+          <a class="post-link" href="#">Shopify Embedded App SDK</a>
+        </dd>
+      <dt>Embedded App SDK</dt>
+        <dd>
+          <a class="post-link" href="#">Examples</a>
+        </dd>
+        <dd>
+          <a class="post-link" href="#">Features</a>
+        </dd>
+        <dd>
+          <a class="post-link" href="#">Getting started</a>
+        </dd>
+    </dl>
+  </nav>
+  <div class="content-wrapper">
+    <h1>Welcome to yoolk's developer documentation guide.</h1>
+  </div>
+
+
+  <!-- <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -16,7 +45,7 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-  </ul>
+  </ul> -->
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

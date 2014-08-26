@@ -30,6 +30,9 @@
   margin-right: 5px;
 }
 
+.nav-menu { width: 29%; display: inline-block; }
+.content-wrapper { width: 70%; display: inline-block; float: right; }
+
 .site-nav {
     float: right;
     line-height: 56px;
@@ -192,7 +195,7 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 
