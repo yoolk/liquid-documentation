@@ -89,13 +89,22 @@
 }
 .nav-menu dl {
   border-right: 1px solid #EBEBEB;
-  dt {
-    border-bottom: 1px solid #EBEBEB;
-    padding: 0 8px 12px;
-    margin-bottom: 20px;
+
+  dt:not(.active) {
+    margin-left: 10px;
   }
-  dd + dt {
-    margin-top: 20px;
+  dd {
+    margin-left: 15px;
+    a { color: #333; }
+    border-left: 1px solid #ccc;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li:hover {
+        border-left: 2px solid orange;
+      }
+    }
   }
   a {
     font-size: 14px;

@@ -1,18 +1,14 @@
 - title: Basics
   subcategory:
-    - name: Introduction
-      href: "/jekyll/update/2014/08/26/newbie-to-jekyll.html"
     - name: Operators
-      href: "/post1/2/"
+      href: "/operators"
     - name: Types
-      href: "/jekyll/update/2014/08/26/newbie-to-jekyll.html"
+      href: "/types"
     - name: Truthy and Falsy
-      href: "/post1/2/"
+      href: "/truthy-and-falsy"
 
 - title: Tags
   subcategory:
-    - name: Introduction
-      href: "/post2/1/"
     - name: Control Flow Tags
       href: "/post2/2/"
     - name: Iteration Tags
@@ -22,8 +18,6 @@
 
 - title: Objects
   subcategory:
-    - name: Introduction
-      href: "/post3/1/"
     - name: address
       href: "/post3/2/"
     - name: article

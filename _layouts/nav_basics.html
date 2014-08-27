@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<nav class="nav-menu">
+  <dl>
+    <dt>Liquid Documentation</dt>
+    {% for nav in site.data.navs %}
+      {% assign nav_title = nav.title | downcase | prepend: '/' %}
+      <dt {% if nav_title == page.dir %} {{'class="active"'}} {% endif %}> <a href="{{ nav_title }}">{{ nav.title }} </a> </dt>
+      {% if nav_title == page.dir %}
+        <dd>
+          <ul>
+            <li>
+              <a class="" href="{{ nav_title }}">Introduction</a>
+            </li>
+
+            {% for subcategory in nav.subcategory %}
+              <li>
+                <a class="{% if false %} {{'active'}} {% endif %}" href="{{subcategory.href | prepend: site.baseurl | prepend: nav_title }}">{{subcategory.name}}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </dd>
+      {% endif %}
+    {% endfor %}
+  </dl>
+</nav>
+<section class="content">
+  {{ content }}
+</section>

@@ -25,33 +25,7 @@
 <body>
   {% include header.html %}
   <div class="container main-wrapper">
-    <h1 class="page-heading">Liquid Documentation</h1>
-    <nav class="nav-menu">
-      <dl>
-        {% for nav in site.data.navs %}
-          <dt> {{ nav.title }} </dt>
-          {% for subcategory in nav.subcategory %}
-            <dd>
-              <a class="{% if page.url == subcategory.href %} {{'active'}} {% endif %}" href="{{subcategory.href | prepend: site.baseurl }}">{{subcategory.name}}</a>
-            </dd>
-          {% endfor %}
-        {% endfor %}
-      </dl>
-     <!--  <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul> -->
-    </nav>
-    <section class="content">
-      {{ content }}
-    </section>
+    {{ content }}
   </div>
   {% include footer.html %}
 
