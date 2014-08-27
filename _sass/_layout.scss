@@ -25,7 +25,7 @@
     }
 }
 
-.yoolk-logo {
+.site-logo {
   float: left;
   margin-right: 5px;
 }
@@ -36,10 +36,32 @@
   margin: 0 auto;
 }
 .nav-menu {
-  width: 16.1764%;
-  margin: 0 2.9411%;
+  width: 19.1175%;
   display: inline-block;
 }
+.nav-menu dl {
+  border-right: 1px solid #EBEBEB;
+  dt {
+    border-bottom: 1px solid #EBEBEB;
+    padding: 0 8px 12px;
+    margin-bottom: 20px;
+  }
+  dd + dt {
+    margin-top: 20px;
+  }
+  a {
+    font-size: 14px;
+    display: block;
+    padding: 8px;
+    color: #E7B30F;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      background-color: #FFCC33;
+    }
+  }
+}
+
 .content {
   width: 71%;
   margin: 0 2.9411%;
@@ -49,6 +71,18 @@
 footer {
   clear: both;
 }
+header {
+  background: #FFCC33;
+  box-shadow: 1px 1px 1px $grey-color-light;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 56px;
+}
+.main-wrapper {
+  margin-top: 96px;
+}
+
 .site-nav {
     float: right;
     line-height: 56px;
