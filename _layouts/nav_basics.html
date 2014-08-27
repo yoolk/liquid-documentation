@@ -3,19 +3,19 @@ layout: default
 ---
 <nav class="nav-menu">
   <dl>
-    <dt>Liquid Documentation</dt>
+    <dt class="nav-first-child">Liquid Documentation</dt>
     {% for nav in site.data.navs %}
       {% assign nav_title = nav.title | downcase | prepend: '/' %}
       <dt {% if nav_title == page.dir %} {{'class="active"'}} {% endif %}> <a href="{{ nav_title }}">{{ nav.title }} </a> </dt>
       {% if nav_title == page.dir %}
         <dd>
-          <ul>
-            <li>
+          <ul class="subnav">
+            <li class="subnav-item">
               <a class="" href="{{ nav_title }}">Introduction</a>
             </li>
 
             {% for subcategory in nav.subcategory %}
-              <li>
+              <li class="subnav-item">
                 <a class="{% if false %} {{'active'}} {% endif %}" href="{{subcategory.href | prepend: site.baseurl | prepend: nav_title }}">{{subcategory.name}}</a>
               </li>
             {% endfor %}
