@@ -1,26 +1,37 @@
-- title: cat1
+- title: The Basics
   subcategory:
-    - name: post1.1
+    - name: Submit your app
       href: "/post1/1/"
-    - name: post1.2
+    - name: Build an app
       href: "/post1/2/"
-    - name: post1.3
-      href: "/post1/3/"
 
-- title: cat2
+- title: Embedded App SDK
   subcategory:
-    - name: post2.1
+    - name: Shopify Embedded App SDK
       href: "/post2/1/"
-    - name: post2.2
+    - name: Examples
       href: "/post2/2/"
-    - name: post2.3
+    - name: Features
+      href: "/post2/3/"
+    - name: Getting started
+      href: "/post2/1/"
+    - name: Headers
+      href: "/post2/2/"
+    - name: Initialization
       href: "/post2/3/"
 
-- title: cat3
+- title: Tutorials
   subcategory:
-    - name: post3.1
+    - name: API Credential Rotation
       href: "/post3/1/"
-    - name: post3.2
+    - name: Deploy your app to Heroku
       href: "/post3/2/"
-    - name: post3.3
+    - name: OAuth Authentication
       href: "/post3/2/"
+
+- title: Libraries
+  subcategory:
+    - name: Ruby on Rails
+      href: ...
+    - name: PHP
+      href: ...

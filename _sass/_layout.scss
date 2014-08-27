@@ -30,9 +30,25 @@
   margin-right: 5px;
 }
 
-.nav-menu { width: 29%; display: inline-block; }
-.content-wrapper { width: 70%; display: inline-block; float: right; }
-
+.container {
+  max-width: 1020px;
+  height: auto;
+  margin: 0 auto;
+}
+.nav-menu {
+  width: 16.1764%;
+  margin: 0 2.9411%;
+  display: inline-block;
+}
+.content {
+  width: 71%;
+  margin: 0 2.9411%;
+  display: inline-block;
+  float: right;
+}
+footer {
+  clear: both;
+}
 .site-nav {
     float: right;
     line-height: 56px;
