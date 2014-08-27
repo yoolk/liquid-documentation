@@ -1,7 +1,7 @@
 - title: The Basics
   subcategory:
     - name: Submit your app
-      href: "2014/08/26/newbie-to-jekyll.html"
+      href: "/jekyll/update/2014/08/26/newbie-to-jekyll.html"
     - name: Build an app
       href: "/post1/2/"
 

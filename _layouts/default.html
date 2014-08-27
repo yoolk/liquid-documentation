@@ -32,7 +32,7 @@
           <dt> {{ nav.title }} </dt>
           {% for subcategory in nav.subcategory %}
             <dd>
-              <a href="jekyll/update/{{subcategory.href | prepend: site.baseurl }}">{{subcategory.name}}</a>
+              <a class="{% if page.url == subcategory.href %} {{'active'}} {% endif %}" href="{{subcategory.href | prepend: site.baseurl }}">{{subcategory.name}}</a>
             </dd>
           {% endfor %}
         {% endfor %}
