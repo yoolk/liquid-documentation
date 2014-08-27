@@ -1,37 +1,123 @@
-- title: The Basics
+- title: Basics
   subcategory:
-    - name: Submit your app
+    - name: Introduction
       href: "/jekyll/update/2014/08/26/newbie-to-jekyll.html"
-    - name: Build an app
+    - name: Operators
+      href: "/post1/2/"
+    - name: Types
+      href: "/jekyll/update/2014/08/26/newbie-to-jekyll.html"
+    - name: Truthy and Falsy
       href: "/post1/2/"
 
-- title: Embedded App SDK
+- title: Tags
   subcategory:
-    - name: Shopify Embedded App SDK
+    - name: Introduction
       href: "/post2/1/"
-    - name: Examples
+    - name: Control Flow Tags
       href: "/post2/2/"
-    - name: Features
+    - name: Iteration Tags
       href: "/post2/3/"
-    - name: Getting started
-      href: "/post2/1/"
-    - name: Headers
-      href: "/post2/2/"
-    - name: Initialization
+    - name: Variable Tags
       href: "/post2/3/"
 
-- title: Tutorials
+- title: Objects
   subcategory:
-    - name: API Credential Rotation
+    - name: Introduction
       href: "/post3/1/"
-    - name: Deploy your app to Heroku
+    - name: address
       href: "/post3/2/"
-    - name: OAuth Authentication
+    - name: article
       href: "/post3/2/"
+    - name: blog
+      href: "/part/1"
+    - name: cart
+      href: "#"
+    - name: collection
+      href: "#"
+    - name: comment
+      href: "#"
+    - name: country_option_tags
+      href: "#"
+    - name: current_page
+      href: "#"
+    - name: current_tags
+      href: "#"
+    - name: customer
+      href: "#"
+    - name: customer_address
+      href: "#"
+    - name: discount
+      href: "#"
+    - name: forloop
+      href: "#"
+    - name: form
+      href: "#"
+    - name: fulfillment
+      href: "#"
+    - name: gift_card
+      href: "#"
+    - name: image
+      href: "#"
+    - name: line_item
+      href: "#"
+    - name: link
+      href: "#"
+    - name: linklist
+      href: "#"
+    - name: metafield
+      href: "#"
+    - name: order
+      href: "#"
+    - name: page
+      href: "#"
+    - name: page_description
+      href: "#"
+    - name: page_title
+      href: "#"
+    - name: paginate
+      href: "#"
+    - name: part
+      href: "#"
+    - name: product
+      href: "#"
+    - name: search
+      href: "#"
+    - name: shipping_method
+      href: "#"
+    - name: shop
+      href: "#"
+    - name: tablerow
+      href: "#"
+    - name: tax_line
+      href: "#"
+    - name: template
+      href: "#"
+    - name: theme
+      href: "#"
+    - name: transaction
+      href: "#"
+    - name: variant
+      href: "#"
 
-- title: Libraries
+- title: Filters
   subcategory:
-    - name: Ruby on Rails
-      href: ...
+    - name: "Ruby on Rails"
+      href: "#"
     - name: PHP
-      href: ...
+      href: "#"
+    - name: Introduction
+      href: "#"
+    - name: Array Filters
+      href: "#"
+    - name: HTML Filters
+      href: "#"
+    - name: Math Filters
+      href: "#"
+    - name: Money Filters
+      href: "#"
+    - name: String Filters
+      href: "#"
+    - name: URL Filters
+      href: "#"
+    - name: Additional Filters
+      href: "#"
