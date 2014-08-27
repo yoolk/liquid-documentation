@@ -131,6 +131,10 @@
   dt a {
     display: block;
     padding: 8px 24px;
+    color: #E7B30F;
+    &:hover {
+      background: #FFF0C5;
+    }
   }
   .subnav {
     list-style-type: none;
@@ -143,10 +147,11 @@
   }
 }
 
-// .active a {
-//   color: #fff !important;
-//   background-color: #FFCC33;
-// }
+.active a {
+  color: #fff !important;
+  background-color: #FFCC33 !important;
+}
+
 .nav-first-child {
   padding: 0 24px 12px;
   margin-bottom: 12px;
