@@ -32,12 +32,12 @@
           <dt> {{ nav.title }} </dt>
           {% for subcategory in nav.subcategory %}
             <dd>
-              <a href="{{subcategory.href | prepend: site.baseurl }}">{{subcategory.name}}</a>
+              <a href="jekyll/update/{{subcategory.href | prepend: site.baseurl }}">{{subcategory.name}}</a>
             </dd>
           {% endfor %}
         {% endfor %}
       </dl>
-      <!-- <ul class="post-list">
+     <!--  <ul class="post-list">
         {% for post in site.posts %}
           <li>
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
