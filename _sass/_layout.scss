@@ -113,7 +113,9 @@
   color: #fff !important;
   background-color: #FFCC33 !important;
 }
-
+.sub-active {
+  border-left: 2px solid #FFCC33 !important;
+}
 .nav-first-child {
   padding: 0 24px 12px;
   margin-bottom: 12px;
