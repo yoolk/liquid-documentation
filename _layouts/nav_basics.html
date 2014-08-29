@@ -26,9 +26,17 @@ layout: default
   </dl>
 </nav>
 <section class="content">
+  {% assign full_path = page.dir | remove_first: "/" %}
+  {% assign paths =  full_path | split: '/' %}
   <p class="breadscrumb">
     <a href="/" class="arrow_box">Home</a>
-    <span>{{ page.title }}</span>
+    {% for path in paths %}
+      {% if forloop.last == true %}
+        <span>{{ path }}</span>
+      {% else %}
+        <a href="/{{ path }}" class="arrow_box">{{ path }}</a>
+      {% endif %}
+    {% endfor %}
   </p>
   {{ content }}
 </section>

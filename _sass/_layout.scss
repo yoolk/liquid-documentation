@@ -27,6 +27,7 @@
 
 .arrow_box {
   position: relative;
+  margin-left: 53px;
 }
 .arrow_box:after, .arrow_box:before {
   display: block;
@@ -58,7 +59,7 @@
   white-space: nowrap;
   background-color: white;
   border: 1px solid #F7F7F7;
-  padding: 5px 42px;
+  padding: 5px 0;
   a {
     text-decoration: none;
     color: #F0BC1B;
