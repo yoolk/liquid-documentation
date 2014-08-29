@@ -10,3 +10,8 @@ Liquid is an open-source, Ruby-based template language created by Shopify. It is
 {% highlight html%}{% raw %}
   {{ product.title }} <!-- Output: Awesome T-Shirt-->
 {% endraw %}{% endhighlight %}
+
+
+{% raw %}
+  {{ 'sales' | append: '.jpg' }} \<!-- Output: sales.jpg \-->
+{% endraw %}
