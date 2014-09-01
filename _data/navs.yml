@@ -95,23 +95,33 @@
 
 - title: Filters
   subcategory:
-    - name: "Ruby on Rails"
-      href: "/ruby-on-rails"
-    - name: PHP
-      href: "#"
-    - name: Introduction
-      href: "#"
-    - name: Array Filters
-      href: "#"
-    - name: HTML Filters
-      href: "#"
-    - name: Math Filters
-      href: "#"
-    - name: Money Filters
-      href: "#"
-    - name: String Filters
-      href: "#"
-    - name: URL Filters
-      href: "#"
-    - name: Additional Filters
-      href: "#"
+    - name: "Standard Filters"
+      href: "/standard-filters"
+    - name: "Text Filters"
+      href: "/text-filters"
+    - name: "Translate Filters"
+      href: "/translate-filters"
+    - name: "URL Filters"
+      href: "/url-filters"
+    - name: "Mics Filters"
+      href: "/mics-filters"
+    # - name: "Ruby on Rails"
+    #   href: "/ruby-on-rails"
+    # - name: PHP
+    #   href: "#"
+    # - name: Introduction
+    #   href: "#"
+    # - name: Array Filters
+    #   href: "#"
+    # - name: HTML Filters
+    #   href: "#"
+    # - name: Math Filters
+    #   href: "#"
+    # - name: Money Filters
+    #   href: "#"
+    # - name: String Filters
+    #   href: "#"
+    # - name: URL Filters
+    #   href: "#"
+    # - name: Additional Filters
+    #   href: "#"
