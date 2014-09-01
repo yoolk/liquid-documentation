@@ -12,9 +12,9 @@
     - name: Control Flow Tags
       href: "/control-flow-tags"
     - name: Iteration Tags
-      href: "/post2/3/"
+      href: "/iteration-tags"
     - name: Variable Tags
-      href: "/post2/3/"
+      href: "/variable-tags"
 
 - title: Objects
   subcategory:
