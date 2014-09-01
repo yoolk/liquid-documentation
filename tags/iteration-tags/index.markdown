@@ -38,7 +38,6 @@ output
 > ---
 > Exits the for loop at a specific index
 > input
->  \<!-- if array = [1,2,3,4,5,6] \-->
 >  {% for item in array limit:2 %}
 >    {{ item }}
 >  {% endfor %}
@@ -48,7 +47,6 @@ output
 > ---
 > Starts the for loop at a specific index
 > input
->  \<!-- if array = [1,2,3,4,5,6] \-->
 >  {% for item in array limit:2 %}
 >    {{ item }}
 >  {% endfor %}
@@ -57,7 +55,6 @@ output
 > range
 > ---
 > input
->  \<!-- if array = [1,2,3,4,5,6] \-->
 >  {% for item in array limit:2 %}
 >    {{ item }}
 >  {% endfor %}
@@ -66,7 +63,6 @@ output
 > reversed
 > ---
 > input
->  \<!-- if array = [1,2,3,4,5,6] \-->
 >  {% for item in array limit:2 %}
 >    {{ item }}
 >  {% endfor %}
@@ -158,7 +154,6 @@ The example below shows why cycle groups are necessary when there are multiple i
 >    <li style="clear:both"></li>
 >    <li></li>
 >  </ul>
->  <!-- new cycle group starts! -->
 >  <ul>
 >    <li style="clear:both"></li>
 >    <li></li>
@@ -261,17 +256,16 @@ output
 > range
 > ---
 > Defines a range of numbers to loop through. The range can be defined by both literal and variable numbers
-> {% highlight html%}{% raw %}<!--variable number example\-->
+{% highlight html%}{% raw %}
   {% assign num = 4 %}
   <table>
   {% tablerow i in (1..num) %}
     {{ i }}
   {% endtablerow %}
   </table>
-  <!--literal number example-->
   <table>
   {% tablerow i in (3..5) %}
     {{ i }}
   {% endtablerow %}
   </table>
-> {% endraw %}{% endhighlight %}
+{% endraw %}{% endhighlight %}
