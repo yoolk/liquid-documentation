@@ -10,7 +10,7 @@
 - title: Tags
   subcategory:
     - name: Control Flow Tags
-      href: "/post2/2/"
+      href: "/control-flow-tags"
     - name: Iteration Tags
       href: "/post2/3/"
     - name: Variable Tags
