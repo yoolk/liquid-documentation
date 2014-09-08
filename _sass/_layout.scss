@@ -79,6 +79,19 @@
   margin-right: 5px;
 }
 
+.tags {
+  border-top: 1px dashed #ccc;
+  margin: 48px 0 16px;
+  padding-top: 47px;
+}
+
+.read-more {
+  text-align: right;
+  a {
+    text-decoration: none;
+  }
+}
+
 .container {
   max-width: 1020px;
   height: auto;
