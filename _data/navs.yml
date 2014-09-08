@@ -95,6 +95,18 @@
 
 - title: Filters
   subcategory:
+    - name: "Asset Tag Filters"
+      href: "/asset-tag-filters"
+    - name: "Asset URL Filters"
+      href: "/asset-url-filters"
+    - name: "Date Filters"
+      href: "/date-filters"
+    - name: "Mics Filters"
+      href: "/mics-filters"
+    - name: "Number Filters"
+      href: "/number-filters"
+    - name: "Sanitize Filters"
+      href: "/sanitize-filters"
     - name: "Standard Filters"
       href: "/standard-filters"
     - name: "Text Filters"
@@ -103,8 +115,6 @@
       href: "/translate-filters"
     - name: "URL Filters"
       href: "/url-filters"
-    - name: "Mics Filters"
-      href: "/mics-filters"
     # - name: "Ruby on Rails"
     #   href: "/ruby-on-rails"
     # - name: PHP
