@@ -11,7 +11,7 @@ Filters are simple methods that modify the output of numbers, strings, variables
   <h3>input</h3>
   </div>
   <div class="panel-body">
-    {% highlight html %}{% raw %}
+    {% highlight django %}{% raw %}
     <!-- product.title = "Awesome Shoes" -->
     {{ product.title | upcase }}
     {% endraw %}{% endhighlight %}
