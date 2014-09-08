@@ -26,7 +26,9 @@ $on-laptop:        800px;
 
 // Custom variables
 
-$logo-color:      #808080;
+$logo-color:          #808080;
+$panel-border-color:  #DDD;
+$panel-bg-header:     #F9F9F9;
 
 
 
@@ -49,5 +51,6 @@ $logo-color:      #808080;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "panel"
 ;

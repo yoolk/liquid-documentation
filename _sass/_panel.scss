@@ -1,0 +1,30 @@
+.panel {
+  border-radius: 3px;
+  border: 1px solid $panel-border-color;
+}
+.panel-header {
+  margin: 0;
+  border-bottom: 1px solid $panel-border-color;
+  padding: 15px;
+  background-color: $panel-bg-header;
+  h3 {
+    margin: 0;
+    color: $text-color;
+  }
+}
+.panel-body {
+  .highlight {
+    margin: 0;
+    padding: 20px 0;
+  }
+  pre {
+    background: white;
+    overflow-x: auto;
+    border: none;
+    margin: 0;
+    padding: 15px;
+  }
+  .language-html {
+    background: white;
+  }
+}
