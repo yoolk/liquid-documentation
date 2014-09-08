@@ -29,11 +29,15 @@ Liquid uses a combination of tags, objects, and filters to load dynamic content.
 
 Tags make up the programming logic that tells templates what to do.
 
-{% raw %}
-  {% if user.name == 'elvis' %}
-    Hey Elvis
-  {% endif %}
-{% endraw %}
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if user.name == 'elvis' %}
+        Hey Elvis
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 <p class="read-more">
   <a href="/tags">read more &raquo;</a>
@@ -44,11 +48,14 @@ Tags make up the programming logic that tells templates what to do.
 
 Objects contain attributes that are used to display dynamic content on the page.
 
-{% raw %}
-  {% if user.name == 'elvis' %}
-    Hey Elvis
-  {% endif %}
-{% endraw %}
+
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {{ product.title }} <!-- Output: Awesome T-Shirt-->
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 <p class="read-more">
   <a href="/objects">read more &raquo;</a>
@@ -58,11 +65,13 @@ Objects contain attributes that are used to display dynamic content on the page.
 
 Filters are used to modify the output of strings, numbers, variables, and objects.
 
-{% raw %}
-  {% if user.name == 'elvis' %}
-    Hey Elvis
-  {% endif %}
-{% endraw %}
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {{ 'sales' | append: '.jpg' }} <!-- Output: sales.jpg -->
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 <p class="read-more">
   <a href="/filters">read more &raquo;</a>
