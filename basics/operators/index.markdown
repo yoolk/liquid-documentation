@@ -28,62 +28,62 @@ Liquid has access to all of the logical and comparison operators. These can be u
   </tr>
   <tr>
     <td>!=</td>
-    <td>equals</td>
+    <td>does not equal</td>
   </tr>
   <tr>
     <td>></td>
-    <td>equals</td>
+    <td>greater than</td>
   </tr>
   <tr>
     <td><</td>
-    <td>equals</td>
+    <td>less than</td>
   </tr>
   <tr>
     <td>>=</td>
-    <td>equals</td>
+    <td>greater than or equal to</td>
   </tr>
   <tr>
     <td><=</td>
-    <td>equals</td>
+    <td>less than or equal to</td>
   </tr>
   <tr>
     <td>or</td>
-    <td>equals</td>
+    <td>condition A or condition B</td>
   </tr>
   <tr>
     <td>and</td>
-    <td>equals</td>
+    <td>condition A and condition B</td>
   </tr>
 </table>
 {% endraw %}
 
-##### examples:
+<h2 class="tags">examples</h2>
 
-{% raw %}
+{% highlight django%}{% raw %}
   {% if product.title == "Awesome Shoes" %}
       These shoes are awesome!
   {% endif %}
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 Operators can be chained together.
 
-{% raw %}
-  {% if product.title == "Awesome Shoes" %}
-      These shoes are awesome!
+{% highlight django%}{% raw %}
+  {% if product.type == "Shirt" or product.type == "Shoes" %}
+      This is a shirt or a shoe.
   {% endif %}
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
----
 
-The '''contains''' Operator
+<h2 class="tags">The 'contains' Operator</h2>
+
 
 contains checks for the presence of a substring inside a string.
 
-{% raw %}
-  {% if product.title == "Awesome Shoes" %}
-      These shoes are awesome!
+{% highlight django%}{% raw %}
+  {% if product.title contains 'Pack' %}
+    This product's title contains the word Pack.
   {% endif %}
-{% endraw %}
+{% endraw %}{% endhighlight %}
 
 contains can also check for the presence of a string in an array of strings.
 
