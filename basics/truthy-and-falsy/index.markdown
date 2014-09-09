@@ -2,97 +2,126 @@
 layout: nav_basics
 ---
 
-## Truthy and Falsy in Liquid
+<h2 class="section-title">Truthy and Falsy in Liquid</h2>
 
 In programming, we describe “truthy” and “falsy” as anything that returns true or false, respectively, when used inside an if statement
 
----
-
-##### What is truthy?
+<h2 class="tags" id="tags">What is truthy?</h2>
 
 All values in Liquid are truthy, with the exception of nil and false. <br>
 
 In the example below, the text “Tobi” is not a boolean, but it is truthy in a conditional
 
-{% raw %}
-  {% assign tobi = 'Tobi' %}
-  {% if tobi %}
-  This will always be true.
-  {% endif %}
-{% endraw %}
+
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% assign tobi = 'Tobi' %}
+      {% if tobi %}
+        This will always be true.
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 Strings, even when empty, are truthy. The example below will result in empty HTML tags if settings.fp_heading is empty:
 
-input
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if settings.fp_heading %}
+      <h1>{{ settings.fp_heading }}</h1>
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
-{% raw %}
-  {% if settings.fp_heading %}
-  <h1>{{ settings.fp_heading }}</h1>
-  {% endif %}
-{% endraw %}
-
-output
-
-{% raw %}
-  <h1></h1>
-{% endraw %}
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <h1></h1>
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 To avoid this, you can check to see if the string is blank, as follows:
 
-{% raw %}
-  {% unless settings.fp_heading == blank %}
-      <h1>{{ settings.fp_heading }}</h1>
-  {% endunless %}
-{% endraw %}
-
----
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% unless settings.fp_heading == blank %}
+          <h1>{{ settings.fp_heading }}</h1>
+      {% endunless %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 An EmptyDrop is also truthy. In the example below, if settings.page is an empty string or set to a hidden or deleted object, you will end up with an EmptyDrop. The result is an undesirable empty <div>:
 
-input
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if pages[settings.page] %}
+      <div>{{ pages[settings.page].content }}</div>
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
-{% raw %}
-  {% if pages[settings.page] %}
-  <div>{{ pages[settings.page].content }}</div>
-  {% endif %}
-{% endraw %}
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <div></div>
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
-output
-
-{% raw %}
-  <div></div>
-{% endraw %}
-
----
-
-### What is falsy?
+<h2 class="tags" id="objects">What is falsy?</h2>
 
 The only values that are falsy in Liquid are nil and false. <br>
 
 nil is returned when a Liquid object doesn't have anything to return. For example, if a collection doesn't have a collection image, collection.image will be set to nil. Since that is “falsy”, you can do this:
 
-{% raw %}
-  {% if collection.image %}
-  \<!-- output collection image \-->
-  {% endif %}
-{% endraw %}
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if collection.image %}
+      <!-- output collection image -->
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 The value false is returned through many Liquid object properties such as product.available.
 
----
+<h2 class="tags" id="objects">Summary</h2>
 
-### Summary
 
 The table below summarizes what is truthy or falsy in Liquid
 
-<table>
+<table class="table" rules="all" frame="void">
   <tr>
     <th></th>
     <th>truthy</th>
     <th>falsy</th>
   </tr>
   <tr>
-    <td>true</td>
+    <td width="30%">true</td>
     <td>x</td>
     <td></td>
   </tr>

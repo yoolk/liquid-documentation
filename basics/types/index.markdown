@@ -45,7 +45,7 @@ Strings are declared by wrapping the variable's value in single or double quotes
 
 <h2 class="tags" id="numbers">Numbers</h2>
 
-Strings are declared by wrapping the variable's value in single or double quotes.
+Numbers include floats and integers.
 
 <div class="panel">
   <div class="panel-body">
@@ -57,7 +57,7 @@ Strings are declared by wrapping the variable's value in single or double quotes
 
 <h2 class="tags" id="booleans">Booleans</h2>
 
-Strings are declared by wrapping the variable's value in single or double quotes.
+Booleans are either true or false. No quotations are necessary when declaring a boolean
 
 <div class="panel">
   <div class="panel-body">
