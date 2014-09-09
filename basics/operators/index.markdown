@@ -59,58 +59,80 @@ Liquid has access to all of the logical and comparison operators. These can be u
 
 <h2 class="tags">examples</h2>
 
-{% highlight django%}{% raw %}
-  {% if product.title == "Awesome Shoes" %}
-      These shoes are awesome!
-  {% endif %}
-{% endraw %}{% endhighlight %}
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if product.title == "Awesome Shoes" %}
+          These shoes are awesome!
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 Operators can be chained together.
 
-{% highlight django%}{% raw %}
-  {% if product.type == "Shirt" or product.type == "Shoes" %}
-      This is a shirt or a shoe.
-  {% endif %}
-{% endraw %}{% endhighlight %}
-
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if product.type == "Shirt" or product.type == "Shoes" %}
+          This is a shirt or a shoe.
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 <h2 class="tags">The 'contains' Operator</h2>
 
-
 contains checks for the presence of a substring inside a string.
 
-{% highlight django%}{% raw %}
-  {% if product.title contains 'Pack' %}
-    This product's title contains the word Pack.
-  {% endif %}
-{% endraw %}{% endhighlight %}
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if product.title contains 'Pack' %}
+        This product's title contains the word Pack.
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 contains can also check for the presence of a string in an array of strings.
 
-{% raw %}
-  {% if product.title == "Awesome Shoes" %}
-      These shoes are awesome!
-  {% endif %}
-{% endraw %}
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if product.tags contains 'Hello' %}
+        This product has been tagged with 'Hello'.
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 You __cannot__ check for the presence of an object in an array of objects using contains. This will not work:
 
-{% raw %}
-  {% if product.title == "Awesome Shoes"% }
-      These shoes are awesome!
-  {% endif %}
-{% endraw %}
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if product.collections contains 'Sale' %}
+        One of the collections this product belongs to is the Sale collection.
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 This will work:
 
-{% raw %}
-  {% assign in_sale_collection = false %}
-  {% for collection in product.collections %}
-    {% if in_sale_collection == false and collection.title == 'Sale' %}
-      {% assign in_sale_collection = true %}
-    {% endif %}
-  {% endfor %}
-  {% if in_sale_collection %}
-    One of the collections this product belongs to is the Sale collection.
-  {% endif %}
-{% endraw %}
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% assign in_sale_collection = false %}
+      {% for collection in product.collections %}
+        {% if in_sale_collection == false and collection.title == 'Sale' %}
+          {% assign in_sale_collection = true %}
+        {% endif %}
+      {% endfor %}
+      {% if in_sale_collection %}
+        One of the collections this product belongs to is the Sale collection.
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
