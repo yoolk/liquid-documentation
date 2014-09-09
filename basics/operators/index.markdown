@@ -1,21 +1,29 @@
 ---
 layout: nav_basics
 ---
-### Operators
+<h2 class="section-title">Operators</h2>
 
 Liquid has access to all of the logical and comparison operators. These can be used in tags such as [if](#) and [unless](#).
 
-- Basic Operators
-- The contains operator
+<div class="panel">
+  <div class="panel-body">
+    <ul>
+      <li>
+        <a href="#basic-operators">Basic Operators</a>
+      </li>
+      <li>
+        <a href="#objects">The contains operator</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
----
-
-Basic Operators
+<h2 class="tags" id="basic-operators">Basic Operators</h2>
 
 {% raw %}
-<table>
+<table class="table" rules="all" frame="void">
   <tr>
-    <td>==</td>
+    <td width="30%">==</td>
     <td>equals</td>
   </tr>
   <tr>

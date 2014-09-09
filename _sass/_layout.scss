@@ -104,6 +104,26 @@
   height: auto;
   margin: 0 auto;
 }
+.table {
+  max-width: 100%;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  border-radius: 1px;
+  td {
+    padding: 18px 24px 6px 24px;
+  }
+  tr {
+    border-color: #E7E7E7;
+  }
+  tr:nth-child(even) {
+      background-color: #FAFAFA;
+  }
+  tr:nth-child(odd) {
+      background-color: #FFF;
+  }
+}
 .nav-menu {
   width: 22.0588%;
   display: inline-block;
