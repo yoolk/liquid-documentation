@@ -13,7 +13,7 @@
         <a href="#string_filters">String Filters</a>
       </li>
       <li>
-        <a href="#filters">Filters</a>
+        <a href="#math_filters">Math Filters</a>
       </li>
     </ul>
   </div>
@@ -980,6 +980,222 @@ Replaces all characters in a string that are not allowed in URLs with their esca
   </div>
 </div>
 
+<h2 class="tags" id="math_filters">Math Filters</h2>
+Math filters allow you to apply mathematical tasks.
+
+Math filters can be linked and, as with any other filters, are applied in order of left to right. In the example below, <code>minus</code> is applied first, then <code>times</code>, and finally <code>divided_by</code>.
+
+
+<h5 class="sub-section-title">ceil</h5>
+Rounds an output up to the nearest integer.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {{ 4.6 | ceil }}
+      {{ 4.3 | ceil }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      5
+      5
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+<h5 class="sub-section-title">divided_by</h5>
+Divides an output by a number.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- product.price = 200 -->
+      {{ product.price | divided_by: 10 }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      20
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">floor</h5>
+Rounds an output down to the nearest integer.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {{ 4.6 | floor }}
+      {{ 4.3 | floor }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      4
+      4
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">minus</h5>
+Subtracts a number from an output.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- product.price = 200 -->
+      {{ product.price | minus: 15 }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      185
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">plus</h5>
+Adds a number to an output.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- product.price = 200 -->
+      {{ product.price | plus: 15 }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      215
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">round</h5>
+Rounds the output to the nearest integer or specified number of decimals.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {{ 4.6 | round }}
+      {{ 4.3 | round }}
+      {{ 4.5612 | round: 2 }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      5
+      4
+      4.56
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">times</h5>
+Multiplies an output by a number.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- product.price = 200 -->
+      {{ product.price | times: 1.15 }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      230
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">modulo</h5>
+Divides an output by a number and returns the remainder.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {{ 12 | modulo:5 }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      2
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 
 ### escape_once
@@ -992,25 +1208,5 @@ Replaces all characters in a string that are not allowed in URLs with their esca
 
 
 ### date
-
-# addition
-### plus
-
-# subtraction
-### minus
-
-# multiplication
-### times
-
-# division
-### divided_by
-
-### modulo
-
-### round
-
-### ceil
-
-### floor
 
 ### default
