@@ -54,21 +54,17 @@ provides methods for generating asset paths and urls.
   </div>
 </div>
 
-<h2 class="tags" id="audio_tag">audio_tag</h2>
+<h2 class="tags" id="asset_path">asset_path</h2>
 
-Returns an HTML audio tag for the source. The source can be full path or file that exists in your public audios directory.
+Computes the path to asset in public directory. If :type options is set, a file extension will be appended and scoped to the corresponding public directory.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight html%}{% raw %}
-      audio_tag("sound")
-      # => <audio src="/audios/sound" />
-      audio_tag("sound.wav")
-      # => <audio src="/audios/sound.wav" />
-      audio_tag("sound.wav", autoplay: true, controls: true)
-      # => <audio autoplay="autoplay" controls="controls" src="/audios/sound.wav" />
-      audio_tag("sound.wav", "sound.mid")
-      # => <audio><source src="/audios/sound.wav" /><source src="/audios/sound.mid" /></audio>
+    {% highlight django%}{% raw %}
+      asset_path "application.js"                     # => /application.js
+      asset_path "application", type: :javascript     # => /javascripts/application.js
+      asset_path "application", type: :stylesheet     # => /stylesheets/application.css
+      asset_path "http://www.example.com/js/xmlhr.js" # => http://www.example.com/js/xmlhr.js
     {% endraw %}{% endhighlight %}
   </div>
 </div>
