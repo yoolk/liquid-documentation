@@ -19,9 +19,163 @@
   </div>
 </div>
 
-### size
 <h2 class="tags" id="array_filters">Array Filters</h2>
 Array filters are used to modify the output of arrays.
+
+<h5 class="sub-section-title">join</h5>
+Joins the elements of an array with the character passed as the parameter. The result is a single string.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {{ product.tags | join: ', ' }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+    tag1, tag2, tag3
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">first</h5>
+Returns the first element of an array.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- product.tags = "sale", "mens", "womens", "awesome" -->
+      {{ product.tags | first }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+    sale
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<code>first</code> can be used in dot notation, in cases where it needs to be used inside a tag.
+
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if product.tags.first == "sale" %}
+          This product is on sale!
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">last</h5>
+Gets the last element passed in an array.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- product.tags = "sale", "mens", "womens", "awesome" -->
+      {{ product.tags | last }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+    awesome
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<code>last</code> can be used in dot notation, in cases where it needs to be used inside a tag.
+
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if product.tags.last == "sale"%}
+          This product is on sale!
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+Using <code>last</code> on a string returns the last character in the string.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- product.title = "Awesome Shoes" -->
+      {{ product.title | last }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+    s
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">map</h5>
+Accepts an array element's attribute as a parameter and creates a string out of each array element's value.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- collection.title = "Spring", "Summer", "Fall", "Winter" -->
+      {% assign collection_titles = collections | map: 'title' %}
+      {{ collection_titles }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+    SpringSummerFallWinter
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+
 
 <h5 class="sub-section-title">size</h5>
 Returns the size of a string or an array.
@@ -56,6 +210,49 @@ Returns the size of a string or an array.
       {% if collections.frontpage.products.size > 10 %}
           There are more than 10 products in this collection!
       {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+
+<h5 class="sub-section-title">sort</h5>
+Sorts the elements of an array by a given attribute of an element in the array.
+
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% assign products = collection.products | sort: 'price' %}
+      {% for product in products %}
+          <h4>{{ product.title }}</h4>
+      {% endfor %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+The order of the sorted array is case-sensitive.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      <!-- products = "a", "b", "A", "B" -->
+      {% assign products = collection.products | sort: 'title' %}
+      {% for product in products %}
+         {{ product.title }}
+      {% endfor %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+    A B a b
     {% endraw %}{% endhighlight %}
   </div>
 </div>
