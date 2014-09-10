@@ -78,40 +78,32 @@ Returns a link tag that browsers and feed readers can use to auto-detect an RSS 
   </div>
 </div>
 
-<h2 class="tags" id="audio_tag">audio_tag</h2>
+<h2 class="tags" id="favicon_link_tag">favicon_link_tag</h2>
 
-Returns an HTML audio tag for the source. The source can be full path or file that exists in your public audios directory.
+Returns a link loading a favicon file. You may specify a different file in the first argument. The helper accepts an additional options hash where you can override “rel” and “type”.
 
 <div class="panel">
   <div class="panel-body">
     {% highlight html%}{% raw %}
-      audio_tag("sound")
-      # => <audio src="/audios/sound" />
-      audio_tag("sound.wav")
-      # => <audio src="/audios/sound.wav" />
-      audio_tag("sound.wav", autoplay: true, controls: true)
-      # => <audio autoplay="autoplay" controls="controls" src="/audios/sound.wav" />
-      audio_tag("sound.wav", "sound.mid")
-      # => <audio><source src="/audios/sound.wav" /><source src="/audios/sound.mid" /></audio>
+      favicon_link_tag 'myicon.ico'
+      # => <link href="/assets/myicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     {% endraw %}{% endhighlight %}
   </div>
 </div>
 
-<h2 class="tags" id="audio_tag">audio_tag</h2>
+<h2 class="tags" id="image_alt">image_alt</h2>
 
-Returns an HTML audio tag for the source. The source can be full path or file that exists in your public audios directory.
+Returns a string suitable for an html image tag alt attribute. The src argument is meant to be an image file path. The method removes the basename of the file path and the digest, if any. It also removes hyphens and underscores from file names and replaces them with spaces, returning a space-separated, titleized string.
 
 <div class="panel">
   <div class="panel-body">
     {% highlight html%}{% raw %}
-      audio_tag("sound")
-      # => <audio src="/audios/sound" />
-      audio_tag("sound.wav")
-      # => <audio src="/audios/sound.wav" />
-      audio_tag("sound.wav", autoplay: true, controls: true)
-      # => <audio autoplay="autoplay" controls="controls" src="/audios/sound.wav" />
-      audio_tag("sound.wav", "sound.mid")
-      # => <audio><source src="/audios/sound.wav" /><source src="/audios/sound.mid" /></audio>
+      image_alt('rails.png')
+      # => Rails
+      image_alt('hyphenated-file-name.png')
+      # => Hyphenated file name
+      image_alt('underscored_file_name.png')
+      # => Underscored file name
     {% endraw %}{% endhighlight %}
   </div>
 </div>
