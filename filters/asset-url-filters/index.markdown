@@ -69,177 +69,128 @@ Computes the path to asset in public directory. If :type options is set, a file 
   </div>
 </div>
 
-<h2 class="tags" id="auto_discovery_link_tag">auto_discovery_link_tag</h2>
+<h2 class="tags" id="asset_url">asset_url</h2>
 
-Returns a link tag that browsers and feed readers can use to auto-detect an RSS or Atom feed. The type can either be :rss (default) or :atom. Control the link options in url_for format using the url_options. You can modify the LINK tag itself in tag_options.
+Computes the full URL to an asset in the public directory. This will use asset_path internally, so most of their behaviors will be the same.
 
-<div class="panel">
-  <div class="panel-body">
-    {% highlight html%}{% raw %}
-      auto_discovery_link_tag
-      # => <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.currenthost.com/controller/action" />
-      auto_discovery_link_tag(:atom)
-      # => <link rel="alternate" type="application/atom+xml" title="ATOM" href="http://www.currenthost.com/controller/action" />
-      auto_discovery_link_tag(:rss, {action: "feed"})
-      # => <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.currenthost.com/controller/feed" />
-      auto_discovery_link_tag(:rss, {action: "feed"}, {title: "My RSS"})
-      # => <link rel="alternate" type="application/rss+xml" title="My RSS" href="http://www.currenthost.com/controller/feed" />
-      auto_discovery_link_tag(:rss, {controller: "news", action: "feed"})
-      # => <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.currenthost.com/news/feed" />
-      auto_discovery_link_tag(:rss, "http://www.example.com/feed.rss", {title: "Example RSS"})
-      # => <link rel="alternate" type="application/rss+xml" title="Example RSS" href="http://www.example.com/feed" />
-    {% endraw %}{% endhighlight %}
-  </div>
-</div>
+<h2 class="tags" id="audio_path">audio_path</h2>
 
-<h2 class="tags" id="favicon_link_tag">favicon_link_tag</h2>
-
-Returns a link loading a favicon file. You may specify a different file in the first argument. The helper accepts an additional options hash where you can override “rel” and “type”.
+Computes the path to an audio asset in the public audios directory. Full paths from the document root will be passed through. Used internally by audio_tag to build the audio path.
 
 <div class="panel">
   <div class="panel-body">
     {% highlight html%}{% raw %}
-      favicon_link_tag 'myicon.ico'
-      # => <link href="/assets/myicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+      audio_path("horse")                                            # => /audios/horse
+      audio_path("horse.wav")                                        # => /audios/horse.wav
+      audio_path("sounds/horse.wav")                                 # => /audios/sounds/horse.wav
+      audio_path("/sounds/horse.wav")                                # => /sounds/horse.wav
+      audio_path("http://www.example.com/sounds/horse.wav")          # => http://www.example.com/sounds/horse.wav
     {% endraw %}{% endhighlight %}
   </div>
 </div>
 
-<h2 class="tags" id="image_alt">image_alt</h2>
+<h2 class="tags" id="audio_url">audio_url</h2>
 
-Returns a string suitable for an html image tag alt attribute. The src argument is meant to be an image file path. The method removes the basename of the file path and the digest, if any. It also removes hyphens and underscores from file names and replaces them with spaces, returning a space-separated, titleized string.
+Computes the full URL to an audio asset in the public audios directory. This will use audio_path internally, so most of their behaviors will be the same.
+
+<h2 class="tags" id="font_path">font_path</h2>
+
+Computes the path to a font asset. Full paths from the document root will be passed through.
 
 <div class="panel">
   <div class="panel-body">
     {% highlight html%}{% raw %}
-      image_alt('rails.png')
-      # => Rails
-      image_alt('hyphenated-file-name.png')
-      # => Hyphenated file name
-      image_alt('underscored_file_name.png')
-      # => Underscored file name
+      font_path("font")                                           # => /assets/font
+      font_path("font.ttf")                                       # => /assets/font.ttf
+      font_path("dir/font.ttf")                                   # => /assets/dir/font.ttf
+      font_path("/dir/font.ttf")                                  # => /dir/font.ttf
+      font_path("http://www.example.com/dir/font.ttf")            # => http://www.example.com/dir/font.ttf
     {% endraw %}{% endhighlight %}
   </div>
 </div>
 
-<h2 class="tags" id="image_tag">image_tag</h2>
+<h2 class="tags" id="font_url">font_url</h2>
 
-Returns an HTML image tag for the source. The source can be a full path or a file.
+Computes the full URL to a font asset. This will use font_path internally, so most of their behaviors will be the same.
+
+<h2 class="tags" id="image_path">image_path</h2>
+
+Computes the path to an image asset. Full paths from the document root will be passed through. Used internally by image_tag to build the image path.
 
 <div class="panel">
   <div class="panel-body">
     {% highlight html%}{% raw %}
-      image_tag("icon")
-      # => <img alt="Icon" src="/assets/icon" />
-      image_tag("icon.png")
-      # => <img alt="Icon" src="/assets/icon.png" />
-      image_tag("icon.png", size: "16x10", alt: "Edit Entry")
-      # => <img src="/assets/icon.png" width="16" height="10" alt="Edit Entry" />
-      image_tag("/icons/icon.gif", size: "16")
-      # => <img src="/icons/icon.gif" width="16" height="16" alt="Icon" />
-      image_tag("/icons/icon.gif", height: '32', width: '32')
-      # => <img alt="Icon" height="32" src="/icons/icon.gif" width="32" />
-      image_tag("/icons/icon.gif", class: "menu_icon")
-      # => <img alt="Icon" class="menu_icon" src="/icons/icon.gif" />
-
+      image_path("edit")                                         # => "/assets/edit"
+      image_path("edit.png")                                     # => "/assets/edit.png"
+      image_path("icons/edit.png")                               # => "/assets/icons/edit.png"
+      image_path("/icons/edit.png")                              # => "/icons/edit.png"
+      image_path("http://www.example.com/img/edit.png")          # => "http://www.example.com/img/edit.png"
     {% endraw %}{% endhighlight %}
   </div>
 </div>
 
-<h2 class="tags" id="javascript_include_tag">javascript_include_tag</h2>
+<h2 class="tags" id="image_url">image_url</h2>
 
-Returns an HTML script tag for each of the sources provided.
+Computes the full URL to an image asset. This will use image_path internally, so most of their behaviors will be the same.
 
-Sources may be paths to JavaScript files. Relative paths are assumed to be relative to assets/javascripts, full paths are assumed to be relative to the document root. Relative paths are idiomatic, use absolute paths only when needed.
+---
 
-When passing paths, the “.js” extension is optional. If you do not want “.js” appended to the path extname: false can be set on the options.
+<h2 class="tags" id="javascript_path">javascript_path</h2>
 
-You can modify the HTML attributes of the script tag by passing a hash as the last argument.
-
-When the Asset Pipeline is enabled, you can pass the name of your manifest as source, and include other JavaScript or CoffeeScript files inside the manifest.
+Computes the path to a javascript asset in the public javascripts directory. If the source filename has no extension, .js will be appended (except for explicit URIs) Full paths from the document root will be passed through. Used internally by javascript_include_tag to build the script path.
 
 <div class="panel">
   <div class="panel-body">
     {% highlight html%}{% raw %}
-      javascript_include_tag "xmlhr"
-      # => <script src="/assets/xmlhr.js?1284139606"></script>
-
-      javascript_include_tag "template.jst", extname: false
-      # => <script src="/assets/template.jst?1284139606"></script>
-
-      javascript_include_tag "xmlhr.js"
-      # => <script src="/assets/xmlhr.js?1284139606"></script>
-
-      javascript_include_tag "common.javascript", "/elsewhere/cools"
-      # => <script src="/assets/common.javascript?1284139606"></script>
-      #    <script src="/elsewhere/cools.js?1423139606"></script>
-
-      javascript_include_tag "http://www.example.com/xmlhr"
-      # => <script src="http://www.example.com/xmlhr"></script>
-
-      javascript_include_tag "http://www.example.com/xmlhr.js"
-      # => <script src="http://www.example.com/xmlhr.js"></script>
-
+      javascript_path "xmlhr"                              # => /javascripts/xmlhr.js
+      javascript_path "dir/xmlhr.js"                       # => /javascripts/dir/xmlhr.js
+      javascript_path "/dir/xmlhr"                         # => /dir/xmlhr.js
+      javascript_path "http://www.example.com/js/xmlhr"    # => http://www.example.com/js/xmlhr
+      javascript_path "http://www.example.com/js/xmlhr.js" # => http://www.example.com/js/xmlhr.js
     {% endraw %}{% endhighlight %}
   </div>
 </div>
 
-<h2 class="tags" id="stylesheet_link_tag">stylesheet_link_tag</h2>
+<h2 class="tags" id="javascript_url">javascript_url</h2>
 
-Returns a stylesheet link tag for the sources specified as arguments. If you don't specify an extension, .css will be appended automatically. You can modify the link attributes by passing a hash as the last argument. For historical reasons, the 'media' attribute will always be present and defaults to “screen”, so you must explicitly set it to “all” for the stylesheet(s) to apply to all media types.
+Computes the full URL to a javascript asset in the public javascripts directory. This will use javascript_path internally, so most of their behaviors will be the same.
+
+<h2 class="tags" id="stylesheet_path">stylesheet_path</h2>
+
+Computes the path to a stylesheet asset in the public stylesheets directory. If the source filename has no extension, .css will be appended (except for explicit URIs). Full paths from the document root will be passed through. Used internally by stylesheet_link_tag to build the stylesheet path.
 
 <div class="panel">
   <div class="panel-body">
     {% highlight html%}{% raw %}
-      stylesheet_link_tag "style"
-      # => <link href="/assets/style.css" media="screen" rel="stylesheet" />
-
-      stylesheet_link_tag "style.css"
-      # => <link href="/assets/style.css" media="screen" rel="stylesheet" />
-
-      stylesheet_link_tag "http://www.example.com/style.css"
-      # => <link href="http://www.example.com/style.css" media="screen" rel="stylesheet" />
-
-      stylesheet_link_tag "style", media: "all"
-      # => <link href="/assets/style.css" media="all" rel="stylesheet" />
-
-      stylesheet_link_tag "style", media: "print"
-      # => <link href="/assets/style.css" media="print" rel="stylesheet" />
-
-      stylesheet_link_tag "random.styles", "/css/stylish"
-      # => <link href="/assets/random.styles" media="screen" rel="stylesheet" />
-      #    <link href="/css/stylish.css" media="screen" rel="stylesheet" />
+      stylesheet_path "style"                                  # => /stylesheets/style.css
+      stylesheet_path "dir/style.css"                          # => /stylesheets/dir/style.css
+      stylesheet_path "/dir/style.css"                         # => /dir/style.css
+      stylesheet_path "http://www.example.com/css/style"       # => http://www.example.com/css/style
+      stylesheet_path "http://www.example.com/css/style.css"   # => http://www.example.com/css/style.css
     {% endraw %}{% endhighlight %}
   </div>
 </div>
 
-<h2 class="tags" id="video_tag">video_tag</h2>
+<h2 class="tags" id="stylesheet_url">stylesheet_url</h2>
 
-Returns an html video tag for the sources. If sources is a string, a single video tag will be returned. If sources is an array, a video tag with nested source tags for each source will be returned. The sources can be full paths or files that exists in your public videos directory.
+Computes the full URL to a stylesheet asset in the public stylesheets directory. This will use stylesheet_path internally, so most of their behaviors will be the same.
+
+<h2 class="tags" id="video_path">video_path</h2>
+
+Computes the path to a video asset in the public videos directory. Full paths from the document root will be passed through. Used internally by video_tag to build the video path.
 
 <div class="panel">
   <div class="panel-body">
     {% highlight html%}{% raw %}
-      video_tag("trailer")
-      # => <video src="/videos/trailer" />
-      video_tag("trailer.ogg")
-      # => <video src="/videos/trailer.ogg" />
-      video_tag("trailer.ogg", controls: true, autobuffer: true)
-      # => <video autobuffer="autobuffer" controls="controls" src="/videos/trailer.ogg" />
-      video_tag("trailer.m4v", size: "16x10", poster: "screenshot.png")
-      # => <video src="/videos/trailer.m4v" width="16" height="10" poster="/assets/screenshot.png" />
-      video_tag("/trailers/hd.avi", size: "16x16")
-      # => <video src="/trailers/hd.avi" width="16" height="16" />
-      video_tag("/trailers/hd.avi", size: "16")
-      # => <video height="16" src="/trailers/hd.avi" width="16" />
-      video_tag("/trailers/hd.avi", height: '32', width: '32')
-      # => <video height="32" src="/trailers/hd.avi" width="32" />
-      video_tag("trailer.ogg", "trailer.flv")
-      # => <video><source src="/videos/trailer.ogg" /><source src="/videos/trailer.flv" /></video>
-      video_tag(["trailer.ogg", "trailer.flv"])
-      # => <video><source src="/videos/trailer.ogg" /><source src="/videos/trailer.flv" /></video>
-      video_tag(["trailer.ogg", "trailer.flv"], size: "160x120")
-      # => <video height="120" width="160"><source src="/videos/trailer.ogg" /><source src="/videos/trailer.flv" /></video>
+      video_path("hd")                                            # => /videos/hd
+      video_path("hd.avi")                                        # => /videos/hd.avi
+      video_path("trailers/hd.avi")                               # => /videos/trailers/hd.avi
+      video_path("/trailers/hd.avi")                              # => /trailers/hd.avi
+      video_path("http://www.example.com/vid/hd.avi")             # => http://www.example.com/vid/hd.avi
     {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+<h2 class="tags" id="video_url">video_url</h2>
+
+Computes the full URL to a video asset in the public videos directory. This will use video_path internally, so most of their behaviors will be the same.
