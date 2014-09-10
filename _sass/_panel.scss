@@ -16,7 +16,7 @@
 .panel-body {
   .highlight {
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
   }
   pre {
     background: white;
@@ -25,7 +25,9 @@
     margin: 0;
     padding: 15px;
   }
-  .language-django, .language-html {
+  .language-django,
+  .language-html,
+  .language-ruby {
     background: white;
     font-size: 14px;
   }
