@@ -1,18 +1,65 @@
 ---
   layout: nav_basics
 ---
-## Standard Filters
+<h2 class="section-title">Standard Filters</h2>
 
+<div class="panel">
+  <div class="panel-body">
+    <ul>
+      <li>
+        <a href="#array_filters">Array Filters</a>
+      </li>
+      <li>
+        <a href="#objects">Objects</a>
+      </li>
+      <li>
+        <a href="#filters">Filters</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 ### size
-  Return the size of an array or of an string
+<h2 class="tags" id="array_filters">Array Filters</h2>
+Array filters are used to modify the output of arrays.
 
-  input
-  {%raw%}
-  {{ 'this is a 30 character string' | size }}
-  {%endraw%}
-  output
-  30
+<h5 class="sub-section-title">size</h5>
+Returns the size of a string or an array.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {{ 'this is a 30 character string' | size }}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+    30
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<code>size</code> can be used in dot notation, in cases where it needs to be used inside a tag.
+
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+      {% if collections.frontpage.products.size > 10 %}
+          There are more than 10 products in this collection!
+      {% endif %}
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
 ### downcase
  convert an input string to DOWNCASE
 
