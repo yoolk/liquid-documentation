@@ -1180,7 +1180,7 @@ Divides an output by a number and returns the remainder.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
+    {% highlight django %}{% raw %}
       {{ 12 | modulo:5 }}
     {% endraw %}{% endhighlight %}
   </div>
@@ -1191,9 +1191,11 @@ Divides an output by a number and returns the remainder.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
+    {% highlight django %}
+    {% raw %}
       2
-    {% endraw %}{% endhighlight %}
+    {% endraw %}
+    {% endhighlight %}
   </div>
 </div>
 

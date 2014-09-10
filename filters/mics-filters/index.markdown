@@ -2,16 +2,29 @@
   layout: nav_basics
 ---
 
-## Mics Filters
+<h2 class="section-title">Misc Filters</h2>
+provides miscellaneous filters.
 
-### index(array, position)
-  Get the nth element of the passed in array
+<h5 class="sub-section-title">random</h5>
+generate random numbers.
 
-### random(input)
+<div class="panel">
+  <div class="panel-body">
+    {% highlight ruby %}{% raw %}
+      {{ 5 | random }}
+      # => 4 (the result is randomly print)
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
-### json(object)
+<h5 class="sub-section-title">toggle_class_name</h5>
+Return class_name if condition evaluate to true otherwise nil is returned.
 
-### toggle_class_name(class_name, condition)
-  If condition is true, the class_name is returned. Otherwise, it returns nil.
-  class_name: css class name
-  condition: boolean
+<div class="panel">
+  <div class="panel-body">
+    {% highlight ruby %}{% raw %}
+      {{ 'active' | toggle_class_name: true }}
+      # => 'active'
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
