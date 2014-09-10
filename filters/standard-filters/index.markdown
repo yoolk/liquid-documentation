@@ -30,9 +30,9 @@ Joins the elements of an array with the character passed as the parameter. The r
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ product.tags | join: ', ' }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ product.tags | join: ', ' }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -41,9 +41,9 @@ Joins the elements of an array with the character passed as the parameter. The r
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    tag1, tag2, tag3
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+tag1, tag2, tag3
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -55,10 +55,10 @@ Returns the first element of an array.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.tags = "sale", "mens", "womens", "awesome" -->
-      {{ product.tags | first }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.tags = "sale", "mens", "womens", "awesome" -->
+{{ product.tags | first }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -67,9 +67,9 @@ Returns the first element of an array.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    sale
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+sale
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -77,11 +77,11 @@ Returns the first element of an array.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if product.tags.first == "sale" %}
-          This product is on sale!
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if product.tags.first == "sale" %}
+    This product is on sale!
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -93,10 +93,10 @@ Gets the last element passed in an array.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.tags = "sale", "mens", "womens", "awesome" -->
-      {{ product.tags | last }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.tags = "sale", "mens", "womens", "awesome" -->
+{{ product.tags | last }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -105,9 +105,9 @@ Gets the last element passed in an array.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    awesome
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+awesome
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -115,11 +115,11 @@ Gets the last element passed in an array.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if product.tags.last == "sale"%}
-          This product is on sale!
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if product.tags.last == "sale"%}
+    This product is on sale!
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -130,10 +130,10 @@ Using <code>last</code> on a string returns the last character in the string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.title = "Awesome Shoes" -->
-      {{ product.title | last }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.title = "Awesome Shoes" -->
+{{ product.title | last }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -142,9 +142,9 @@ Using <code>last</code> on a string returns the last character in the string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    s
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+s
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -156,11 +156,11 @@ Accepts an array element's attribute as a parameter and creates a string out of 
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- collection.title = "Spring", "Summer", "Fall", "Winter" -->
-      {% assign collection_titles = collections | map: 'title' %}
-      {{ collection_titles }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- collection.title = "Spring", "Summer", "Fall", "Winter" -->
+{% assign collection_titles = collections | map: 'title' %}
+{{ collection_titles }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -169,9 +169,9 @@ Accepts an array element's attribute as a parameter and creates a string out of 
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    SpringSummerFallWinter
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+SpringSummerFallWinter
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -185,9 +185,9 @@ Returns the size of a string or an array.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ 'this is a 30 character string' | size }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'this is a 30 character string' | size }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -196,9 +196,9 @@ Returns the size of a string or an array.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    30
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+30
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -206,11 +206,11 @@ Returns the size of a string or an array.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if collections.frontpage.products.size > 10 %}
-          There are more than 10 products in this collection!
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if collections.frontpage.products.size > 10 %}
+There are more than 10 products in this collection!
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -220,12 +220,12 @@ Sorts the elements of an array by a given attribute of an element in the array.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% assign products = collection.products | sort: 'price' %}
-      {% for product in products %}
-          <h4>{{ product.title }}</h4>
-      {% endfor %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% assign products = collection.products | sort: 'price' %}
+{% for product in products %}
+<h4>{{ product.title }}</h4>
+{% endfor %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -236,13 +236,13 @@ The order of the sorted array is case-sensitive.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- products = "a", "b", "A", "B" -->
-      {% assign products = collection.products | sort: 'title' %}
-      {% for product in products %}
-         {{ product.title }}
-      {% endfor %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- products = "a", "b", "A", "B" -->
+{% assign products = collection.products | sort: 'title' %}
+{% for product in products %}
+{{ product.title }}
+{% endfor %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -251,9 +251,9 @@ The order of the sorted array is case-sensitive.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    A B a b
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+A B a b
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -268,9 +268,9 @@ Appends characters to a string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    {{ 'sales' | append: '.jpg' }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'sales' | append: '.jpg' }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -279,9 +279,9 @@ Appends characters to a string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    sales.jpg
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+sales.jpg
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -293,9 +293,9 @@ Converts a string into CamelCase.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    {{ 'coming-soon' | camelcase }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'coming-soon' | camelcase }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -304,9 +304,9 @@ Converts a string into CamelCase.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    ComingSoon
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+ComingSoon
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -318,9 +318,9 @@ Capitalizes the first word in a string
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    {{ 'capitalize me' | capitalize }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'capitalize me' | capitalize }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -329,9 +329,9 @@ Capitalizes the first word in a string
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    Capitalize me
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+Capitalize me
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -343,9 +343,9 @@ Converts a string into lowercase.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    {{ 'UPPERCASE' | downcase }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'UPPERCASE' | downcase }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -354,9 +354,9 @@ Converts a string into lowercase.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    uppercase
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+uppercase
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -368,9 +368,9 @@ Escapes a string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    {{ "<p>test</p>" | escape }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "<p>test</p>" | escape }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -379,10 +379,10 @@ Escapes a string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    <!-- The <p> tags are not rendered -->
-    <p>test</p>
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- The <p> tags are not rendered -->
+<p>test</p>
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -395,9 +395,9 @@ Formats a string into a handle.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    {{ '100% M & Ms!!!' | handleize }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ '100% M & Ms!!!' | handleize }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -406,9 +406,9 @@ Formats a string into a handle.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    100-m-ms
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+100-m-ms
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -422,9 +422,9 @@ An example use case for this filter is showing the Gravatar image associated wit
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    <img src="http://www.gravatar.com/avatar/{{ comment.email | remove: ' ' | strip_newlines | downcase | md5 }}" />
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<img src="http://www.gravatar.com/avatar/{{ comment.email | remove: ' ' | strip_newlines | downcase | md5 }}" />
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -433,9 +433,9 @@ An example use case for this filter is showing the Gravatar image associated wit
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-    <img src="http://www.gravatar.com/avatar/2a95ab7c950db9693c2ceb767784c201" />
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<img src="http://www.gravatar.com/avatar/2a95ab7c950db9693c2ceb767784c201" />
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -448,14 +448,14 @@ Inserts a <br > linebreak HTML tag in front of each line break in a string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% capture var %}
-      One
-      Two
-      Three
-      {% endcapture %}
-      {{ var | newline_to_br }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% capture var %}
+One
+Two
+Three
+{% endcapture %}
+{{ var | newline_to_br }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -464,11 +464,11 @@ Inserts a <br > linebreak HTML tag in front of each line break in a string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      One <br>
-      Two<br>
-      Three<br>
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+One <br>
+Two<br>
+Three<br>
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -480,10 +480,10 @@ Outputs the singular or plural version of a string based on the value of a numbe
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ cart.item_count }}
-      {{ cart.item_count | pluralize: 'item', 'items' }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ cart.item_count }}
+{{ cart.item_count | pluralize: 'item', 'items' }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -492,9 +492,9 @@ Outputs the singular or plural version of a string based on the value of a numbe
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      3 items
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+3 items
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -506,9 +506,9 @@ Prepends characters to a string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ 'sale' | prepend: 'Made a great ' }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'sale' | prepend: 'Made a great ' }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -517,9 +517,9 @@ Prepends characters to a string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      Made a great sale
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+Made a great sale
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -531,9 +531,9 @@ Removes all occurrences of a substring from a string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "Hello, world. Goodbye, world." | remove: "world" }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "Hello, world. Goodbye, world." | remove: "world" }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -542,9 +542,9 @@ Removes all occurrences of a substring from a string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      Hello, . Goodbye, .
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+Hello, . Goodbye, .
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -556,9 +556,9 @@ Removes only the first occurrence of a substring from a string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "Hello, world. Goodbye, world." | remove_first: "world" }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "Hello, world. Goodbye, world." | remove_first: "world" }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -567,9 +567,9 @@ Removes only the first occurrence of a substring from a string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      Hello, . Goodbye, world.
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+Hello, . Goodbye, world.
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -581,10 +581,10 @@ Replaces all occurrences of a string with a substring.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.title = "Awesome Shoes" -->
-      {{ product.title | replace: 'Awesome', 'Mega' }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.title = "Awesome Shoes" -->
+{{ product.title | replace: 'Awesome', 'Mega' }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -593,9 +593,9 @@ Replaces all occurrences of a string with a substring.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      Mega Shoes
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+Mega Shoes
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -607,10 +607,10 @@ Replaces the first occurrence of a string with a substring.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.title = "Awesome Awesome Shoes" -->
-      {{ product.title | replace_first: 'Awesome', 'Mega' }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.title = "Awesome Awesome Shoes" -->
+{{ product.title | replace_first: 'Awesome', 'Mega' }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -619,9 +619,9 @@ Replaces the first occurrence of a string with a substring.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      Mega Awesome Shoes
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+Mega Awesome Shoes
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -633,10 +633,10 @@ The <code>slice</code> filter returns a substring, starting at the specified ind
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "hello" | slice: 2 }}
-      {{ "hello" | slice: 1, 3 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "hello" | slice: 2 }}
+{{ "hello" | slice: 1, 3 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -645,10 +645,10 @@ The <code>slice</code> filter returns a substring, starting at the specified ind
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      e
-      ell
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+e
+ell
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -659,9 +659,9 @@ If the passed index is negative, it is counted from the end of the string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "hello" | slice: -3, 2  }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "hello" | slice: -3, 2  }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -670,9 +670,9 @@ If the passed index is negative, it is counted from the end of the string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      el
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+el
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -684,18 +684,18 @@ The <code>split</code> filter takes on a substring as a parameter. The substring
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% assign words = "Uses cheat codes, calls the game boring." | split: ' ' %}
-      First word: {{ words.first }}
-      First word: {{ words[0] }}
-      Second word: {{ words[1] }}
-      Last word: {{ words.last }}
-      All words: {{ words | join: ', ' }}
+{% highlight django%}{% raw %}
+{% assign words = "Uses cheat codes, calls the game boring." | split: ' ' %}
+First word: {{ words.first }}
+First word: {{ words[0] }}
+Second word: {{ words[1] }}
+Last word: {{ words.last }}
+All words: {{ words | join: ', ' }}
 
-      {% for word in words %}
-      {{ word }}
-      {% endfor %}
-    {% endraw %}{% endhighlight %}
+{% for word in words %}
+{{ word }}
+{% endfor %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -704,15 +704,15 @@ The <code>split</code> filter takes on a substring as a parameter. The substring
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      First word: Uses
-      First word: Uses
-      Second word: cheat
-      Last word: boring.
-      All words: Uses, cheat, codes,, calls, the, game, boring.
+{% highlight django%}{% raw %}
+First word: Uses
+First word: Uses
+Second word: cheat
+Last word: boring.
+All words: Uses, cheat, codes,, calls, the, game, boring.
 
-      Uses cheat codes, calls the game boring.
-    {% endraw %}{% endhighlight %}
+Uses cheat codes, calls the game boring.
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -724,9 +724,9 @@ Strips tabs, spaces, and newlines (all whitespace) from the left and right side 
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ '   too many spaces      ' | strip }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ '   too many spaces      ' | strip }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -735,9 +735,9 @@ Strips tabs, spaces, and newlines (all whitespace) from the left and right side 
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      too many spaces
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+too many spaces
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -749,9 +749,9 @@ Strips tabs, spaces, and newlines (all whitespace) from the __left__ side of a s
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      "{{ '   too many spaces           ' | lstrip }}"
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+"{{ '   too many spaces           ' | lstrip }}"
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -760,10 +760,10 @@ Strips tabs, spaces, and newlines (all whitespace) from the __left__ side of a s
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- Notice the empty spaces to the right of the string -->
-      too many spaces
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- Notice the empty spaces to the right of the string -->
+too many spaces
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -775,9 +775,9 @@ Strips tabs, spaces, and newlines (all whitespace) from the __right__ side of a 
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ '              too many spaces      ' | strip }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ '              too many spaces      ' | strip }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -786,9 +786,9 @@ Strips tabs, spaces, and newlines (all whitespace) from the __right__ side of a 
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-                   too many spaces
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+               too many spaces
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -800,9 +800,9 @@ Strips all HTML tags from a string.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "<h1>Hello</h1> World" | strip_html }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "<h1>Hello</h1> World" | strip_html }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -811,9 +811,9 @@ Strips all HTML tags from a string.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      Hello World
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+Hello World
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -822,9 +822,9 @@ Removes any line breaks/newlines from a string.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ product.description | strip_newlines }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ product.description | strip_newlines }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -837,9 +837,9 @@ Truncates a string down to 'x' characters, where x is the number passed as a par
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "The cat came back the very next day" | truncate: 10 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "The cat came back the very next day" | truncate: 10 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -848,9 +848,9 @@ Truncates a string down to 'x' characters, where x is the number passed as a par
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      The cat...
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+The cat...
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -862,9 +862,9 @@ Truncates a string down to 'x' words, where x is the number passed as a paramete
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "The cat came back the very next day" | truncatewords: 4 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "The cat came back the very next day" | truncatewords: 4 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -873,9 +873,9 @@ Truncates a string down to 'x' words, where x is the number passed as a paramete
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      The cat came back...
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+The cat came back...
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -887,10 +887,10 @@ Removes any duplicate instances of an element in an array.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% assign fruits = "orange apple banana apple orange" %}
-      {{ fruits | split: ' ' | uniq | join: ' ' }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% assign fruits = "orange apple banana apple orange" %}
+{{ fruits | split: ' ' | uniq | join: ' ' }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -899,9 +899,9 @@ Removes any duplicate instances of an element in an array.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      orange apple banana
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+orange apple banana
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -913,9 +913,9 @@ Converts a string into uppercase
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ 'i want this to be uppercase' | upcase }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'i want this to be uppercase' | upcase }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -924,9 +924,9 @@ Converts a string into uppercase
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      I WANT THIS TO BE UPPERCASE
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+I WANT THIS TO BE UPPERCASE
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -938,9 +938,9 @@ Identifies all characters in a string that are not allowed in URLS, and replaces
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "<hello> & <shopify>" | url_escape }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "<hello> & <shopify>" | url_escape }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -949,9 +949,9 @@ Identifies all characters in a string that are not allowed in URLS, and replaces
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      %3Chello%3E%20&%20%3Cshopify%3E
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+%3Chello%3E%20&%20%3Cshopify%3E
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -963,9 +963,9 @@ Replaces all characters in a string that are not allowed in URLs with their esca
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ "<hello> & <shopify>" | url_param_escape }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ "<hello> & <shopify>" | url_param_escape }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -974,9 +974,9 @@ Replaces all characters in a string that are not allowed in URLs with their esca
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      %3Chello%3E%20%26%20%3Cshopify%3E
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+%3Chello%3E%20%26%20%3Cshopify%3E
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -994,10 +994,10 @@ Rounds an output up to the nearest integer.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ 4.6 | ceil }}
-      {{ 4.3 | ceil }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 4.6 | ceil }}
+{{ 4.3 | ceil }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1006,10 +1006,10 @@ Rounds an output up to the nearest integer.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      5
-      5
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+5
+5
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 <h5 class="sub-section-title">divided_by</h5>
@@ -1020,10 +1020,10 @@ Divides an output by a number.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.price = 200 -->
-      {{ product.price | divided_by: 10 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.price = 200 -->
+{{ product.price | divided_by: 10 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1032,9 +1032,9 @@ Divides an output by a number.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      20
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+20
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1046,10 +1046,10 @@ Rounds an output down to the nearest integer.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ 4.6 | floor }}
-      {{ 4.3 | floor }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 4.6 | floor }}
+{{ 4.3 | floor }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1058,10 +1058,10 @@ Rounds an output down to the nearest integer.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      4
-      4
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+4
+4
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1073,10 +1073,10 @@ Subtracts a number from an output.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.price = 200 -->
-      {{ product.price | minus: 15 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.price = 200 -->
+{{ product.price | minus: 15 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1085,9 +1085,9 @@ Subtracts a number from an output.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      185
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+185
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1099,10 +1099,10 @@ Adds a number to an output.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.price = 200 -->
-      {{ product.price | plus: 15 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.price = 200 -->
+{{ product.price | plus: 15 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1111,9 +1111,9 @@ Adds a number to an output.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      215
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+215
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1125,11 +1125,11 @@ Rounds the output to the nearest integer or specified number of decimals.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ 4.6 | round }}
-      {{ 4.3 | round }}
-      {{ 4.5612 | round: 2 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 4.6 | round }}
+{{ 4.3 | round }}
+{{ 4.5612 | round: 2 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1138,11 +1138,11 @@ Rounds the output to the nearest integer or specified number of decimals.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      5
-      4
-      4.56
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+5
+4
+4.56
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1154,10 +1154,10 @@ Multiplies an output by a number.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.price = 200 -->
-      {{ product.price | times: 1.15 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.price = 200 -->
+{{ product.price | times: 1.15 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1166,9 +1166,9 @@ Multiplies an output by a number.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      230
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+230
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1180,9 +1180,9 @@ Divides an output by a number and returns the remainder.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django %}{% raw %}
-      {{ 12 | modulo:5 }}
-    {% endraw %}{% endhighlight %}
+{% highlight django %}{% raw %}
+{{ 12 | modulo:5 }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -1191,11 +1191,11 @@ Divides an output by a number and returns the remainder.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django %}
-    {% raw %}
-      2
-    {% endraw %}
-    {% endhighlight %}
+{% highlight django %}
+{% raw %}
+  2
+{% endraw %}
+{% endhighlight %}
   </div>
 </div>
 

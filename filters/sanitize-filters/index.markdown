@@ -24,16 +24,16 @@ Strips all HTML tags from the html, including comments. This uses the html-scann
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight ruby %}{% raw %}
-      strip_tags("Strip <i>these</i> tags!")
-      # => Strip these tags!
+{% highlight ruby %}{% raw %}
+strip_tags("Strip <i>these</i> tags!")
+# => Strip these tags!
 
-      strip_tags("<b>Bold</b> no more!  <a href='more.html'>See more here</a>...")
-      # => Bold no more!  See more here...
+strip_tags("<b>Bold</b> no more!  <a href='more.html'>See more here</a>...")
+# => Bold no more!  See more here...
 
-      strip_tags("<div id='top-bar'>Welcome to my website!</div>")
-      # => Welcome to my website!
-    {% endraw %}{% endhighlight %}
+strip_tags("<div id='top-bar'>Welcome to my website!</div>")
+# => Welcome to my website!
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -43,15 +43,15 @@ Strips all link tags from text leaving just the link text.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight ruby %}{% raw %}
-      strip_links('<a href="http://www.rubyonrails.org">Ruby on Rails</a>')
-      # => Ruby on Rails
+{% highlight ruby %}{% raw %}
+strip_links('<a href="http://www.rubyonrails.org">Ruby on Rails</a>')
+# => Ruby on Rails
 
-      strip_links('Please e-mail me at <a href="mailto:me@email.com">me@email.com</a>.')
-      # => Please e-mail me at me@email.com.
+strip_links('Please e-mail me at <a href="mailto:me@email.com">me@email.com</a>.')
+# => Please e-mail me at me@email.com.
 
-      strip_links('Blog: <a href="http://www.myblog.com/" class="nav" target=\"_blank\">Visit</a>.')
-      # => Blog: Visit.
-    {% endraw %}{% endhighlight %}
+strip_links('Blog: <a href="http://www.myblog.com/" class="nav" target=\"_blank\">Visit</a>.')
+# => Blog: Visit.
+{% endraw %}{% endhighlight %}
   </div>
 </div>
