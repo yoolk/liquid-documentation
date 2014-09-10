@@ -31,11 +31,11 @@ Tags make up the programming logic that tells templates what to do.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if user.name == 'elvis' %}
-        Hey Elvis
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if user.name == 'elvis' %}
+Hey Elvis
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -51,9 +51,9 @@ Objects contain attributes that are used to display dynamic content on the page.
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ product.title }} <!-- Output: Awesome T-Shirt-->
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ product.title }} <!-- Output: Awesome T-Shirt-->
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -67,9 +67,9 @@ Filters are used to modify the output of strings, numbers, variables, and object
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ 'sales' | append: '.jpg' }} <!-- Output: sales.jpg -->
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'sales' | append: '.jpg' }} <!-- Output: sales.jpg -->
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 

@@ -11,9 +11,9 @@ Apply locale translation.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ 'welcome' | translate: 'km' }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ 'welcome' | translate: 'km' }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 <div class="panel">
@@ -21,8 +21,8 @@ Apply locale translation.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      សូមស្វាគមន៏
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+សូមស្វាគមន៏
+{% endraw %}{% endhighlight %}
   </div>
 </div>
