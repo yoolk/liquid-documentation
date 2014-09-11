@@ -11,10 +11,10 @@ Filters are simple methods that modify the output of numbers, strings, variables
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.title = "Awesome Shoes" -->
-      {{ product.title | upcase }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.title = "Awesome Shoes" -->
+{{ product.title | upcase }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -23,9 +23,9 @@ Filters are simple methods that modify the output of numbers, strings, variables
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      AWESOME SHOES
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+AWESOME SHOES
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -38,9 +38,9 @@ Some filters require a parameter to be passed.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {{ product.title | remove: "Awesome" }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{{ product.title | remove: "Awesome" }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -49,9 +49,9 @@ Some filters require a parameter to be passed.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      Shoes
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+Shoes
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -62,10 +62,10 @@ Multiple filters can be used on one output. They are applied from left to right.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- product.title = "Awesome Shoes" -->
-      {{ product.title | upcase | remove: "AWESOME"  }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- product.title = "Awesome Shoes" -->
+{{ product.title | upcase | remove: "AWESOME"  }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -74,8 +74,8 @@ Multiple filters can be used on one output. They are applied from left to right.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      SHOES
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+SHOES
+{% endraw %}{% endhighlight %}
   </div>
 </div>

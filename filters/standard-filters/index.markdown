@@ -223,7 +223,7 @@ Sorts the elements of an array by a given attribute of an element in the array.
 {% highlight django%}{% raw %}
 {% assign products = collection.products | sort: 'price' %}
 {% for product in products %}
-<h4>{{ product.title }}</h4>
+  <h4>{{ product.title }}</h4>
 {% endfor %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -240,7 +240,7 @@ The order of the sorted array is case-sensitive.
 <!-- products = "a", "b", "A", "B" -->
 {% assign products = collection.products | sort: 'title' %}
 {% for product in products %}
-{{ product.title }}
+  {{ product.title }}
 {% endfor %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -450,9 +450,9 @@ Inserts a <br > linebreak HTML tag in front of each line break in a string.
   <div class="panel-body">
 {% highlight django%}{% raw %}
 {% capture var %}
-One
-Two
-Three
+  One
+  Two
+  Three
 {% endcapture %}
 {{ var | newline_to_br }}
 {% endraw %}{% endhighlight %}
@@ -693,7 +693,7 @@ Last word: {{ words.last }}
 All words: {{ words | join: ', ' }}
 
 {% for word in words %}
-{{ word }}
+  {{ word }}
 {% endfor %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -1198,17 +1198,3 @@ Divides an output by a number and returns the remainder.
 {% endhighlight %}
   </div>
 </div>
-
-
-### escape_once
-
-### url_encode
-
-
-### reverse
- Reverse the elements of an array
-
-
-### date
-
-### default
