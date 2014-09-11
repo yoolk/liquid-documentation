@@ -122,7 +122,7 @@ To access items in an array, you can loop through each item in the array using a
 {% highlight django%}{% raw %}
 <!-- if product.tags = "sale", "summer", "spring", "wholesale" -->
 {% for tag in product.tags %}
-{{ tag }}
+  {{ tag }}
 {% endfor %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -224,10 +224,10 @@ Using the empty? attribute, you can check to see if a page exists or not before 
   <div class="panel-body">
 {% highlight django%}{% raw %}
 {% unless pages.frontpage.empty? %}
-<!-- We have a page with handle 'frontpage' and it's not hidden.-->
-<h1>{{ pages.frontpage.title }}</h1>
-<div>{{ pages.frontpage.content }}</div>
-{% endunless %}
+  <!-- We have a page with handle 'frontpage' and it's not hidden.-->
+  <h1>{{ pages.frontpage.title }}</h1>
+  <div>{{ pages.frontpage.content }}</div>
+  {% endunless %}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -257,13 +257,13 @@ You can perform the same verification with collections as well:
   <div class="panel-body">
 {% highlight django%}{% raw %}
 {% unless pages.frontpage.empty? %}
-{% unless collections.frontpage.empty? %}
-{% for product in collections.frontpage.products %}
-{% include 'product-grid-item' %}
-{% else %}
-<p>We do have a 'frontpage' collection but it's empty.</p>
-{% endfor %}
-{% endunless %}
+  {% unless collections.frontpage.empty? %}
+    {% for product in collections.frontpage.products %}
+      {% include 'product-grid-item' %}
+    {% else %}
+      <p>We do have a 'frontpage' collection but it's empty.</p>
+    {% endfor %}
+  {% endunless %}
 {% endunless %}
 {% endraw %}{% endhighlight %}
   </div>
