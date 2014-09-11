@@ -34,11 +34,11 @@ Executes a block of code only if a certain condition is met
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if product.title == 'Awesome Shoes' %}
-          These shoes are awesome!
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if product.title == 'Awesome Shoes' %}
+  These shoes are awesome!
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -47,9 +47,9 @@ Executes a block of code only if a certain condition is met
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      These shoes are awesome!
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+  These shoes are awesome!
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -62,16 +62,16 @@ Adds more conditions within an if or unless block.
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <!-- If customer.name = 'anonymous' -->
-      {% if customer.name == 'kevin' %}
-        Hey Kevin!
-      {% elsif customer.name == 'anonymous' %}
-        Hey Anonymous!
-      {% else %}
-        Hi Stranger!
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+<!-- If customer.name = 'anonymous' -->
+{% if customer.name == 'kevin' %}
+  Hey Kevin!
+{% elsif customer.name == 'anonymous' %}
+  Hey Anonymous!
+{% else %}
+  Hi Stranger!
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -80,9 +80,9 @@ Adds more conditions within an if or unless block.
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      Hey Anonymous!
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+  Hey Anonymous!
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -95,17 +95,17 @@ Creates a switch statement to compare a variable with different values. case ini
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% assign handle = 'cake' %}
-      {% case handle %}
-        {% when 'cake' %}
-           This is a cake
-        {% when 'cookie' %}
-           This is a cookie
-        {% else %}
-           This is not a cake nor a cookie
-      {% endcase %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% assign handle = 'cake' %}
+{% case handle %}
+  {% when 'cake' %}
+    This is a cake
+  {% when 'cookie' %}
+    This is a cookie
+  {% else %}
+    This is not a cake nor a cookie
+{% endcase %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -114,9 +114,9 @@ Creates a switch statement to compare a variable with different values. case ini
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      This is a cake
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+  This is a cake
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -129,11 +129,11 @@ Similar to if, but executes a block of code only if a certain condition is not m
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% unless product.title == 'Awesome Shoes' %}
-        These shoes are not awesome.
-      {% endunless %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% unless product.title == 'Awesome Shoes' %}
+  These shoes are not awesome.
+{% endunless %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -142,9 +142,9 @@ Similar to if, but executes a block of code only if a certain condition is not m
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      These shoes are not awesome.
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+  These shoes are not awesome.
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -152,10 +152,10 @@ This would be the equivalent of doing the following:
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if product.title != 'Awesome Shoes' %}
-        These shoes are not awesome.
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if product.title != 'Awesome Shoes' %}
+  These shoes are not awesome.
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
