@@ -32,12 +32,13 @@ Creates a new variable
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% assign my_variable = false %}
-      {% if my_variable != true %}
-      This statement is valid.
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% assign my_variable = false %}
+
+{% if my_variable != true %}
+  This statement is valid.
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -46,9 +47,9 @@ Creates a new variable
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      This statement is valid.
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+This statement is valid.
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -59,10 +60,10 @@ Use quotations (\"\") to save the variable as a string
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% assign foo = "bar" %}
-      {{ foo }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% assign foo = "bar" %}
+{{ foo }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -71,9 +72,9 @@ Use quotations (\"\") to save the variable as a string
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      bar
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+bar
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -86,10 +87,12 @@ Captures the string inside of the opening and closing tags and assigns it to a v
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% capture my_variable %}I am being captured.{% endcapture %}
-      {{ my_variable }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% capture my_variable %}
+I am being captured.
+{% endcapture %}
+{{ my_variable }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -98,9 +101,9 @@ Captures the string inside of the opening and closing tags and assigns it to a v
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      I am being captured.
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+I am being captured.
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -113,11 +116,11 @@ Creates a new number variable, and increases its value by one every time it is c
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% increment variable %}
-      {% increment variable %}
-      {% increment variable %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% increment variable %}
+{% increment variable %}
+{% increment variable %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -126,11 +129,11 @@ Creates a new number variable, and increases its value by one every time it is c
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      0
-      1
-      2
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+0
+1
+2
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -143,13 +146,13 @@ In the example below, a variable named "var" is created through assign. The incr
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% assign var = 10 %}
-      {% increment var %}
-      {% increment var %}
-      {% increment var %}
-      {{ var }}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% assign var = 10 %}
+{% increment var %}
+{% increment var %}
+{% increment var %}
+{{ var }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -158,12 +161,12 @@ In the example below, a variable named "var" is created through assign. The incr
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      0
-      1
-      2
-      10
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+0
+1
+2
+10
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -176,11 +179,11 @@ Creates a new number variable, and decreases its value by one every time it is c
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% decrement variable %}
-      {% decrement variable %}
-      {% decrement variable %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% decrement variable %}
+{% decrement variable %}
+{% decrement variable %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -189,11 +192,11 @@ Creates a new number variable, and decreases its value by one every time it is c
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      -1
-      -2
-      -3
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+-1
+-2
+-3
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
