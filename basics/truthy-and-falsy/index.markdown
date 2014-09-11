@@ -15,12 +15,12 @@ In the example below, the text “Tobi” is not a boolean, but it is truthy in 
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% assign tobi = 'Tobi' %}
-      {% if tobi %}
-        This will always be true.
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% assign tobi = 'Tobi' %}
+{% if tobi %}
+  This will always be true.
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -31,11 +31,11 @@ Strings, even when empty, are truthy. The example below will result in empty HTM
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if settings.fp_heading %}
-      <h1>{{ settings.fp_heading }}</h1>
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if settings.fp_heading %}
+  <h1>{{ settings.fp_heading }}</h1>
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -44,9 +44,9 @@ Strings, even when empty, are truthy. The example below will result in empty HTM
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <h1></h1>
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+  <h1></h1>
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -57,11 +57,11 @@ To avoid this, you can check to see if the string is blank, as follows:
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% unless settings.fp_heading == blank %}
-          <h1>{{ settings.fp_heading }}</h1>
-      {% endunless %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% unless settings.fp_heading == blank %}
+  <h1>{{ settings.fp_heading }}</h1>
+{% endunless %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -72,11 +72,11 @@ An EmptyDrop is also truthy. In the example below, if settings.page is an empty 
     <h3>Input</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if pages[settings.page] %}
-      <div>{{ pages[settings.page].content }}</div>
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if pages[settings.page] %}
+  <div>{{ pages[settings.page].content }}</div>
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -85,9 +85,9 @@ An EmptyDrop is also truthy. In the example below, if settings.page is an empty 
     <h3>Output</h3>
   </div>
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      <div></div>
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+  <div></div>
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
@@ -99,11 +99,11 @@ nil is returned when a Liquid object doesn't have anything to return. For exampl
 
 <div class="panel">
   <div class="panel-body">
-    {% highlight django%}{% raw %}
-      {% if collection.image %}
-      <!-- output collection image -->
-      {% endif %}
-    {% endraw %}{% endhighlight %}
+{% highlight django%}{% raw %}
+{% if collection.image %}
+  <!-- output collection image -->
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
