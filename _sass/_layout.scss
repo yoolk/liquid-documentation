@@ -287,7 +287,17 @@ header {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
-
+.scroll-to-top {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  background-image: url("/images/arrow-up.png");
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
 .contact-list,
 .social-media-list {
     list-style: none;
