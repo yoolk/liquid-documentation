@@ -204,23 +204,13 @@ Get image albums of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+
 {{ listing.galleries[0].name }}
 {{ listing.galleries[0].display_order }}
 {{ listing.galleries[0].to_param }}
 {{ listing.galleries[0].created_at }}
 {{ listing.galleries[0].updated_at }}
-
 {{ listing.galleries[0].images }}
-
-  {{ listing.galleries[0].image.caption }}
-  {{ listing.galleries[0].image.display_order }}
-  {{ listing.galleries[0].image.created_at }}
-  {{ listing.galleries[0].image.updated_at }}
-  {{ listing.galleries[0].image.styles }}
-  {{ listing.galleries[0].image.width }}
-  {{ listing.galleries[0].image.height }}
-  {{ listing.galleries[0].image.size }}
-  {{ listing.galleries[0].image.url }}
 
 {% endraw %}{% endhighlight %}
   </div>
@@ -230,18 +220,41 @@ Get image albums of the current listing object.
 
 Get gallery images of the current listing object.
 
+<h5 class="sub-section-title">
+  <code>styles</code> option
+</h5>
+<table class="table" rules="all" frame="void">
+  <tr>
+    <th height="56">styles</th>
+    <th>size</th>
+  </tr>
+  <tr>
+    <td>small</td>
+    <td>196 x auto</td>
+  </tr>
+  <tr>
+    <td>medium</td>
+    <td>322 x auto</td>
+  </tr>
+  <tr>
+    <td>large</td>
+    <td>994 x auto</td>
+  </tr>
+</table>
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.galleries[0].image.caption }}
-{{ listing.galleries[0].image.display_order }}
-{{ listing.galleries[0].image.created_at }}
-{{ listing.galleries[0].image.updated_at }}
-{{ listing.galleries[0].image.styles }}
-{{ listing.galleries[0].image.width }}
-{{ listing.galleries[0].image.height }}
-{{ listing.galleries[0].image.size }}
-{{ listing.galleries[0].image.url }}
+
+{{ listing.image[0].caption }}
+{{ listing.image[0].display_order }}
+{{ listing.image[0].created_at }}
+{{ listing.image[0].updated_at }}
+{{ listing.image[0].styles }}
+{{ listing.image[0].width }}
+{{ listing.image[0].height }}
+{{ listing.image[0].size }}
+{{ listing.image[0].url }}
+
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -296,6 +309,31 @@ Get announcements of the current listing object.
 
 Get services of the current listing object.
 
+<h5 class="sub-section-title">
+  <code>styles</code> option
+</h5>
+<table class="table" rules="all" frame="void">
+  <tr>
+    <th height="56">styles</th>
+    <th>size</th>
+  </tr>
+  <tr>
+    <td>thumbnail</td>
+    <td>50x50</td>
+  </tr>
+  <tr>
+    <td>small</td>
+    <td>196 x auto</td>
+  </tr>
+  <tr>
+    <td>medium</td>
+    <td>364 x auto</td>
+  </tr>
+  <tr>
+    <td>large</td>
+    <td>994 x auto</td>
+  </tr>
+</table>
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
@@ -332,6 +370,31 @@ Get service_categories of the current listing object.
 
 Get products of the current listing object.
 
+<h5 class="sub-section-title">
+  <code>styles</code> option
+</h5>
+<table class="table" rules="all" frame="void">
+  <tr>
+    <th height="56">styles</th>
+    <th>size</th>
+  </tr>
+  <tr>
+    <td>thumbnail</td>
+    <td>49 x auto</td>
+  </tr>
+  <tr>
+    <td>small</td>
+    <td>186 x auto</td>
+  </tr>
+  <tr>
+    <td>medium</td>
+    <td>350 x auto</td>
+  </tr>
+  <tr>
+    <td>large</td>
+    <td>994 x auto</td>
+  </tr>
+</table>
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
@@ -368,6 +431,32 @@ Get product_categories of the current listing object.
 <h2 class="tags" id="foods">foods</h2>
 
 Get foods of the current listing object.
+
+<h5 class="sub-section-title">
+  <code>styles</code> option
+</h5>
+<table class="table" rules="all" frame="void">
+  <tr>
+    <th height="56">styles</th>
+    <th>size</th>
+  </tr>
+  <tr>
+    <td>thumbnail</td>
+    <td>50x50</td>
+  </tr>
+  <tr>
+    <td>small</td>
+    <td>196 x auto</td>
+  </tr>
+  <tr>
+    <td>medium</td>
+    <td>364 x auto</td>
+  </tr>
+  <tr>
+    <td>large</td>
+    <td>994 x auto</td>
+  </tr>
+</table>
 
 <div class="panel">
   <div class="panel-body">
