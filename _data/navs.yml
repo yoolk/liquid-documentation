@@ -20,80 +20,18 @@
 
 - title: Objects
   subcategory:
-    - name: address
-      href: "/address"
-    - name: article
-      href: "/post3/2/"
-    - name: blog
-      href: "/part/1"
-    - name: cart
-      href: "#"
-    - name: collection
-      href: "#"
-    - name: comment
-      href: "#"
-    - name: country_option_tags
-      href: "#"
-    - name: current_page
-      href: "#"
-    - name: current_tags
-      href: "#"
-    - name: customer
-      href: "#"
-    - name: customer_address
-      href: "#"
-    - name: discount
-      href: "#"
-    - name: forloop
-      href: "#"
-    - name: form
-      href: "#"
-    - name: fulfillment
-      href: "#"
-    - name: gift_card
-      href: "#"
-    - name: image
-      href: "#"
-    - name: line_item
-      href: "#"
-    - name: link
-      href: "#"
-    - name: linklist
-      href: "#"
-    - name: metafield
-      href: "#"
-    - name: order
-      href: "#"
-    - name: page
-      href: "#"
-    - name: page_description
-      href: "#"
-    - name: page_title
-      href: "#"
-    - name: paginate
-      href: "#"
-    - name: part
-      href: "#"
+    - name: listing
+      href: "/listing"
+    - name: country
+      href: "/country"
+    - name: location
+      href: "/location"
+    - name: menu
+      href: "/menu"
     - name: product
-      href: "#"
-    - name: search
-      href: "#"
-    - name: shipping_method
-      href: "#"
-    - name: shop
-      href: "#"
-    - name: tablerow
-      href: "#"
-    - name: tax_line
-      href: "#"
-    - name: template
-      href: "#"
-    - name: theme
-      href: "#"
-    - name: transaction
-      href: "#"
-    - name: variant
-      href: "#"
+      href: "/product"
+    - name: service
+      href: "/service"
 
 - title: Filters
   subcategory:
