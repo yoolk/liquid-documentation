@@ -1,11 +1,10 @@
 ---
 layout: nav_basics
+title: Basics - Yoolk Instant Website Themes
 ---
 
 <h2 class="section-title">Introduction</h2>
-Liquid is an open-source, Ruby-based template language created by Shopify. It is the backbone of Shopify themes and is used to load dynamic content on storefronts.
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/tZLTExLukSg" frameborder="0" allowfullscreen="" style="margin: 0 auto 24px auto; width: 70%; display: block; padding: 20px 15%; background: #f9f9f9;"></iframe>
+Liquid is an open-source, Ruby-based template language created by Shopify. Yoolk uses this template language to allow external people to build Instant Website Theme.
 
 Liquid uses a combination of tags, objects, and filters to load dynamic content. They are used inside Liquid template files, which are a group of files that make up a theme. For more information on the available templates, please see [Theme Development](#).
 
@@ -52,7 +51,7 @@ Objects contain attributes that are used to display dynamic content on the page.
 <div class="panel">
   <div class="panel-body">
 {% highlight django %}{% raw %}
-{{ product.title }}
+{{ product.name }}
 <!-- Output: Awesome T-Shirt-->
 {% endraw %}{% endhighlight %}
   </div>

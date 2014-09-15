@@ -1,5 +1,6 @@
 ---
 layout: nav_basics
+title: Truthy and Falsy - Basics - Yoolk Instant Website Themes
 ---
 
 <h2 class="section-title">Truthy and Falsy in Liquid</h2>
@@ -24,7 +25,7 @@ In the example below, the text “Tobi” is not a boolean, but it is truthy in 
   </div>
 </div>
 
-Strings, even when empty, are truthy. The example below will result in empty HTML tags if settings.fp_heading is empty:
+Strings, even when empty, are truthy. The example below will result in empty HTML tags if email.value is empty:
 
 <div class="panel">
   <div class="panel-header">
@@ -32,8 +33,9 @@ Strings, even when empty, are truthy. The example below will result in empty HTM
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% if settings.fp_heading %}
-  <h1>{{ settings.fp_heading }}</h1>
+{% assign email = listing.email %}
+{% if email.value %}
+  <h1>{{ email.value }}</h1>
 {% endif %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -58,35 +60,10 @@ To avoid this, you can check to see if the string is blank, as follows:
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% unless settings.fp_heading == blank %}
-  <h1>{{ settings.fp_heading }}</h1>
+{% assign email = listing.email %}
+{% unless email.value == blank %}
+  <h1>{{ email.value }}</h1>
 {% endunless %}
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-An EmptyDrop is also truthy. In the example below, if settings.page is an empty string or set to a hidden or deleted object, you will end up with an EmptyDrop. The result is an undesirable empty <div>:
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Input</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-{% if pages[settings.page] %}
-  <div>{{ pages[settings.page].content }}</div>
-{% endif %}
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Output</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-  <div></div>
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -95,19 +72,19 @@ An EmptyDrop is also truthy. In the example below, if settings.page is an empty 
 
 The only values that are falsy in Liquid are nil and false. <br>
 
-nil is returned when a Liquid object doesn't have anything to return. For example, if a collection doesn't have a collection image, collection.image will be set to nil. Since that is “falsy”, you can do this:
+nil is returned when a Liquid object doesn't have anything to return. For example, if a catalog_item doesn't have an image, catalog_item.image will be set to nil. Since that is “falsy”, you can do this:
 
 <div class="panel">
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% if collection.image %}
-  <!-- output collection image -->
+{% if catalog_item.image %}
+  <!-- output catalog_item image -->
 {% endif %}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
 
-The value false is returned through many Liquid object properties such as product.available.
+The value false is returned through many Liquid object properties such as product.delivery.
 
 <h2 class="tags" id="objects">Summary</h2>
 
@@ -166,22 +143,17 @@ The table below summarizes what is truthy or falsy in Liquid
     <td></td>
   </tr>
   <tr>
-    <td>collection</td>
+    <td>listing</td>
     <td>x</td>
     <td></td>
   </tr>
   <tr>
-    <td>collection with no products</td>
+    <td>listing with no products</td>
     <td>x</td>
     <td></td>
   </tr>
   <tr>
     <td>page</td>
-    <td>x</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>emptyDrop</td>
     <td>x</td>
     <td></td>
   </tr>

@@ -31,9 +31,9 @@ layout: default
     <a href="/" class="arrow_box">Home</a>
     {% for path in paths %}
       {% if forloop.last == true %}
-        <span>{{ path }}</span>
+        <span>{{ path | capitalize }}</span>
       {% else %}
-        <a href="/{{ path }}" class="arrow_box">{{ path }}</a>
+        <a href="/{{ path }}" class="arrow_box">{{ path | capitalize }}</a>
       {% endif %}
     {% endfor %}
   </p>

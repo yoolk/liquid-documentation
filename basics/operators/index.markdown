@@ -1,5 +1,6 @@
 ---
 layout: nav_basics
+title: Operators - Basics - Yoolk Instant Website Themes
 ---
 <h2 class="section-title">Operators</h2>
 
@@ -12,7 +13,7 @@ Liquid has access to all of the logical and comparison operators. These can be u
         <a href="#basic-operators">Basic Operators</a>
       </li>
       <li>
-        <a href="#objects">The contains operator</a>
+        <a href="#contains">The contains operator</a>
       </li>
     </ul>
   </div>
@@ -60,7 +61,7 @@ Liquid has access to all of the logical and comparison operators. These can be u
 <div class="panel">
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% if product.title == "Awesome Shoes" %}
+{% if product.name == "Awesome Shoes" %}
   These shoes are awesome!
 {% endif %}
 {% endraw %}{% endhighlight %}
@@ -72,22 +73,22 @@ Operators can be chained together.
 <div class="panel">
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% if product.type == "Shirt" or product.type == "Shoes" %}
+{% if product.name == "Shirt" or product.name == "Shoes" %}
   This is a shirt or a shoe.
 {% endif %}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
 
-<h2 class="tags">The 'contains' Operator</h2>
+<h2 class="tags" id="contains">The 'contains' Operator</h2>
 
 contains checks for the presence of a substring inside a string.
 
 <div class="panel">
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% if product.title contains 'Pack' %}
-  This product's title contains the word Pack.
+{% if product.name contains 'Pack' %}
+  This product's name contains the word Pack.
 {% endif %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -98,6 +99,7 @@ contains can also check for the presence of a string in an array of strings.
 <div class="panel">
   <div class="panel-body">
 {% highlight django%}{% raw %}
+<!-- assume product.tags returns an array of tags. -->
 {% if product.tags contains 'Hello' %}
   This product has been tagged with 'Hello'.
 {% endif %}
@@ -110,8 +112,8 @@ You __cannot__ check for the presence of an object in an array of objects using 
 <div class="panel">
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% if product.collections contains 'Sale' %}
-  One of the collections this product belongs to is the Sale collection.
+{% if product_category.products contains 'Awesome Shoes' %}
+  One of the products in this category is Awesome Shoes.
 {% endif %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -122,16 +124,16 @@ This will work:
 <div class="panel">
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% assign in_sale_collection = false %}
+{% assign in_product_category = false %}
 
-{% for collection in product.collections %}
-  {% if in_sale_collection == false and collection.title == 'Sale' %}
-    {% assign in_sale_collection = true %}
+{% for product in product_category.products %}
+  {% if in_product_category == false and product.name == 'Awesome Shoes' %}
+    {% assign in_product_category = true %}
   {% endif %}
 {% endfor %}
 
-{% if in_sale_collection %}
-  One of the collections this product belongs to is the Sale collection.
+{% if in_product_category %}
+  One of the products in this category is Awesome Shoes.
 {% endif %}
 {% endraw %}{% endhighlight %}
   </div>
