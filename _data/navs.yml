@@ -20,18 +20,8 @@
 
 - title: Objects
   subcategory:
-    - name: listing
+    - name: Listing
       href: "/listing"
-    - name: country
-      href: "/country"
-    - name: location
-      href: "/location"
-    - name: menu
-      href: "/menu"
-    - name: product
-      href: "/product"
-    - name: service
-      href: "/service"
 
 - title: Filters
   subcategory:
@@ -55,23 +45,3 @@
       href: "/translate-filters"
     - name: "URL Filters"
       href: "/url-filters"
-    # - name: "Ruby on Rails"
-    #   href: "/ruby-on-rails"
-    # - name: PHP
-    #   href: "#"
-    # - name: Introduction
-    #   href: "#"
-    # - name: Array Filters
-    #   href: "#"
-    # - name: HTML Filters
-    #   href: "#"
-    # - name: Math Filters
-    #   href: "#"
-    # - name: Money Filters
-    #   href: "#"
-    # - name: String Filters
-    #   href: "#"
-    # - name: URL Filters
-    #   href: "#"
-    # - name: Additional Filters
-    #   href: "#"

@@ -79,7 +79,6 @@ Get location of the current listing object.
   <div class="panel-body">
 {% highlight html %}{% raw %}
 {{ listing.location.name }}
-# => Phnom Penh
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -92,7 +91,6 @@ Get country of the current listing object.
   <div class="panel-body">
 {% highlight html %}{% raw %}
 {{ listing.country.name }}
-# => Cambodia
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -144,7 +142,7 @@ Get lists of communications of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.communications }}
+{{ listing.communications[0] }}
 # => error: uninitialized constant Yoolk::Liquid::CollectionDrop
 {% endraw %}{% endhighlight %}
   </div>
@@ -157,7 +155,7 @@ Get lists of extra communications of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.extra_communications }}
+{{ listing.extra_communications[0] }}
 # => Liquid error: undefined method `new' for nil:NilClass
 {% endraw %}{% endhighlight %}
   </div>
@@ -170,15 +168,15 @@ Get country of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight ruby %}{% raw %}
-{{ listing.listing_categories.alias_id }}
-{{ listing.listing_categories.short_name }}
-{{ listing.listing_categories.name }}
-{{ listing.listing_categories.description }}
-{{ listing.listing_categories.keyword }}
-{{ listing.listing_categories.display_on_web }}
-{{ listing.listing_categories.listings_count }}
-{{ listing.listing_categories.sub_categories_count }}
-{{ listing.listing_categories.level }}
+{{ listing.listing_categories[0].alias_id }}
+{{ listing.listing_categories[0].short_name }}
+{{ listing.listing_categories[0].name }}
+{{ listing.listing_categories[0].description }}
+{{ listing.listing_categories[0].keyword }}
+{{ listing.listing_categories[0].display_on_web }}
+{{ listing.listing_categories[0].listings_count }}
+{{ listing.listing_categories[0].sub_categories_count }}
+{{ listing.listing_categories[0].level }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -190,13 +188,13 @@ Get country of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.catalog_items.title }}
-{{ listing.catalog_items.html_text }}
-{{ listing.catalog_items.show_image }}
-{{ listing.catalog_items.published }}
-{{ listing.catalog_items.display_order }}
-{{ listing.catalog_items.created_at }}
-{{ listing.catalog_items.updated_at }}
+{{ listing.catalog_items[0].title }}
+{{ listing.catalog_items[0].html_text }}
+{{ listing.catalog_items[0].show_image }}
+{{ listing.catalog_items[0].published }}
+{{ listing.catalog_items[0].display_order }}
+{{ listing.catalog_items[0].created_at }}
+{{ listing.catalog_items[0].updated_at }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -208,23 +206,23 @@ Get image albums of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.galleries.name }}
-{{ listing.galleries.display_order }}
-{{ listing.galleries.to_param }}
-{{ listing.galleries.created_at }}
-{{ listing.galleries.updated_at }}
+{{ listing.galleries[0].name }}
+{{ listing.galleries[0].display_order }}
+{{ listing.galleries[0].to_param }}
+{{ listing.galleries[0].created_at }}
+{{ listing.galleries[0].updated_at }}
 
-{{ listing.galleries.images }}
+{{ listing.galleries[0].images }}
 
-  {{ listing.galleries.image.caption }}
-  {{ listing.galleries.image.display_order }}
-  {{ listing.galleries.image.created_at }}
-  {{ listing.galleries.image.updated_at }}
-  {{ listing.galleries.image.styles }}
-  {{ listing.galleries.image.width }}
-  {{ listing.galleries.image.height }}
-  {{ listing.galleries.image.size }}
-  {{ listing.galleries.image.url }}
+  {{ listing.galleries[0].image.caption }}
+  {{ listing.galleries[0].image.display_order }}
+  {{ listing.galleries[0].image.created_at }}
+  {{ listing.galleries[0].image.updated_at }}
+  {{ listing.galleries[0].image.styles }}
+  {{ listing.galleries[0].image.width }}
+  {{ listing.galleries[0].image.height }}
+  {{ listing.galleries[0].image.size }}
+  {{ listing.galleries[0].image.url }}
 
 {% endraw %}{% endhighlight %}
   </div>
@@ -237,15 +235,15 @@ Get gallery images of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.galleries.image.caption }}
-{{ listing.galleries.image.display_order }}
-{{ listing.galleries.image.created_at }}
-{{ listing.galleries.image.updated_at }}
-{{ listing.galleries.image.styles }}
-{{ listing.galleries.image.width }}
-{{ listing.galleries.image.height }}
-{{ listing.galleries.image.size }}
-{{ listing.galleries.image.url }}
+{{ listing.galleries[0].image.caption }}
+{{ listing.galleries[0].image.display_order }}
+{{ listing.galleries[0].image.created_at }}
+{{ listing.galleries[0].image.updated_at }}
+{{ listing.galleries[0].image.styles }}
+{{ listing.galleries[0].image.width }}
+{{ listing.galleries[0].image.height }}
+{{ listing.galleries[0].image.size }}
+{{ listing.galleries[0].image.url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -257,19 +255,19 @@ Get brochures of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.brochures.name }}
-{{ listing.brochures.text }}
-{{ listing.brochures.description }}
-{{ listing.brochures.is_active }}
-{{ listing.brochures.created_at }}
-{{ listing.brochures.updated_at }}
+{{ listing.brochures[0].name }}
+{{ listing.brochures[0].text }}
+{{ listing.brochures[0].description }}
+{{ listing.brochures[0].is_active }}
+{{ listing.brochures[0].created_at }}
+{{ listing.brochures[0].updated_at }}
 
-{{ listing.brochures.image.content_type }}
-{{ listing.brochures.image.styles }}
-{{ listing.brochures.image.width }}
-{{ listing.brochures.image.height }}
-{{ listing.brochures.image.size }}
-{{ listing.brochures.image.url }}
+{{ listing.brochures[0].image.content_type }}
+{{ listing.brochures[0].image.styles }}
+{{ listing.brochures[0].image.width }}
+{{ listing.brochures[0].image.height }}
+{{ listing.brochures[0].image.size }}
+{{ listing.brochures[0].image.url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -281,17 +279,17 @@ Get announcements of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.announcements.text }}
-{{ listing.announcements.to_param }}
-{{ listing.announcements.created_at }}
-{{ listing.announcements.updated_at }}
+{{ listing.announcements[0].text }}
+{{ listing.announcements[0].to_param }}
+{{ listing.announcements[0].created_at }}
+{{ listing.announcements[0].updated_at }}
 
-{{ listing.announcements.image.content_type }}
-{{ listing.announcements.image.styles }}
-{{ listing.announcements.image.width }}
-{{ listing.announcements.image.height }}
-{{ listing.announcements.image.size }}
-{{ listing.announcements.image.url }}
+{{ listing.announcements[0].image.content_type }}
+{{ listing.announcements[0].image.styles }}
+{{ listing.announcements[0].image.width }}
+{{ listing.announcements[0].image.height }}
+{{ listing.announcements[0].image.size }}
+{{ listing.announcements[0].image.url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -303,14 +301,14 @@ Get services of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.services.name }}
-{{ listing.services.description }}
-{{ listing.services.properties }}
-{{ listing.services.created_at }}
-{{ listing.services.updated_at }}
-{{ listing.services.to_param }}
-{{ listing.services.photos }} => AttachmentDrop
-{{ listing.services.url }}
+{{ listing.services[0].name }}
+{{ listing.services[0].description }}
+{{ listing.services[0].properties }}
+{{ listing.services[0].created_at }}
+{{ listing.services[0].updated_at }}
+{{ listing.services[0].to_param }}
+{{ listing.services[0].photos }} => AttachmentDrop
+{{ listing.services[0].url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -322,12 +320,12 @@ Get service_categories of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.service_categories.alias_id }}
-{{ listing.service_categories.short_name }}
-{{ listing.service_categories.name }}
-{{ listing.service_categories.description }}
-{{ listing.service_categories.to_param }}
-{{ listing.service_categories.services }}
+{{ listing.service_categories[0].alias_id }}
+{{ listing.service_categories[0].short_name }}
+{{ listing.service_categories[0].name }}
+{{ listing.service_categories[0].description }}
+{{ listing.service_categories[0].to_param }}
+{{ listing.service_categories[0].services }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -339,16 +337,16 @@ Get products of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.products.name }}
-{{ listing.products.description }}
-{{ listing.products.delivery }}
-{{ listing.products.features }}
-{{ listing.products.brand }}
-{{ listing.products.to_param }}
-{{ listing.products.created_at }}
-{{ listing.products.updated_at }}
-{{ listing.products.photos }}
-{{ listing.products.url }}
+{{ listing.products[0].name }}
+{{ listing.products[0].description }}
+{{ listing.products[0].delivery }}
+{{ listing.products[0].features }}
+{{ listing.products[0].brand }}
+{{ listing.products[0].to_param }}
+{{ listing.products[0].created_at }}
+{{ listing.products[0].updated_at }}
+{{ listing.products[0].photos }}
+{{ listing.products[0].url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -360,11 +358,11 @@ Get product_categories of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.product_categories.name }}
-{{ listing.product_categories.name_path }}
-{{ listing.product_categories.to_param }}
-{{ listing.product_categories.products }}
-{{ listing.product_categories.url }}
+{{ listing.product_categories[0].name }}
+{{ listing.product_categories[0].name_path }}
+{{ listing.product_categories[0].to_param }}
+{{ listing.product_categories[0].products }}
+{{ listing.product_categories[0].url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -376,15 +374,15 @@ Get foods of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.foods.name }}
-{{ listing.foods.description }}
-{{ listing.foods.delivery }}
-{{ listing.foods.properties }}
-{{ listing.foods.to_param }}
-{{ listing.foods.created_at }}
-{{ listing.foods.updated_at }}
-{{ listing.foods.photos }}
-{{ listing.foods.url }}
+{{ listing.foods[0].name }}
+{{ listing.foods[0].description }}
+{{ listing.foods[0].delivery }}
+{{ listing.foods[0].properties }}
+{{ listing.foods[0].to_param }}
+{{ listing.foods[0].created_at }}
+{{ listing.foods[0].updated_at }}
+{{ listing.foods[0].photos }}
+{{ listing.foods[0].url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -396,12 +394,12 @@ Get food_categories of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.food_categories.name }}
-{{ listing.food_categories.to_param }}
-{{ listing.food_categories.created_at }}
-{{ listing.food_categories.updated_at }}
-{{ listing.food_categories.foods }}
-{{ listing.food_categories.url }}
+{{ listing.food_categories[0].name }}
+{{ listing.food_categories[0].to_param }}
+{{ listing.food_categories[0].created_at }}
+{{ listing.food_categories[0].updated_at }}
+{{ listing.food_categories[0].foods }}
+{{ listing.food_categories[0].url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
