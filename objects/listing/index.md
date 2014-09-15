@@ -102,8 +102,7 @@ Get telephone of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.telephone }}
-# => Yoolk::Liquid::Listing::CommunicationDrop
+{{ listing.telephone.value }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -115,8 +114,7 @@ Get email of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.email }}
-# => Yoolk::Liquid::Listing::CommunicationDrop
+{{ listing.email.value }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
