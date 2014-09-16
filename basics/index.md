@@ -56,7 +56,7 @@ Tags make up the programming logic that tells templates what to do.
 </div>
 
 <p class="read-more">
-  <a href="/tags">read more &raquo;</a>
+  <a href="{{ '/tags' | prepend: site.baseurl }}">read more &raquo;</a>
 </p>
 
 
@@ -75,7 +75,7 @@ Objects contain attributes that are used to display dynamic content on the page.
 </div>
 
 <p class="read-more">
-  <a href="/objects">read more &raquo;</a>
+  <a href="{{ '/objects' | prepend: site.baseurl }}">read more &raquo;</a>
 </p>
 
 <h2 class="tags" id="filters">Filters</h2>
@@ -92,5 +92,5 @@ Filters are used to modify the output of strings, numbers, variables, and object
 </div>
 
 <p class="read-more">
-  <a href="/filters">read more &raquo;</a>
+  <a href="{{ '/filters' | prepend: site.baseurl }}">read more &raquo;</a>
 </p>
