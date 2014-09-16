@@ -68,6 +68,9 @@ The <code>listing</code> object has the following associations:
         <a href="#country">listing.country</a>
       </li>
       <li>
+        <a href="#business_type">listing.business_type</a>
+      </li>
+      <li>
         <a href="#telephone">listing.telephone</a>
       </li>
       <li>
@@ -185,6 +188,10 @@ Returns [location]({{ '/objects/location' | prepend: site.baseurl }}) object of 
 <h2 class="tags" id="country">listing.country</h2>
 
 Returns [country]({{ '/objects/country' | prepend: site.baseurl }}) object of a listing. [*Mandatory*]
+
+<h2 class="tags" id="business_type">listing.business_type</h2>
+
+Returns [business_type]({{ '/objects/business_type' | prepend: site.baseurl }}) object of a listing. [*Mandatory*]
 
 <h2 class="tags" id="telephone">listing.telephone</h2>
 
