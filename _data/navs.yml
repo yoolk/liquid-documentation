@@ -30,6 +30,8 @@
       href: "/country"
     - name: communication
       href: "/communication"
+    - name: extra_communication
+      href: "/extra_communication"
 
 - title: Filters
   subcategory:
