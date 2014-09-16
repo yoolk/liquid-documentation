@@ -19,3 +19,7 @@ To output an object's attribute on the page, wrap them in {% raw %}<code>{{</cod
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+<h2 id="global-objects" class="tags">Global Object</h2>
+<a href="{{ '/objects/listing/' | prepend: site.baseurl }}">Listing</a>
+can be used and accessed from **any file** in your theme, and are defined as **global object**, or global variable. It's the **only one** global object.

@@ -20,8 +20,10 @@
 
 - title: Objects
   subcategory:
-    - name: Listing
+    - name: listing
       href: "/listing"
+    - name: location
+      href: "/location"
 
 - title: Filters
   subcategory:
