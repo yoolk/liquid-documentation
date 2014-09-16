@@ -11,18 +11,17 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-    color: $logo-color;
-    font-weight: bold;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+  font-size: 38px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  color: #616161 !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  position: absolute;
+  left: 47px;
+  top: 5px;
 }
 
 .arrow_box {
@@ -77,6 +76,8 @@
 .site-logo {
   float: left;
   margin-right: 5px;
+  position: absolute;
+  top: 10px;
 }
 
 
@@ -112,6 +113,7 @@
   max-width: 1020px;
   height: auto;
   margin: 0 auto;
+  position: relative;
 }
 .table {
   max-width: 100%;
