@@ -9,8 +9,8 @@
 
 - title: Tags
   subcategory:
-    - name: "CSRF Meta Tag"
-      href: "/csrf-meta-tag"
+    - name: "CSRF Meta Tags"
+      href: "/csrf-meta-tags"
     - name: Control Flow Tags
       href: "/control-flow-tags"
     - name: Iteration Tags

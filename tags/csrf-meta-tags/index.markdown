@@ -1,8 +1,9 @@
 ---
 layout: nav_basics
+title: CSRF Meta Tags - Tags - Yoolk Instant Website Themes
 ---
 
-<h2 class="section-title">CSRF Meta Tag</h2>
+<h2 class="section-title">CSRF Meta Tags</h2>
 
 Returns meta tags “csrf-param” and “csrf-token” with the name of the cross-site request forgery protection parameter and token, respectively.
 

@@ -1,5 +1,6 @@
 ---
   layout: nav_basics
+  title: Iteration Tags - Tags - Yoolk Instant Website Themes
 ---
 
 <h2 class="section-title">Iteration Tags</h2>
@@ -34,8 +35,8 @@ For loops can only output a maximum of 50 results per page. In cases where there
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% for product in collection.products %}
-  {{ product.title }}
+{% for product in product_category.products %}
+  {{ product.name }}
 {% endfor %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -215,19 +216,19 @@ The example below shows why cycle groups are necessary when there are multiple i
     <div class="panel-body">
 {% highlight django%}{% raw %}
 <ul>
-  {% for product in collections.collection-1.products %}
+  {% for product in product_category-1.products %}
     <li{% cycle ' style="clear:both;"', '', '', ' class="last"' %}>
-      <a href="{{ product.url | within: collection }}">
-        <img src="{{ product.featured_image.src | product_img_url: 'medium' }}" alt="{{ product.featured_image.alt }}" />
+      <a href="{{ product.url }}">
+        {{ product.cover_photo | attachment_url: 'medium' | image_tag }}
       </a>
     </li>
   {% endfor %}
 </ul>
 <ul>
-  {% for product in collections.collection-2.products %}
+  {% for product in product_category-2.products %}
     <li{% cycle ' style="clear:both;"', '', '', ' class="last"' %}>
-      <a href="{{ product.url | within: collection }}">
-        <img src="{{ product.featured_image.src | product_img_url: 'medium' }}" alt="{{ product.featured_image.alt }}" />
+      <a href="{{ product.url }}">
+        {{ product.cover_photo | attachment_url: 'medium' | image_tag }}
       </a>
     </li>
   {% endfor %}
@@ -258,19 +259,19 @@ The example below shows why cycle groups are necessary when there are multiple i
     <div class="panel-body">
 {% highlight django%}{% raw %}
 <ul>
-  {% for product in collections.collection-1.products %}
+  {% for product in product_category-1.products %}
     <li{% cycle 'group1': ' style="clear:both;"', '', '', ' class="last"' %}>
-      <a href="{{ product.url | within: collection }}">
-        <img src="{{ product.featured_image.src | product_img_url: "medium" }}" alt="{{ product.featured_image.alt }}" />
+      <a href="{{ product.url }}">
+        {{ product.cover_photo | attachment_url: 'medium' | image_tag }}
       </a>
     </li>
   {% endfor %}
 </ul>
 <ul>
-  {% for product in collections.collection-2.products %}
+  {% for product in product_category-2.products %}
     <li{% cycle 'group2': ' style="clear:both;"', '', '', ' class="last"' %}>
-      <a href="{{ product.url | within: collection }}">
-        <img src="{{ product.featured_image.src | product_img_url: "medium" }}" alt="{{ product.featured_image.alt }}" />
+      <a href="{{ product.url }}">
+        {{ product.cover_photo | attachment_url: 'medium' | image_tag }}
       </a>
     </li>
   {% endfor %}
@@ -311,8 +312,8 @@ Generates an HTML <table>. Must be wrapped in an opening <table> and closing </t
   <div class="panel-body">
 {% highlight html %}{% raw %}
 <table>
-  {% tablerow product in collection.products %}
-    {{ product.title }}
+  {% tablerow product in product_category.products %}
+    {{ product.name }}
   {% endtablerow %}
 </table>
 {% endraw %}{% endhighlight %}
@@ -361,8 +362,8 @@ Generates an HTML <table>. Must be wrapped in an opening <table> and closing </t
     </div>
     <div class="panel-body">
 {% highlight django%}{% raw %}
-{% tablerow product in collection.products cols:2 %}
-  {{ product.title }}
+{% tablerow product in product_category.products cols:2 %}
+  {{ product.name }}
 {% endtablerow %}
 {% endraw %}{% endhighlight %}
     </div>
@@ -409,8 +410,8 @@ Generates an HTML <table>. Must be wrapped in an opening <table> and closing </t
   <div class="panel">
     <div class="panel-body">
 {% highlight django%}{% raw %}
-{% tablerow product in collection.products cols:2 limit:3 %}
-  {{ product.title }}
+{% tablerow product in product_category.products cols:2 limit:3 %}
+  {{ product.name }}
 {% endtablerow %}
 {% endraw %}{% endhighlight %}
     </div>
@@ -421,8 +422,8 @@ Generates an HTML <table>. Must be wrapped in an opening <table> and closing </t
   <div class="panel">
     <div class="panel-body">
 {% highlight html %}{% raw %}
-{% tablerow product in collection.products cols:2 offset:3 %}
-  {{ product.title }}
+{% tablerow product in product_category.products cols:2 offset:3 %}
+  {{ product.name }}
 {% endtablerow %}
 {% endraw %}{% endhighlight %}
     </div>

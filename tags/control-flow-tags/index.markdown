@@ -1,5 +1,6 @@
 ---
   layout: nav_basics
+  title: Control Flow Tags - Tags - Yoolk Instant Website Themes
 ---
 
 <h2 class="section-title">Control Flow Tags</h2>
@@ -35,7 +36,7 @@ Executes a block of code only if a certain condition is met
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% if product.title == 'Awesome Shoes' %}
+{% if product.name == 'Awesome Shoes' %}
   These shoes are awesome!
 {% endif %}
 {% endraw %}{% endhighlight %}
@@ -64,9 +65,9 @@ Adds more conditions within an if or unless block.
   <div class="panel-body">
 {% highlight django%}{% raw %}
 <!-- If customer.name = 'anonymous' -->
-{% if customer.name == 'kevin' %}
+{% if person.name == 'kevin' %}
   Hey Kevin!
-{% elsif customer.name == 'anonymous' %}
+{% elsif person.name == 'anonymous' %}
   Hey Anonymous!
 {% else %}
   Hi Stranger!
@@ -130,7 +131,7 @@ Similar to if, but executes a block of code only if a certain condition is not m
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% unless product.title == 'Awesome Shoes' %}
+{% unless product.name == 'Awesome Shoes' %}
   These shoes are not awesome.
 {% endunless %}
 {% endraw %}{% endhighlight %}
@@ -153,7 +154,7 @@ This would be the equivalent of doing the following:
 <div class="panel">
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% if product.title != 'Awesome Shoes' %}
+{% if product.name != 'Awesome Shoes' %}
   These shoes are not awesome.
 {% endif %}
 {% endraw %}{% endhighlight %}

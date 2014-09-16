@@ -1,5 +1,6 @@
 ---
   layout: nav_basics
+  title: Variable Tags - Tags - Yoolk Instant Website Themes
 ---
 <h2 class="section-title">Variable Tags</h2>
 Variable Tags are used to create new Liquid variables
