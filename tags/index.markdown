@@ -18,7 +18,7 @@ Tags can be broken down into four categories:
         <ul>
           {% for subcategory in nav.subcategory %}
             <li>
-              <a href="/tags{{subcategory.href}}">{{subcategory.name}}</a>
+              <a href="{{ subcategory.href | prepend: '/tags' | prepend: site.baseurl }}">{{subcategory.name}}</a>
             </li>
           {% endfor %}
         </ul>
