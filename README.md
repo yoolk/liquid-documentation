@@ -8,11 +8,11 @@ This repo contains source code to [Theme Documentation for Yoolk Instant Website
 
 Use Bundler to install the gem and its dependencies
 
-  $ bundle install
+    $ bundle install
 
 Run it locally
 
-  $ jekyll serve --watch
+    $ jekyll serve --watch
 
 Then, go to your browser with this url, [http://localhost:4000/liquid-documentation](http://localhost:4000/liquid-documentation).
 
