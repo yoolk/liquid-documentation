@@ -28,6 +28,8 @@
       href: "/business_type"
     - name: country
       href: "/country"
+    - name: communication
+      href: "/communication"
 
 - title: Filters
   subcategory:
