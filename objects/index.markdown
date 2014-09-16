@@ -1,10 +1,11 @@
 ---
   layout: nav_basics
+  title: Objects - Yoolk Instant Website Themes
 ---
 
 <h2 class="section-title">Objects</h2>
 
-Liquid objects contain attributes to output dynamic content on the page. For example, the <code>listing</code> object contains an attribute called title that can be used to output the <code>name</code> of a listing.
+Liquid objects contain attributes to output dynamic content on the page. For example, the <code>listing</code> object contains an attribute called `name` that can be used to output the <code>name</code> of a listing.
 
 Liquid objects are also often refered to as Liquid variables.
 

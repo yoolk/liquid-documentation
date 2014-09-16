@@ -1,5 +1,6 @@
 ---
   layout: nav_basics
+  title: Tags - Yoolk Instant Website Themes
 ---
 
 <h2 class="section-title">Tags</h2>

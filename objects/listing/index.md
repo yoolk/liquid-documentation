@@ -1,5 +1,6 @@
 ---
   layout: nav_basics
+  title: listing - Objects - Yoolk Instant Website Themes
 ---
 
 <h2 class="section-title">Listing</h2>
@@ -33,7 +34,6 @@ The <code>listing</code> object contains information about listing.
       <li>
         <a href="#listing_categories">listing_categories</a>
       </li>
-
       <li>
         <a href="#catalog_items">catalog_items</a>
       </li>
@@ -126,8 +126,7 @@ Get website of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.website }}
-# => Yoolk::Liquid::Listing::CommunicationDrop
+{{ listing.website.value }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -140,8 +139,7 @@ Get lists of communications of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
-{{ listing.communications[0] }}
-# => error: uninitialized constant Yoolk::Liquid::CollectionDrop
+{{ listing.communications[0].value }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -154,7 +152,6 @@ Get lists of extra communications of the current listing object.
   <div class="panel-body">
 {% highlight html %}{% raw %}
 {{ listing.extra_communications[0] }}
-# => Liquid error: undefined method `new' for nil:NilClass
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -166,6 +163,7 @@ Get country of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight ruby %}{% raw %}
+{{ listing.listing_categories[0].id }}
 {{ listing.listing_categories[0].alias_id }}
 {{ listing.listing_categories[0].short_name }}
 {{ listing.listing_categories[0].name }}
@@ -181,11 +179,12 @@ Get country of the current listing object.
 
 <h2 class="tags" id="catalog_items">catalog_items</h2>
 
-Get country of the current listing object.
+Get catalog items of the current listing object. `image` object is optional.
 
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.catalog_items[0].id }}
 {{ listing.catalog_items[0].title }}
 {{ listing.catalog_items[0].html_text }}
 {{ listing.catalog_items[0].show_image }}
@@ -193,6 +192,8 @@ Get country of the current listing object.
 {{ listing.catalog_items[0].display_order }}
 {{ listing.catalog_items[0].created_at }}
 {{ listing.catalog_items[0].updated_at }}
+
+{{ listing.catalog_items[0].image.url }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -205,9 +206,9 @@ Get image albums of the current listing object.
   <div class="panel-body">
 {% highlight html %}{% raw %}
 
+{{ listing.galleries[0].id }}
 {{ listing.galleries[0].name }}
 {{ listing.galleries[0].display_order }}
-{{ listing.galleries[0].to_param }}
 {{ listing.galleries[0].created_at }}
 {{ listing.galleries[0].updated_at }}
 {{ listing.galleries[0].images }}
@@ -245,14 +246,11 @@ Get gallery images of the current listing object.
   <div class="panel-body">
 {% highlight html %}{% raw %}
 
+{{ listing.image[0].id }}
 {{ listing.image[0].caption }}
 {{ listing.image[0].display_order }}
 {{ listing.image[0].created_at }}
 {{ listing.image[0].updated_at }}
-{{ listing.image[0].styles }}
-{{ listing.image[0].width }}
-{{ listing.image[0].height }}
-{{ listing.image[0].size }}
 {{ listing.image[0].url }}
 
 {% endraw %}{% endhighlight %}
@@ -261,11 +259,12 @@ Get gallery images of the current listing object.
 
 <h2 class="tags" id="brochures">brochures</h2>
 
-Get brochures of the current listing object.
+Get brochures of the current listing object. `image` object is optional.
 
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.brochures[0].id }}
 {{ listing.brochures[0].name }}
 {{ listing.brochures[0].text }}
 {{ listing.brochures[0].description }}
@@ -273,11 +272,6 @@ Get brochures of the current listing object.
 {{ listing.brochures[0].created_at }}
 {{ listing.brochures[0].updated_at }}
 
-{{ listing.brochures[0].image.content_type }}
-{{ listing.brochures[0].image.styles }}
-{{ listing.brochures[0].image.width }}
-{{ listing.brochures[0].image.height }}
-{{ listing.brochures[0].image.size }}
 {{ listing.brochures[0].image.url }}
 {% endraw %}{% endhighlight %}
   </div>
@@ -285,21 +279,17 @@ Get brochures of the current listing object.
 
 <h2 class="tags" id="announcements">announcements</h2>
 
-Get announcements of the current listing object.
+Get announcements of the current listing object. `image` object is optional.
 
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.announcements[0].id }}
 {{ listing.announcements[0].text }}
-{{ listing.announcements[0].to_param }}
+{{ listing.announcements[0].url }}
 {{ listing.announcements[0].created_at }}
 {{ listing.announcements[0].updated_at }}
 
-{{ listing.announcements[0].image.content_type }}
-{{ listing.announcements[0].image.styles }}
-{{ listing.announcements[0].image.width }}
-{{ listing.announcements[0].image.height }}
-{{ listing.announcements[0].image.size }}
 {{ listing.announcements[0].image.url }}
 {% endraw %}{% endhighlight %}
   </div>
@@ -337,13 +327,13 @@ Get services of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.services[0].id }}
 {{ listing.services[0].name }}
 {{ listing.services[0].description }}
 {{ listing.services[0].properties }}
 {{ listing.services[0].created_at }}
 {{ listing.services[0].updated_at }}
-{{ listing.services[0].to_param }}
-{{ listing.services[0].photos }} => AttachmentDrop
+{{ listing.services[0].photos }}
 {{ listing.services[0].url }}
 {% endraw %}{% endhighlight %}
   </div>
@@ -356,11 +346,11 @@ Get service_categories of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.service_categories[0].id }}
 {{ listing.service_categories[0].alias_id }}
 {{ listing.service_categories[0].short_name }}
 {{ listing.service_categories[0].name }}
 {{ listing.service_categories[0].description }}
-{{ listing.service_categories[0].to_param }}
 {{ listing.service_categories[0].services }}
 {% endraw %}{% endhighlight %}
   </div>
@@ -398,12 +388,12 @@ Get products of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.products[0].id }}
 {{ listing.products[0].name }}
 {{ listing.products[0].description }}
 {{ listing.products[0].delivery }}
 {{ listing.products[0].features }}
 {{ listing.products[0].brand }}
-{{ listing.products[0].to_param }}
 {{ listing.products[0].created_at }}
 {{ listing.products[0].updated_at }}
 {{ listing.products[0].photos }}
@@ -419,9 +409,9 @@ Get product_categories of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.product_categories[0].id }}
 {{ listing.product_categories[0].name }}
 {{ listing.product_categories[0].name_path }}
-{{ listing.product_categories[0].to_param }}
 {{ listing.product_categories[0].products }}
 {{ listing.product_categories[0].url }}
 {% endraw %}{% endhighlight %}
@@ -461,11 +451,11 @@ Get foods of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.foods[0].id }}
 {{ listing.foods[0].name }}
 {{ listing.foods[0].description }}
 {{ listing.foods[0].delivery }}
 {{ listing.foods[0].properties }}
-{{ listing.foods[0].to_param }}
 {{ listing.foods[0].created_at }}
 {{ listing.foods[0].updated_at }}
 {{ listing.foods[0].photos }}
@@ -481,8 +471,8 @@ Get food_categories of the current listing object.
 <div class="panel">
   <div class="panel-body">
 {% highlight html %}{% raw %}
+{{ listing.food_categories[0].id }}
 {{ listing.food_categories[0].name }}
-{{ listing.food_categories[0].to_param }}
 {{ listing.food_categories[0].created_at }}
 {{ listing.food_categories[0].updated_at }}
 {{ listing.food_categories[0].foods }}
