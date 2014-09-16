@@ -28,7 +28,7 @@ layout: default
   {% assign full_path = page.dir | remove_first: "/" %}
   {% assign paths =  full_path | split: '/' %}
   <p class="breadscrumb">
-    <a href="/" class="arrow_box">Home</a>
+    <a href="{{ site.baseurl }}" class="arrow_box">Home</a>
     {% for path in paths %}
       {% if forloop.last == true %}
         <span>{{ path | capitalize }}</span>
