@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img src="/images/book.png" alt="yoolk liquid reference" title="yoolk liquid reference" style="width: 80px" class="ref-image">
+<img src="{{ '/images/book.png' | site.baseurl }}" alt="yoolk liquid reference" title="yoolk liquid reference" style="width: 80px" class="ref-image">
 
 <h2 class="ref-heading">liquid reference</h2>
 
@@ -13,5 +13,5 @@ layout: default
 </p>
 
 <p class="goto-reference">
-  <a href="/basics">go to liquid reference</a>
+  <a href="{{'/basics' | site.baseurl }">go to liquid reference</a>
 </p>
