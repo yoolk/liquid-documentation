@@ -33,7 +33,7 @@ layout: default
       {% if forloop.last == true %}
         <span>{{ path | capitalize }}</span>
       {% else %}
-        <a href="/{{ path }}" class="arrow_box">{{ path | capitalize }}</a>
+        <a href="{{ path | prepend: '/' | prepend: site.baseurl }}" class="arrow_box">{{ path | capitalize }}</a>
       {% endif %}
     {% endfor %}
   </p>
