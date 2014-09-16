@@ -194,6 +194,41 @@ code {
   display: inline-block;
   float: right;
 }
+.goto-reference {
+  text-align: center;
+  a {
+    text-transform: capitalize;
+    background-color: #FFCC33;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #F7F7F7;
+    margin-top: 40px;
+    &:hover {
+      background-color: #ECB81B;
+    }
+  }
+}
+.ref-image {
+  display: block;
+  margin: 0 auto;
+}
+.ref-heading {
+  display: block;
+  text-align: center;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+.ref-description {
+  text-align: center;
+  span {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+  }
+}
 footer {
   clear: both;
 }
