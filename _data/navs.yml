@@ -26,6 +26,8 @@
       href: "/location"
     - name: business_type
       href: "/business_type"
+    - name: country
+      href: "/country"
 
 - title: Filters
   subcategory:
