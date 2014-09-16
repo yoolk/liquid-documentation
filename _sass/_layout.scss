@@ -323,14 +323,14 @@ header {
     margin-bottom: $spacing-unit / 2;
 }
 .scroll-to-top {
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  background-image: url("/images/arrow-up.png");
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-image: url("#{$base-url}/images/arrow-up.png");
   display: block;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 40px;
   z-index: 9999;
 }
 .contact-list,
