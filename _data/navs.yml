@@ -32,6 +32,8 @@
       href: "/communication"
     - name: extra_communication
       href: "/extra_communication"
+    - name: listing_category
+      href: "/listing_category"
 
 - title: Filters
   subcategory:
