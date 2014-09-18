@@ -36,6 +36,10 @@
       href: "/listing_category"
     - name: catalog_item
       href: "/catalog_item"
+    - name: gallery
+      href: "/gallery"
+    - name: image
+      href: "/image"
 
 - title: Filters
   subcategory:
