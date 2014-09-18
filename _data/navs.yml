@@ -40,6 +40,22 @@
       href: "/gallery"
     - name: image
       href: "/image"
+    - name: brochure
+      href: "/brochure"
+    - name: announcement
+      href: "/announcement"
+    - name: service_category
+      href: "/service_category"
+    - name: service
+      href: "/service"
+    - name: product_category
+      href: "/product_category"
+    - name: product
+      href: "/product"
+    - name: food_category
+      href: "/food_category"
+    - name: food
+      href: "/food"
 
 - title: Filters
   subcategory:

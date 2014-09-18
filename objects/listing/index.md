@@ -104,22 +104,22 @@ The <code>listing</code> object has the following associations:
         <a href="#announcements">listing.announcements</a>
       </li>
       <li>
-        <a href="#services">listing.services</a>
-      </li>
-      <li>
         <a href="#service_categories">listing.service_categories</a>
       </li>
       <li>
-        <a href="#products">listing.products</a>
+        <a href="#services">listing.services</a>
       </li>
       <li>
         <a href="#product_categories">listing.product_categories</a>
       </li>
       <li>
-        <a href="#foods">listing.foods</a>
+        <a href="#products">listing.products</a>
       </li>
       <li>
         <a href="#food_categories">listing.food_categories</a>
+      </li>
+      <li>
+        <a href="#foods">listing.foods</a>
       </li>
     </ul>
   </div>
