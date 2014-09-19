@@ -141,3 +141,50 @@ Returns an array of the person's photos. Use the [attachment_url]({{ '/filters/u
     <td>x239</td>
   </tr>
 </table>
+
+<h2 class="tags" id="position_level">person.position_level</h2>
+
+Returns person's position level.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ person.position_level.name }}
+# => Director
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="communications">person.communications</h2>
+
+Returns an array of the person's communications.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% for com in person.communications %}
+  Id: {{ com.id }}
+  Type: {{ com.type }}
+  Value: {{ com.value }}
+  Is first line: {{ com.is_first_line }}
+{% endfor %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+Id: 1
+Type: Mobile Phone
+Value: 099 234 567
+Is first line: true
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
