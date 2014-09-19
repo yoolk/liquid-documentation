@@ -14,10 +14,10 @@ The <code>logo</code> object has the following attributes:
         <a href="#id">logo.id</a>
       </li>
       <li>
-        <a href="#created_at">image.created_at</a>
+        <a href="#created_at">logo.created_at</a>
       </li>
       <li>
-        <a href="#updated_at">image.updated_at</a>
+        <a href="#updated_at">logo.updated_at</a>
       </li>
     </ul>
   </div>
@@ -33,14 +33,14 @@ The <code>logo</code> object has the following attributes:
   </tr>
   <tr>
     <td>small</td>
-    <td>196 x auto</td>
+    <td>50x50></td>
   </tr>
   <tr>
     <td>medium</td>
-    <td>322 x auto</td>
+    <td>150x150></td>
   </tr>
   <tr>
     <td>large</td>
-    <td>994 x auto</td>
+    <td>220x220></td>
   </tr>
 </table>
