@@ -24,7 +24,32 @@ These are the default filters. They have been written by Shopify.
 <h2 class="tags" id="array_filters">Array Filters</h2>
 Array filters are used to modify the output of arrays.
 
-<h5 class="sub-section-title">join</h5>
+<div class="panel">
+  <div class="panel-body">
+    <ul>
+      <li>
+        <a href="#join">join</a>
+      </li>
+      <li>
+        <a href="#first">first</a>
+      </li>
+      <li>
+        <a href="#last">last</a>
+      </li>
+      <li>
+        <a href="#map">map</a>
+      </li>
+      <li>
+        <a href="#size">size</a>
+      </li>
+      <li>
+        <a href="#sort">sort</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h5 class="sub-section-title" id="join">join</h5>
 Joins the elements of an array with the character passed as the parameter. The result is a single string.
 
 <div class="panel">
@@ -49,7 +74,7 @@ tag1, tag2, tag3
   </div>
 </div>
 
-<h5 class="sub-section-title">first</h5>
+<h5 class="sub-section-title" id="first">first</h5>
 Returns the first element of an array.
 
 <div class="panel">
@@ -87,7 +112,7 @@ sale
   </div>
 </div>
 
-<h5 class="sub-section-title">last</h5>
+<h5 class="sub-section-title" id="last">last</h5>
 Gets the last element passed in an array.
 
 <div class="panel">
@@ -150,7 +175,7 @@ s
   </div>
 </div>
 
-<h5 class="sub-section-title">map</h5>
+<h5 class="sub-section-title" id="map">map</h5>
 Accepts an array element's attribute as a parameter and creates a string out of each array element's value.
 
 <div class="panel">
@@ -177,9 +202,7 @@ SpringSummerFallWinter
   </div>
 </div>
 
-
-
-<h5 class="sub-section-title">size</h5>
+<h5 class="sub-section-title" id="size">size</h5>
 Returns the size of a string or an array.
 
 <div class="panel">
@@ -217,7 +240,7 @@ There are more than 10 products in this collection!
 </div>
 
 
-<h5 class="sub-section-title">sort</h5>
+<h5 class="sub-section-title" id="sort">sort</h5>
 Sorts the elements of an array by a given attribute of an element in the array.
 
 <div class="panel">
@@ -262,7 +285,95 @@ A B a b
 <h2 class="tags" id="string_filters">String Filters</h2>
 String filters are used to manipulate outputs and variables of the string type.
 
-<h5 class="sub-section-title">append</h5>
+<div class="panel">
+  <div class="panel-body">
+    <ul>
+      <li>
+        <a href="#append">append</a>
+      </li>
+      <li>
+        <a href="#camelcase">camelcase</a>
+      </li>
+      <li>
+        <a href="#capitalize">capitalize</a>
+      </li>
+      <li>
+        <a href="#downcase">downcase</a>
+      </li>
+      <li>
+        <a href="#escape">escape</a>
+      </li>
+      <li>
+        <a href="#handle/handleize">handle/handleize</a>
+      </li>
+      <li>
+        <a href="#md5">md5</a>
+      </li>
+      <li>
+        <a href="#newline_to_br">newline_to_br</a>
+      </li>
+      <li>
+        <a href="#pluralize">pluralize</a>
+      </li>
+      <li>
+        <a href="#prepend">prepend</a>
+      </li>
+      <li>
+        <a href="#remove">remove</a>
+      </li>
+      <li>
+        <a href="#remove_first">remove_first</a>
+      </li>
+      <li>
+        <a href="#replace">replace</a>
+      </li>
+      <li>
+        <a href="#replace_first">replace_first</a>
+      </li>
+      <li>
+        <a href="#slice">slice</a>
+      </li>
+      <li>
+        <a href="#split">split</a>
+      </li>
+      <li>
+        <a href="#strip">strip</a>
+      </li>
+      <li>
+        <a href="#lstrip">lstrip</a>
+      </li>
+      <li>
+        <a href="#rstrip">rstrip</a>
+      </li>
+      <li>
+        <a href="#strip_html">strip_html</a>
+      </li>
+      <li>
+        <a href="#strip_newlines">strip_newlines</a>
+      </li>
+      <li>
+        <a href="#truncate">truncate</a>
+      </li>
+      <li>
+        <a href="#truncatewords">truncatewords</a>
+      </li>
+      <li>
+        <a href="#uniq">uniq</a>
+      </li>
+      <li>
+        <a href="#upcase">upcase</a>
+      </li>
+      <li>
+        <a href="#url_escape">url_escape</a>
+      </li>
+      <li>
+        <a href="#url_param_escape">url_param_escape</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h5 class="sub-section-title" id="append">append</h5>
 Appends characters to a string.
 
 <div class="panel">
@@ -287,7 +398,7 @@ sales.jpg
   </div>
 </div>
 
-<h5 class="sub-section-title">camelcase</h5>
+<h5 class="sub-section-title" id="camelcase">camelcase</h5>
 Converts a string into CamelCase.
 
 <div class="panel">
@@ -312,7 +423,7 @@ ComingSoon
   </div>
 </div>
 
-<h5 class="sub-section-title">capitalize</h5>
+<h5 class="sub-section-title" id="capitalize">capitalize</h5>
 Capitalizes the first word in a string
 
 <div class="panel">
@@ -337,7 +448,7 @@ Capitalize me
   </div>
 </div>
 
-<h5 class="sub-section-title">downcase</h5>
+<h5 class="sub-section-title" id="downcase">downcase</h5>
 Converts a string into lowercase.
 
 <div class="panel">
@@ -362,7 +473,7 @@ uppercase
   </div>
 </div>
 
-<h5 class="sub-section-title">escape</h5>
+<h5 class="sub-section-title" id="escape">escape</h5>
 Escapes a string.
 
 <div class="panel">
@@ -388,61 +499,7 @@ Escapes a string.
   </div>
 </div>
 
-
-<h5 class="sub-section-title">handle/handleize</h5>
-Formats a string into a handle.
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Input</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-{{ '100% M & Ms!!!' | handleize }}
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Output</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-100-m-ms
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<h5 class="sub-section-title">md5</h5>
-Converts a string into an MD5 hash.
-
-An example use case for this filter is showing the Gravatar image associated with the poster of a blog comment:
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Input</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-<img src="http://www.gravatar.com/avatar/{{ comment.email | remove: ' ' | strip_newlines | downcase | md5 }}" />
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Output</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-<img src="http://www.gravatar.com/avatar/2a95ab7c950db9693c2ceb767784c201" />
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-
-<h5 class="sub-section-title">newline_to_br</h5>
+<h5 class="sub-section-title" id="newline_to_br">newline_to_br</h5>
 Inserts a <br > linebreak HTML tag in front of each line break in a string.
 
 <div class="panel">
@@ -474,33 +531,7 @@ Three<br>
   </div>
 </div>
 
-<h5 class="sub-section-title">pluralize</h5>
-Outputs the singular or plural version of a string based on the value of a number. The first parameter is the singular string and the second parameter is the plural string.
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Input</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-{{ cart.item_count }}
-{{ cart.item_count | pluralize: 'item', 'items' }}
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Output</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-3 items
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<h5 class="sub-section-title">prepend</h5>
+<h5 class="sub-section-title" id="prepend">prepend</h5>
 Prepends characters to a string.
 
 <div class="panel">
@@ -525,7 +556,7 @@ Made a great sale
   </div>
 </div>
 
-<h5 class="sub-section-title">remove</h5>
+<h5 class="sub-section-title" id="remove">remove</h5>
 Removes all occurrences of a substring from a string.
 
 <div class="panel">
@@ -550,7 +581,7 @@ Hello, . Goodbye, .
   </div>
 </div>
 
-<h5 class="sub-section-title">remove_first</h5>
+<h5 class="sub-section-title" id="remove_first">remove_first</h5>
 Removes only the first occurrence of a substring from a string.
 
 <div class="panel">
@@ -575,7 +606,7 @@ Hello, . Goodbye, world.
   </div>
 </div>
 
-<h5 class="sub-section-title">replace</h5>
+<h5 class="sub-section-title" id="replace">replace</h5>
 Replaces all occurrences of a string with a substring.
 
 <div class="panel">
@@ -601,7 +632,7 @@ Mega Shoes
   </div>
 </div>
 
-<h5 class="sub-section-title">replace_first</h5>
+<h5 class="sub-section-title" id="replace_first">replace_first</h5>
 Replaces the first occurrence of a string with a substring.
 
 <div class="panel">
@@ -627,7 +658,7 @@ Mega Awesome Shoes
   </div>
 </div>
 
-<h5 class="sub-section-title">slice</h5>
+<h5 class="sub-section-title" id="slice">slice</h5>
 The <code>slice</code> filter returns a substring, starting at the specified index. An optional second parameter can be passed to specify the length of the substring. If no second parameter is given, a substring of one character will be returned.
 
 <div class="panel">
@@ -678,7 +709,7 @@ el
   </div>
 </div>
 
-<h5 class="sub-section-title">split</h5>
+<h5 class="sub-section-title" id="split">split</h5>
 The <code>split</code> filter takes on a substring as a parameter. The substring is used as a delimiter to divide a string into an array.
 
 <div class="panel">
@@ -718,7 +749,7 @@ Uses cheat codes, calls the game boring.
   </div>
 </div>
 
-<h5 class="sub-section-title">strip</h5>
+<h5 class="sub-section-title" id="strip">strip</h5>
 Strips tabs, spaces, and newlines (all whitespace) from the left and right side of a string.
 
 <div class="panel">
@@ -743,7 +774,7 @@ too many spaces
   </div>
 </div>
 
-<h5 class="sub-section-title">lstrip</h5>
+<h5 class="sub-section-title" id="lstrip">lstrip</h5>
 Strips tabs, spaces, and newlines (all whitespace) from the __left__ side of a string.
 
 <div class="panel">
@@ -769,7 +800,7 @@ too many spaces
   </div>
 </div>
 
-<h5 class="sub-section-title">rstrip</h5>
+<h5 class="sub-section-title" id="rstrip">rstrip</h5>
 Strips tabs, spaces, and newlines (all whitespace) from the __right__ side of a string.
 
 <div class="panel">
@@ -778,7 +809,7 @@ Strips tabs, spaces, and newlines (all whitespace) from the __right__ side of a 
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{{ '              too many spaces      ' | strip }}
+{{ '              too many spaces      ' | rstrip }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -794,7 +825,7 @@ Strips tabs, spaces, and newlines (all whitespace) from the __right__ side of a 
   </div>
 </div>
 
-<h5 class="sub-section-title">strip_html</h5>
+<h5 class="sub-section-title" id="strip_html">strip_html</h5>
 Strips all HTML tags from a string.
 
 <div class="panel">
@@ -819,7 +850,7 @@ Hello World
   </div>
 </div>
 
-<h5 class="sub-section-title">strip_newlines</h5>
+<h5 class="sub-section-title" id="strip_newlines">strip_newlines</h5>
 Removes any line breaks/newlines from a string.
 
 <div class="panel">
@@ -830,33 +861,7 @@ Removes any line breaks/newlines from a string.
   </div>
 </div>
 
-
-<h5 class="sub-section-title">truncate</h5>
-Truncates a string down to 'x' characters, where x is the number passed as a parameter. An ellipsis (...) is appended to the string and is included in the character count.
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Input</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-{{ "The cat came back the very next day" | truncate: 10 }}
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Output</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-The cat...
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<h5 class="sub-section-title">truncatewords</h5>
+<h5 class="sub-section-title" id="truncatewords">truncatewords</h5>
 Truncates a string down to 'x' words, where x is the number passed as a parameter. An ellipsis (...) is appended to the truncated string.
 
 <div class="panel">
@@ -881,7 +886,7 @@ The cat came back...
   </div>
 </div>
 
-<h5 class="sub-section-title">uniq</h5>
+<h5 class="sub-section-title" id="uniq">uniq</h5>
 Removes any duplicate instances of an element in an array.
 
 <div class="panel">
@@ -907,7 +912,7 @@ orange apple banana
   </div>
 </div>
 
-<h5 class="sub-section-title">upcase</h5>
+<h5 class="sub-section-title" id="upcase">upcase</h5>
 Converts a string into uppercase
 
 <div class="panel">
@@ -957,38 +962,41 @@ Identifies all characters in a string that are not allowed in URLS, and replaces
   </div>
 </div>
 
-<h5 class="sub-section-title">url_param_escape</h5>
-Replaces all characters in a string that are not allowed in URLs with their escaped variants, including the ampersand (&).
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Input</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-{{ "<hello> & <shopify>" | url_param_escape }}
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
-<div class="panel">
-  <div class="panel-header">
-    <h3>Output</h3>
-  </div>
-  <div class="panel-body">
-{% highlight django%}{% raw %}
-%3Chello%3E%20%26%20%3Cshopify%3E
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
 <h2 class="tags" id="math_filters">Math Filters</h2>
-Math filters allow you to apply mathematical tasks.
+Math filters allow you to apply mathematical tasks. It can be linked and, as with any other filters, are applied in order of left to right.
 
-Math filters can be linked and, as with any other filters, are applied in order of left to right. In the example below, <code>minus</code> is applied first, then <code>times</code>, and finally <code>divided_by</code>.
+<div class="panel">
+  <div class="panel-body">
+    <ul>
+      <li>
+        <a href="#ceil">ceil</a>
+      </li>
+      <li>
+        <a href="#divided_by">divided_by</a>
+      </li>
+      <li>
+        <a href="#floor">floor</a>
+      </li>
+      <li>
+        <a href="#minus">minus</a>
+      </li>
+      <li>
+        <a href="#plus">plus</a>
+      </li>
+      <li>
+        <a href="#round">round</a>
+      </li>
+      <li>
+        <a href="#times">times</a>
+      </li>
+      <li>
+        <a href="#modulo">modulo</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-
-<h5 class="sub-section-title">ceil</h5>
+<h5 class="sub-section-title" id="ceil">ceil</h5>
 Rounds an output up to the nearest integer.
 
 <div class="panel">
@@ -1014,7 +1022,7 @@ Rounds an output up to the nearest integer.
 {% endraw %}{% endhighlight %}
   </div>
 </div>
-<h5 class="sub-section-title">divided_by</h5>
+<h5 class="sub-section-title" id="divided_by">divided_by</h5>
 Divides an output by a number.
 
 <div class="panel">
@@ -1040,7 +1048,7 @@ Divides an output by a number.
   </div>
 </div>
 
-<h5 class="sub-section-title">floor</h5>
+<h5 class="sub-section-title" id="floor">floor</h5>
 Rounds an output down to the nearest integer.
 
 <div class="panel">
@@ -1067,7 +1075,7 @@ Rounds an output down to the nearest integer.
   </div>
 </div>
 
-<h5 class="sub-section-title">minus</h5>
+<h5 class="sub-section-title" id="minus">minus</h5>
 Subtracts a number from an output.
 
 <div class="panel">
@@ -1093,7 +1101,7 @@ Subtracts a number from an output.
   </div>
 </div>
 
-<h5 class="sub-section-title">plus</h5>
+<h5 class="sub-section-title" id="plus">plus</h5>
 Adds a number to an output.
 
 <div class="panel">
@@ -1119,7 +1127,7 @@ Adds a number to an output.
   </div>
 </div>
 
-<h5 class="sub-section-title">round</h5>
+<h5 class="sub-section-title" id="round">round</h5>
 Rounds the output to the nearest integer or specified number of decimals.
 
 <div class="panel">
@@ -1148,7 +1156,7 @@ Rounds the output to the nearest integer or specified number of decimals.
   </div>
 </div>
 
-<h5 class="sub-section-title">times</h5>
+<h5 class="sub-section-title" id="times">times</h5>
 Multiplies an output by a number.
 
 <div class="panel">
@@ -1174,7 +1182,7 @@ Multiplies an output by a number.
   </div>
 </div>
 
-<h5 class="sub-section-title">modulo</h5>
+<h5 class="sub-section-title" id="modulo">modulo</h5>
 Divides an output by a number and returns the remainder.
 
 <div class="panel">
