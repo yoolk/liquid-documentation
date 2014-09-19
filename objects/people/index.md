@@ -95,3 +95,49 @@ Japan (jp)
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+<h2 class="tags" id="photos">person.photos</h2>
+
+Returns an array of the person's photos. Use the [attachment_url]({{ '/filters/url-filters/' | prepend: site.baseurl }}) filter to link to the image on Yoolk's Content Delivery Network. [*Optional*]
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% for photo in person.photos %}
+  {{ photo | attachment_url: 'medium' | image_tag }}
+{% endfor %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<img src="http://s-yoolk-images1.yoolk.com/kh/person_images/medium/1367097277/1250047?1367097277" />
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title">
+  Parameters: image sizes
+</h5>
+<table class="table" rules="all" frame="void">
+  <tr>
+    <th height="56">styles</th>
+    <th>size</th>
+  </tr>
+  <tr>
+    <td>small</td>
+    <td>x161</td>
+  </tr>
+  <tr>
+    <td>medium</td>
+    <td>x239</td>
+  </tr>
+</table>
