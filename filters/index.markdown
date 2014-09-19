@@ -1,5 +1,6 @@
 ---
   layout: nav_basics
+  title: Filters
 ---
 
 <h2 class="section-title">Filters</h2>

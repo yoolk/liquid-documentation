@@ -10,10 +10,13 @@ URL filters output links to assets. They are also used to create links for filte
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#link_to">link_to</a>
+        <a href="#asset_url">asset_url</a>
       </li>
       <li>
-        <a href="#link_to_unless_current">link_to_unless_current</a>
+        <a href="#attachment_url">attachment_url</a>
+      </li>
+      <li>
+        <a href="#link_to">link_to</a>
       </li>
       <li>
         <a href="#mail_to">mail_to</a>
@@ -55,6 +58,64 @@ URL filters output links to assets. They are also used to create links for filte
         <a href="#link_to_contact_us">link_to_contact_us</a>
       </li>
     </ul>
+  </div>
+</div>
+
+<h2 class="tags" id="asset_url">asset_url</h2>
+Returns the URL of a file in the "assets" folder of a theme. You should prefix with your theme name.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ 'sample/all.css' | asset_url }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+http://s-iw-frontend-statics.s3.amazonaws.com/assets/sample/all-f9546da5db22e729f10b1aae62a16311.css
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="attachment_url">attachment_url</h2>
+Returns the URL of an attachment. Accepts a size as a parameter. The `attachment_url` filter can be used on the following objects. These objects have different attachment sizes.
+
+* [catalog_item]({{ '/objects/catalog_item' | prepend: site.baseurl }})
+* [image]({{ '/objects/image' | prepend: site.baseurl }})
+* [brochure]({{ '/objects/brochure' | prepend: site.baseurl }})
+* [announcement]({{ '/objects/announcement' | prepend: site.baseurl }})
+* [service.photos]({{ '/objects/service' | prepend: site.baseurl }})
+* [product.photos]({{ '/objects/product' | prepend: site.baseurl }})
+* [food.photos]({{ '/objects/food' | prepend: site.baseurl }})
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ catalog_item | attachment_url: 'large' | image_tag }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<img src="http://s-yoolk-images1.yoolk.com/kh/catalog_item_images/large/1367097277/1250047?1367097277" />
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
