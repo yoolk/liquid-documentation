@@ -1,5 +1,6 @@
 ---
   layout: nav_basics
+  title: URL Filters
 ---
 
 <h2 class="section-title">URL Filters</h2>

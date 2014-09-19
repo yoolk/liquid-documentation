@@ -1,9 +1,10 @@
 ---
   layout: nav_basics
+  title: Sanitize Filters
 ---
 
 <h2 class="section-title">Sanitize Filters</h2>
-provides a set of methods for scrubbing text of undesired HTML elements. These helper methods extend Action View making them callable within your template files.
+Provides a set of methods for scrubbing text of undesired HTML elements.
 
 <div class="panel">
   <div class="panel-body">
@@ -25,13 +26,13 @@ Strips all HTML tags from the html, including comments. This uses the html-scann
 <div class="panel">
   <div class="panel-body">
 {% highlight ruby %}{% raw %}
-strip_tags("Strip <i>these</i> tags!")
+{{ "Strip <i>these</i> tags!" | strip_tags }}
 # => Strip these tags!
 
-strip_tags("<b>Bold</b> no more!  <a href='more.html'>See more here</a>...")
+{{ "<b>Bold</b> no more!  <a href='more.html'>See more here</a>..." | strip_tags }}
 # => Bold no more!  See more here...
 
-strip_tags("<div id='top-bar'>Welcome to my website!</div>")
+{{ "<div id='top-bar'>Welcome to my website!</div>" | strip_tags }}
 # => Welcome to my website!
 {% endraw %}{% endhighlight %}
   </div>
@@ -44,13 +45,13 @@ Strips all link tags from text leaving just the link text.
 <div class="panel">
   <div class="panel-body">
 {% highlight ruby %}{% raw %}
-strip_links('<a href="http://www.rubyonrails.org">Ruby on Rails</a>')
+{{ '<a href="http://www.rubyonrails.org">Ruby on Rails</a>' | strip_links }}
 # => Ruby on Rails
 
-strip_links('Please e-mail me at <a href="mailto:me@email.com">me@email.com</a>.')
+{{ 'Please e-mail me at <a href="mailto:me@email.com">me@email.com</a>.' | strip_links }}
 # => Please e-mail me at me@email.com.
 
-strip_links('Blog: <a href="http://www.myblog.com/" class="nav" target=\"_blank\">Visit</a>.')
+{{ 'Blog: <a href="http://www.myblog.com/" class="nav" target=\"_blank\">Visit</a>.' | strip_links }}
 # => Blog: Visit.
 {% endraw %}{% endhighlight %}
   </div>

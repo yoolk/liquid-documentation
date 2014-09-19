@@ -1,5 +1,6 @@
 ---
   layout: nav_basics
+  title: Translate Filters
 ---
 
 <h2 class="section-title">Translate Filters</h2>

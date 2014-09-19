@@ -12,8 +12,8 @@ Filters are simple methods that modify the output of numbers, strings, variables
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-<!-- product.title = "Awesome Shoes" -->
-{{ product.title | upcase }}
+<!-- product.name = "Awesome Shoes" -->
+{{ product.name | upcase }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -29,7 +29,7 @@ AWESOME SHOES
   </div>
 </div>
 
-In the example above, product is the object, title is its attribute, and upcase is the filter being applied.
+In the example above, product is the object, name is its attribute, and upcase is the filter being applied.
 
 Some filters require a parameter to be passed.
 
@@ -39,7 +39,7 @@ Some filters require a parameter to be passed.
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{{ product.title | remove: "Awesome" }}
+{{ product.name | remove: "Awesome" }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -63,8 +63,8 @@ Multiple filters can be used on one output. They are applied from left to right.
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-<!-- product.title = "Awesome Shoes" -->
-{{ product.title | upcase | remove: "AWESOME"  }}
+<!-- product.name = "Awesome Shoes" -->
+{{ product.name | upcase | remove: "AWESOME"  }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>

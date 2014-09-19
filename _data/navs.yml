@@ -61,10 +61,6 @@
   subcategory:
     - name: "Asset Tag Filters"
       href: "/asset-tag-filters"
-    - name: "Asset URL Filters"
-      href: "/asset-url-filters"
-    - name: "Date Filters"
-      href: "/date-filters"
     - name: "Mics Filters"
       href: "/mics-filters"
     - name: "Number Filters"

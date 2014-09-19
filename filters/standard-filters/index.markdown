@@ -1,7 +1,9 @@
 ---
   layout: nav_basics
+  title: Standard Filters
 ---
 <h2 class="section-title">Standard Filters</h2>
+These are the default filters. They have been written by Shopify.
 
 <div class="panel">
   <div class="panel-body">
@@ -131,8 +133,8 @@ Using <code>last</code> on a string returns the last character in the string.
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-<!-- product.title = "Awesome Shoes" -->
-{{ product.title | last }}
+<!-- product.name = "Awesome Shoes" -->
+{{ product.name | last }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -157,7 +159,7 @@ Accepts an array element's attribute as a parameter and creates a string out of 
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-<!-- collection.title = "Spring", "Summer", "Fall", "Winter" -->
+<!-- collection.name = "Spring", "Summer", "Fall", "Winter" -->
 {% assign collection_titles = collections | map: 'title' %}
 {{ collection_titles }}
 {% endraw %}{% endhighlight %}
@@ -223,7 +225,7 @@ Sorts the elements of an array by a given attribute of an element in the array.
 {% highlight django%}{% raw %}
 {% assign products = collection.products | sort: 'price' %}
 {% for product in products %}
-  <h4>{{ product.title }}</h4>
+  <h4>{{ product.name }}</h4>
 {% endfor %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -238,9 +240,9 @@ The order of the sorted array is case-sensitive.
   <div class="panel-body">
 {% highlight django%}{% raw %}
 <!-- products = "a", "b", "A", "B" -->
-{% assign products = collection.products | sort: 'title' %}
+{% assign products = collection.products | sort: 'name' %}
 {% for product in products %}
-  {{ product.title }}
+  {{ product.name }}
 {% endfor %}
 {% endraw %}{% endhighlight %}
   </div>
@@ -257,7 +259,7 @@ A B a b
   </div>
 </div>
 
-<h2 class="tags" id="array_filters">String Filters</h2>
+<h2 class="tags" id="string_filters">String Filters</h2>
 String filters are used to manipulate outputs and variables of the string type.
 
 <h5 class="sub-section-title">append</h5>
@@ -582,8 +584,8 @@ Replaces all occurrences of a string with a substring.
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-<!-- product.title = "Awesome Shoes" -->
-{{ product.title | replace: 'Awesome', 'Mega' }}
+<!-- product.name = "Awesome Shoes" -->
+{{ product.name | replace: 'Awesome', 'Mega' }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -608,8 +610,8 @@ Replaces the first occurrence of a string with a substring.
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-<!-- product.title = "Awesome Awesome Shoes" -->
-{{ product.title | replace_first: 'Awesome', 'Mega' }}
+<!-- product.name = "Awesome Awesome Shoes" -->
+{{ product.name | replace_first: 'Awesome', 'Mega' }}
 {% endraw %}{% endhighlight %}
   </div>
 </div>

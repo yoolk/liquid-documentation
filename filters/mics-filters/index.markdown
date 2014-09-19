@@ -1,9 +1,10 @@
 ---
   layout: nav_basics
+  title: Misc Filters
 ---
 
 <h2 class="section-title">Misc Filters</h2>
-provides miscellaneous filters.
+Provides miscellaneous filters.
 
 <div class="panel">
   <div class="panel-body">
