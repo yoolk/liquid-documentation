@@ -202,3 +202,13 @@ strong {
   opacity: 0.7;
   color: black;
 }
+
+/**
+  * table
+  */
+table {
+  td {
+    vertical-align: top;
+    border-color: #ccc;
+  }
+}
