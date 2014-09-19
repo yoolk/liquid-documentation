@@ -59,8 +59,8 @@
 
 - title: Filters
   subcategory:
-    - name: "Asset Tag Filters"
-      href: "/asset-tag-filters"
+    - name: "HTML Filters"
+      href: "/html-filters"
     - name: "Mics Filters"
       href: "/mics-filters"
     - name: "Number Filters"
