@@ -52,3 +52,46 @@ The <code>person</code> object has the following attributes:
     </ul>
   </div>
 </div>
+
+
+<h2 class="tags" id="nationality">person.nationality</h2>
+
+Returns person nationality.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ person.nationality.name }}
+# => Cambodia
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="languages">person.languages</h2>
+
+Returns person languages known.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% for language in person.languages %}
+  {{ language.name }} ({{ language.two_code }})
+{% endfor %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+English (en)
+Japan (jp)
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
