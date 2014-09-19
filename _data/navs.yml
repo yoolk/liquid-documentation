@@ -56,6 +56,28 @@
       href: "/food_category"
     - name: food
       href: "/food"
+    - name: logo
+      href: "/logo"
+    - name: people
+      href: "/people"
+    - name: medias
+      href: "/medias"
+    - name: business_photos
+      href: "/business_photos"
+    - name: keyphrases
+      href: "/keyphrases"
+    - name: alias_names
+      href: "/alias_names"
+    - name: menu_pdf
+      href: "/menu_pdf"
+    - name: service_catalog_pdf
+      href: "/service_catalog_pdf"
+    - name: product_catalog_pdf
+      href: "/product_catalog_pdf"
+    - name: portal
+      href: "/portal"
+    - name: instant_website
+      href: "/instant_website"
 
 - title: Filters
   subcategory:

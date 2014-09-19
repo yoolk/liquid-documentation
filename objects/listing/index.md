@@ -121,6 +121,39 @@ The <code>listing</code> object has the following associations:
       <li>
         <a href="#foods">listing.foods</a>
       </li>
+      <li>
+        <a href="#logo">listing.logo</a>
+      </li>
+      <li>
+        <a href="#people">listing.people</a>
+      </li>
+      <li>
+        <a href="#medias">listing.medias</a>
+      </li>
+      <li>
+        <a href="#business_photos">listing.business_photos</a>
+      </li>
+      <li>
+        <a href="#keyphrases">listing.keyphrases</a>
+      </li>
+      <li>
+        <a href="#alias_names">listing.alias_names</a>
+      </li>
+      <li>
+        <a href="#menu_pdf">listing.menu_pdf</a>
+      </li>
+      <li>
+        <a href="#service_catalog_pdf">listing.service_catalog_pdf</a>
+      </li>
+      <li>
+        <a href="#product_catalog_pdf">listing.product_catalog_pdf</a>
+      </li>
+      <li>
+        <a href="#v">listing.portal</a>
+      </li>
+      <li>
+        <a href="#instant_website">listing.instant_website</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -260,3 +293,47 @@ Returns an array of [food_category objects]({{ '/objects/food_category' | prepen
 <h2 class="tags" id="foods">listing.foods</h2>
 
 Returns an array of [foods objects]({{ '/objects/foods' | prepend: site.baseurl }}) of a listing. A `listing` has many `food` objects. [*Optional*]
+
+<h2 class="tags" id="logo">listing.logo</h2>
+
+Returns [logo object]({{ '/objects/logo' | prepend: site.baseurl }}) of a listing. A `listing` has one `logo` object. [*Optional*]
+
+<h2 class="tags" id="people">listing.people</h2>
+
+Returns an array of [people objects]({{ '/objects/people' | prepend: site.baseurl }}) of a listing. A `listing` has many `people` objects. [*Optional*]
+
+<h2 class="tags" id="medias">listing.medias</h2>
+
+Returns an array of [medias objects]({{ '/objects/medias' | prepend: site.baseurl }}) of a listing. A `listing` has many `medias` objects. [*Optional*]
+
+<h2 class="tags" id="business_photos">listing.business_photos</h2>
+
+Returns an array of [business_photos objects]({{ '/objects/business_photos' | prepend: site.baseurl }}) of a listing. A `listing` has many `business_photos` objects. [*Optional*]
+
+<h2 class="tags" id="keyphrases">listing.keyphrases</h2>
+
+Returns an array of [keyphrases objects]({{ '/objects/keyphrases' | prepend: site.baseurl }}) of a listing. A `listing` has many `keyphrases` objects. [*Optional*]
+
+<h2 class="tags" id="alias_names">listing.alias_names</h2>
+
+Returns an array of [alias_names object]({{ '/objects/alias_names' | prepend: site.baseurl }}) of a listing. A `listing` has many `alias_names` object. [*Optional*]
+
+<h2 class="tags" id="menu_pdf">listing.menu_pdf</h2>
+
+Returns [menu_pdf object]({{ '/objects/menu_pdf' | prepend: site.baseurl }}) of a listing. A `listing` has one `menu_pdf` object. [*Optional*]
+
+<h2 class="tags" id="service_catalog_pdf">listing.service_catalog_pdf</h2>
+
+Returns [service_catalog_pdf object]({{ '/objects/service_catalog_pdf' | prepend: site.baseurl }}) of a listing. A `listing` has one `service_catalog_pdf` object. [*Optional*]
+
+<h2 class="tags" id="product_catalog_pdf">listing.product_catalog_pdf</h2>
+
+Returns [product_catalog_pdf object]({{ '/objects/product_catalog_pdf' | prepend: site.baseurl }}) of a listing. A `listing` has one `product_catalog_pdf` object. [*Optional*]
+
+<h2 class="tags" id="portal">listing.portal</h2>
+
+Returns [portal object]({{ '/objects/portal' | prepend: site.baseurl }}) of a listing. A `listing` is normally embedded in `portal` object. [*Mandatory*]
+
+<h2 class="tags" id="instant_website">listing.instant_website</h2>
+
+Returns [instant_website object]({{ '/objects/instant_website' | prepend: site.baseurl }}) of a listing. A `listing` has one `instant_website` object. [*Optional*]
