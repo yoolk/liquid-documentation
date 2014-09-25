@@ -69,7 +69,7 @@ Returns person nationality.
 
 <h2 class="tags" id="languages">person.languages</h2>
 
-Returns person languages known.
+Returns person languages.
 
 <div class="panel">
   <div class="panel-header">
@@ -177,7 +177,7 @@ Returns an array of the person's communications.
 
 <div class="panel">
   <div class="panel-header">
-    <h3>Input</h3>
+    <h3>Output</h3>
   </div>
   <div class="panel-body">
 {% highlight django %}{% raw %}
