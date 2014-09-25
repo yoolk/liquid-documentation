@@ -45,15 +45,15 @@
     - name: announcement
       href: "/announcement"
     - name: service_category
-      href: "/service_category"
+      href: "/s_category"
     - name: service
       href: "/service"
     - name: product_category
-      href: "/product_category"
+      href: "/p_category"
     - name: product
       href: "/product"
     - name: food_category
-      href: "/food_category"
+      href: "/f_category"
     - name: food
       href: "/food"
     - name: logo
@@ -71,9 +71,9 @@
     - name: menu_pdf
       href: "/menu_pdf"
     - name: service_catalog_pdf
-      href: "/service_catalog_pdf"
+      href: "/s_catalog_pdf"
     - name: product_catalog_pdf
-      href: "/product_catalog_pdf"
+      href: "/p_catalog_pdf"
     - name: portal
       href: "/portal"
     - name: instant_website

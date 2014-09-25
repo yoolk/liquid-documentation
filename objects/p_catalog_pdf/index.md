@@ -11,7 +11,7 @@ The <code>product_catalog_pdf</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#alias_id">product_catalog_pdf.url</a>
+        product_catalog_pdf.url
       </li>
     </ul>
   </div>
