@@ -26,7 +26,7 @@ The <code>instant_website</code> object has the following attributes:
         <a href="#free_plan">instant_website.free_plan</a>
       </li>
       <li>
-        <a href="template">instant_website.template</a>
+        <a href="#template">instant_website.template</a>
       </li>
       <li>
         <a href="#cover_photos">instant_website.cover_photos</a>
@@ -43,3 +43,15 @@ The <code>instant_website</code> object has the following attributes:
     </ul>
   </div>
 </div>
+
+<h2 class="tags" id="template">instant_website.template</h2>
+
+Returns [template]({{ '/objects/template' | prepend: site.baseurl }}) object which is a template of a listing. [*Optional*]
+
+<h2 class="tags" id="cover_photos">instant_website.cover_photos</h2>
+
+Returns [cover photos]({{ '/objects/cover_photos' | prepend: site.baseurl }}) object which are cover photos of a listing. [*Optional*]
+
+<h2 class="tags" id="telephone">instant_website.domains</h2>
+
+Returns [domains]({{ '/objects/domains' | prepend: site.baseurl }}) object which are domains of a listing. [*Optional*]
