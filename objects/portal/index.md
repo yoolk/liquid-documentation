@@ -11,46 +11,46 @@ The <code>portal</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#abbreviation">portal.abbreviation</a>
+        portal.abbreviation
       </li>
       <li>
-        <a href="#domain_name">portal.domain_name</a>
+        portal.domain_name
       </li>
       <li>
-        <a href="#description">portal.description</a>
+        portal.description
       </li>
       <li>
-        <a href="#official_name">portal.official_name</a>
+        portal.official_name
       </li>
       <li>
-        <a href="#keywords">portal.keywords</a>
+        portal.keywords
       </li>
       <li>
-        <a href="#time_zone">portal.time_zone</a>
+        portal.time_zone
       </li>
       <li>
-        <a href="#listings_count">portal.listings_count</a>
+        portal.listings_count
+      </li>
+      <li>
+        portal.created_at
+      </li>
+      <li>
+        portal.updated_at
       </li>
       <li>
         <a href="#country">portal.country</a>
       </li>
       <li>
-        <a href="#country">portal.country</a>
+        <a href="#listing_categories">portal.listing_categories</a>
       </li>
       <li>
         <a href="#language">portal.language</a>
-      </li>
-      <li>
-        <a href="#updated_at">portal.created_at</a>
-      </li>
-      <li>
-        <a href="#updated_at">portal.updated_at</a>
       </li>
     </ul>
   </div>
 </div>
 
-<h2 class="tags" id="photos">portal.country</h2>
+<h2 class="tags" id="country">portal.country</h2>
 
 Returns portal's country. [*Optional*]
 
@@ -66,7 +66,7 @@ Returns portal's country. [*Optional*]
   </div>
 </div>
 
-<h2 class="tags" id="photos">portal.language</h2>
+<h2 class="tags" id="language">portal.language</h2>
 
 Returns portal's language. [*Optional*]
 
@@ -82,7 +82,7 @@ Returns portal's language. [*Optional*]
   </div>
 </div>
 
-<h2 class="tags" id="photos">portal.listing_categories</h2>
+<h2 class="tags" id="listing_categories">portal.listing_categories</h2>
 
 Returns an array of listing categories. [*Optional*]
 
