@@ -11,22 +11,22 @@ The <code>domains</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#google_analytics_key">domain.google_analytics_key</a>
+        domain.google_analytics_key
       </li>
       <li>
-        <a href="#is_primary">domain.is_primary</a>
+        domain.is_primary
       </li>
       <li>
-        <a href="#name">domain.name</a>
+        domain.name
       </li>
       <li>
-        <a href="#type">domain.type</a>
+        domain.type
       </li>
       <li>
-        <a href="#created_at">domain.created_at</a>
+        domain.created_at
       </li>
       <li>
-        <a href="#updated_at">domain.updated_at</a>
+        domain.updated_at
       </li>
     </ul>
   </div>

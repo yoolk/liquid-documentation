@@ -11,19 +11,19 @@ The <code>cover_photos</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#caption">cover_photos.caption</a>
+        cover_photos.caption
       </li>
       <li>
-        <a href="#dimension">cover_photos.dimension</a>
+        cover_photos.dimension
       </li>
       <li>
-        <a href="#display_order">cover_photos.display_order</a>
+        cover_photos.display_order
       </li>
       <li>
-        <a href="#created_at">cover_photos.created_at</a>
+        cover_photos.created_at
       </li>
       <li>
-        <a href="#updated_at">cover_photos.updated_at</a>
+        cover_photos.updated_at
       </li>
     </ul>
   </div>

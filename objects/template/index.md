@@ -11,13 +11,13 @@ The <code>template</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#name">template.name</a>
+        template.name
       </li>
       <li>
-        <a href="#description">template.description</a>
+        template.description
       </li>
       <li>
-        <a href="#is_responsive">template.is_responsive</a>
+        template.is_responsive
       </li>
       <li>
         <a href="#industries">template.industries</a>
@@ -35,7 +35,7 @@ The <code>template</code> object has the following attributes:
   </div>
 </div>
 
-<h2 class="tags" id="photos">template.industries</h2>
+<h2 class="tags" id="industries">template.industries</h2>
 
 Returns an array of template industries. [*Optional*]
 
@@ -61,7 +61,7 @@ Returns an array of template industries. [*Optional*]
   </div>
 </div>
 
-<h2 class="tags" id="photos">template.pages</h2>
+<h2 class="tags" id="pages">template.pages</h2>
 
 Returns an array of page name of the current template. [*Optional*]
 
@@ -87,7 +87,7 @@ Returns an array of page name of the current template. [*Optional*]
   </div>
 </div>
 
-<h2 class="tags" id="photos">template.thumbnail</h2>
+<h2 class="tags" id="thumbnail">template.thumbnail</h2>
 
 Returns template thumbnail. [*Optional*]
 
@@ -103,7 +103,7 @@ Returns template thumbnail. [*Optional*]
   </div>
 </div>
 
-<h2 class="tags" id="photos">template.cover_photo</h2>
+<h2 class="tags" id="cover_photo">template.cover_photo</h2>
 
 Returns cover photo of current template. [*Optional*]
 
