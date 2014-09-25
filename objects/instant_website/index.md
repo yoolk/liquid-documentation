@@ -26,7 +26,7 @@ The <code>instant_website</code> object has the following attributes:
         <a href="#free_plan">instant_website.free_plan</a>
       </li>
       <li>
-        <a href="#template">instant_website.template</a>
+        <a href="template">instant_website.template</a>
       </li>
       <li>
         <a href="#cover_photos">instant_website.cover_photos</a>
