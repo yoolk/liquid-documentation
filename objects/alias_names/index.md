@@ -11,10 +11,10 @@ The <code>alias_name</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#name">alias_name.name</a>
+        alias_name.name
       </li>
       <li>
-        <a href="#type">alias_name.type</a>
+        alias_name.type
       </li>
     </ul>
   </div>

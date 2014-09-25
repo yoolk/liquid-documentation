@@ -11,37 +11,37 @@ The <code>person</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#title">person.title</a>
+        person.title
       </li>
       <li>
-        <a href="#first_name">person.first_name</a>
+        person.first_name
       </li>
       <li>
-        <a href="#last_name">person.last_name</a>
+        person.last_name
       </li>
       <li>
-        <a href="#gender">person.gender</a>
+        person.gender
       </li>
       <li>
-        <a href="#position_title">person.position_title</a>
+        person.position_title
       </li>
       <li>
-        <a href="#is_active">person.is_active</a>
+        person.is_active
       </li>
       <li>
-        <a href="#sharing_status">person.sharing_status</a>
+        person.sharing_status
+      </li>
+      <li>
+        person.created_at
       </li>
       <li>
         <a href="#nationality">person.nationality</a>
       </li>
       <li>
-        <a href="#created_at">person.created_at</a>
-      </li>
-      <li>
         <a href="#languages">person.languages</a>
       </li>
       <li>
-        <a href="#photo">person.photo</a>
+        <a href="#photos">person.photos</a>
       </li>
       <li>
         <a href="#position_level">person.position_level</a>

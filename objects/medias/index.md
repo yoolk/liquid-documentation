@@ -11,22 +11,22 @@ The <code>media</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
+        media.is_active
+      </li>
+      <li>
+        media.created_at
+      </li>
+      <li>
+        media.updated_at
+      </li>
+      <li>
         <a href="#embed_script">media.embed_script</a>
-      </li>
-      <li>
-        <a href="#is_active">media.is_active</a>
-      </li>
-      <li>
-        <a href="#created_at">media.created_at</a>
-      </li>
-      <li>
-        <a href="#updated_at">media.updated_at</a>
       </li>
     </ul>
   </div>
 </div>
 
-<h2 class="tags" id="photos">media.embed_script</h2>
+<h2 class="tags" id="embed_script">media.embed_script</h2>
 
 Returns an iframe of embed script. [*Optional*]
 

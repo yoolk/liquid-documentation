@@ -11,22 +11,19 @@ The <code>business_photo</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#id">business_photo.id</a>
+        business_photo.name
       </li>
       <li>
-        <a href="#name">business_photo.name</a>
+        business_photo.embed_script
       </li>
       <li>
-        <a href="#embed_script">business_photo.embed_script</a>
+        business_photo.description
       </li>
       <li>
-        <a href="#description">business_photo.description</a>
+        business_photo.created_at
       </li>
       <li>
-        <a href="#created_at">business_photo.created_at</a>
-      </li>
-      <li>
-        <a href="#updated_at">business_photo.updated_at</a>
+        business_photo.updated_at
       </li>
     </ul>
   </div>

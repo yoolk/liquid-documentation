@@ -11,13 +11,10 @@ The <code>logo</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#id">logo.id</a>
+        logo.created_at
       </li>
       <li>
-        <a href="#created_at">logo.created_at</a>
-      </li>
-      <li>
-        <a href="#updated_at">logo.updated_at</a>
+        logo.updated_at
       </li>
     </ul>
   </div>

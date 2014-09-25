@@ -11,19 +11,16 @@ The <code>keyphrase</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        <a href="#id">keyphrase.id</a>
+        keyphrase.text
       </li>
       <li>
-        <a href="#text">keyphrase.text</a>
+        keyphrase.position
       </li>
       <li>
-        <a href="#position">keyphrase.position</a>
+        keyphrase.created_at
       </li>
       <li>
-        <a href="#created_at">keyphrase.created_at</a>
-      </li>
-      <li>
-        <a href="#updated_at">keyphrase.updated_at</a>
+        keyphrase.updated_at
       </li>
     </ul>
   </div>
