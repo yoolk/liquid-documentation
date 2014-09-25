@@ -33,7 +33,7 @@
     - name: extra_communication
       href: "/extra_communication"
     - name: listing_category
-      href: "/listing_category"
+      href: "/l_category"
     - name: catalog_item
       href: "/catalog_item"
     - name: gallery
