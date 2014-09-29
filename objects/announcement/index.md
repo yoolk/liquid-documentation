@@ -41,7 +41,7 @@ Returns an image of a announcement. Use the [attachment_url]({{ '/filters/url-fi
 {% highlight django %}{% raw %}
 {% for announcement in listing.announcements %}
   {% if announcement.image %}
-    {{ announcement.image | attachment_url: 'medium' | image_tag }}
+    {{ announcement | attachment_url: 'medium' | image_tag }}
   {% endfor %}
 {% endfor %}
 {% endraw %}{% endhighlight %}

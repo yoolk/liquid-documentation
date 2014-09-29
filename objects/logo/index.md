@@ -20,6 +20,31 @@ The <code>logo</code> object has the following attributes:
   </div>
 </div>
 
+<h2 class="tags" id="logo">listing.logo</h2>
+Use the [attachment_url]({{ '/filters/url-filters/' | prepend: site.baseurl }}) filter to link to the image on Yoolk's Content Delivery Network.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ listing.logo | attachment_url: 'medium' | image_tag }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<img src="http://s-yoolk-images1.yoolk.com/kh/logo_images/medium/1367097277/1250047?1367097277" />
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
 <h5 class="sub-section-title">
   Parameters: image sizes
 </h5>

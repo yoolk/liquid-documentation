@@ -50,7 +50,7 @@ Returns an image of a brochure. Use the [attachment_url]({{ '/filters/url-filter
 {% highlight django %}{% raw %}
 {% for brochure in listing.brochures %}
   {% if brochure.image %}
-    {{ brochure.image | attachment_url: 'medium' | image_tag }}
+    {{ brochure | attachment_url: 'medium' | image_tag }}
   {% endfor %}
 {% endfor %}
 {% endraw %}{% endhighlight %}

@@ -43,7 +43,7 @@ The <code>catalog_item</code> object has the following attributes:
 
 <h2 class="tags" id="image">catalog_item.image</h2>
 
-Returns an image of a catalog_item. Use the [attachment_url]({{ '/filters/url-filters/' | prepend: site.baseurl }}) filter to link to the image on Yoolk's Content Delivery Network. [*Optional*]
+Returns an image attachment of a catalog_item. Use the [attachment_url]({{ '/filters/url-filters/' | prepend: site.baseurl }}) filter to link to the image on Yoolk's Content Delivery Network. [*Optional*]
 
 <div class="panel">
   <div class="panel-header">
@@ -53,7 +53,7 @@ Returns an image of a catalog_item. Use the [attachment_url]({{ '/filters/url-fi
 {% highlight django %}{% raw %}
 {% for catalog_item in listing.catalog_items %}
   {% if catalog_item.image %}
-    {{ catalog_item.image | attachment_url: 'medium' | image_tag }}
+    {{ catalog_item | attachment_url: 'medium' | image_tag }}
   {% endfor %}
 {% endfor %}
 {% endraw %}{% endhighlight %}

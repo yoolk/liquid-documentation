@@ -87,12 +87,12 @@ http://s-iw-frontend-statics.s3.amazonaws.com/assets/sample/all-f9546da5db22e729
 </div>
 
 <h2 class="tags" id="attachment_url">attachment_url</h2>
-Returns the URL of an attachment. Accepts a size as a parameter. The `attachment_url` filter can be used on the following objects. These objects have different attachment sizes.
+Returns the URL of an attachment. Accepts a size as a parameter. The `attachment_url` filter can be used on any objects that have attachment(s). They have different attachment sizes. For example:
 
 * [catalog_item]({{ '/objects/catalog_item' | prepend: site.baseurl }})
-* [image]({{ '/objects/image' | prepend: site.baseurl }})
 * [brochure]({{ '/objects/brochure' | prepend: site.baseurl }})
 * [announcement]({{ '/objects/announcement' | prepend: site.baseurl }})
+* [image]({{ '/objects/image' | prepend: site.baseurl }})
 * [service.photos]({{ '/objects/service' | prepend: site.baseurl }})
 * [product.photos]({{ '/objects/product' | prepend: site.baseurl }})
 * [food.photos]({{ '/objects/food' | prepend: site.baseurl }})

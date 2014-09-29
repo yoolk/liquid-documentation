@@ -38,6 +38,43 @@ The <code>service</code> object has the following attributes:
   </div>
 </div>
 
+<h2 class="tags" id="properties">service.properties</h2>
+Returns an array of properties. Each property has `name` and `value`.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+<ul>
+  {% for property in service.properties %}
+    <li>
+      <span>{{ property.name }}</span>
+      <span>{{ property.value }}</span>
+    </li>
+  {% endfor %}
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<ul>
+  <li>
+    <span>Rooftop</span>
+    <span>94.28 sqm</span>
+  </li>
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
 <h2 class="tags" id="photos">service.photos</h2>
 
 Returns an array of the service's photos. Use the [attachment_url]({{ '/filters/url-filters/' | prepend: site.baseurl }}) filter to link to the image on Yoolk's Content Delivery Network. [*Optional*]
