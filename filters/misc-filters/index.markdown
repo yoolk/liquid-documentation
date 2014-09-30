@@ -21,6 +21,9 @@ Provides miscellaneous filters.
       <li>
         <a href="#default">default</a>
       </li>
+      <li>
+        <a href="#default_pagination">default_pagination</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -492,6 +495,35 @@ Dear {{ person.name | default: "person" }}
 {% highlight ruby %}{% raw %}
 <!-- if person.name is nil -->
 Dear person
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title" id="default_pagination">default_pagination</h5>
+Creates a set of links for paginated results. Used in conjunction with the [paginate]({{ '/objects/paginate' | prepend: site.base_url }}) variable.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ paginate | default_pagination }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<span class="page current">1</span>
+<span class="page"><a href="/galleries?page=2" title="">2</a></span>
+<span class="page"><a href="/galleries?page=3" title="">3</a></span>
+<span class="deco">&hellip;</span>
+<span class="page"><a href="/galleries?page=17" title="">17</a></span>
+<span class="next"><a href="/galleries?page=2" title="">Next &raquo;</a></span>
 {% endraw %}{% endhighlight %}
   </div>
 </div>
