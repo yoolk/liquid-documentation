@@ -500,7 +500,7 @@ Dear person
 </div>
 
 <h5 class="sub-section-title" id="default_pagination">default_pagination</h5>
-Creates a set of links for paginated results. Used in conjunction with the [paginate]({{ '/objects/paginate' | prepend: site.base_url }}) variable.
+Creates a set of links for paginated results. Used in conjunction with the [paginate]({{ '/objects/paginate' | prepend: site.baseurl }}) variable.
 
 <div class="panel">
   <div class="panel-header">
