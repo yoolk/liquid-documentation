@@ -92,6 +92,8 @@
       href: "/facebook_page"
     - name: twitter_account
       href: "/twitter_account"
+    - name: form
+      href: "/form"
 
 - title: Filters
   subcategory:

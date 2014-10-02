@@ -23,6 +23,9 @@ Theme Tags have various functions, including:
       <li>
         <a href="#raw">raw</a>
       </li>
+      <li>
+        <a href="#form">form</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -158,6 +161,117 @@ Allows output of Liquid code on a page without being parsed.
   <div class="panel-body">
 {% highlight django%}{% raw %}
 {{ 5 | plus: 6 }} is equal to 11.
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="form">form</h2>
+
+Creates an HTML <code><form></code> element with all the necessary attributes (action, id, etc.) and <code>&#60;input&#62;</code> to submit the form successfully. Moreover, We have provide you <code>contact</code>, <code>feedback</code>, and <code>reservation</code> to pass through your <code>form</code> tag.
+
+Find out more about [form]({{ '/objects/form' | prepend: site.baseurl }}) object.
+
+<h6 class="sub-section-title">Parameters <code>contact</code></h6>
+
+Generates a contact form on the contact template.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% form 'contact' %}
+...
+{% endform %}
+{% endraw %}
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<form accept-charset="UTF-8" method="post" class="contact-form" id="contact-form" action="/contact_us?locale=en&amp;theme=sample">
+<div style="margin:0;padding:0;display:inline">
+<input name="utf8" type="hidden" value="✓">
+<input name="authenticity_token" type="hidden" value="cx6VZRkR8wuvy9G3eDbqnjRzUVTBb9ocLZ6X82ehy8A=">
+</div>
+...
+</form>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h6 class="sub-section-title">Parameters <code>reservation</code></h6>
+
+Generates a reservation form on the reservation template.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% form 'reservation' %}
+...
+{% endform %}
+{% endraw %}
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<form accept-charset="UTF-8" method="post" class="reservation-form" id="reservation-form" action="/reservation?locale=en&amp;theme=sample">
+<div style="margin:0;padding:0;display:inline">
+<input name="utf8" type="hidden" value="✓">
+<input name="authenticity_token" type="hidden" value="cx6VZRkR8wuvy9G3eDbqnjRzUVTBb9ocLZ6X82ehy8A=">
+</div>
+...
+</form>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h6 class="sub-section-title">Parameters <code>feedback</code></h6>
+
+Generates a feedback form on the feedback template.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% form 'feedback' %}
+...
+{% endform %}
+{% endraw %}
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<form accept-charset="UTF-8" method="post" class="feedback-form" id="feedback-form" action="/feedback?locale=en&amp;theme=sample">
+<div style="margin:0;padding:0;display:inline">
+<input name="utf8" type="hidden" value="✓">
+<input name="authenticity_token" type="hidden" value="cx6VZRkR8wuvy9G3eDbqnjRzUVTBb9ocLZ6X82ehy8A=">
+</div>
+...
+</form>
 {% endraw %}{% endhighlight %}
   </div>
 </div>
