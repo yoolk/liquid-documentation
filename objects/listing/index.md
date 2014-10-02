@@ -154,6 +154,12 @@ The <code>listing</code> object has the following associations:
       <li>
         <a href="#instant_website">listing.instant_website</a>
       </li>
+      <li>
+        <a href="#facebook_page">listing.facebook_page</a>
+      </li>
+      <li>
+        <a href="#twitter_account">listing.twitter_account</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -337,3 +343,11 @@ Returns [portal object]({{ '/objects/portal' | prepend: site.baseurl }}) of a li
 <h2 class="tags" id="instant_website">listing.instant_website</h2>
 
 Returns [instant_website object]({{ '/objects/instant_website' | prepend: site.baseurl }}) of a listing. A `listing` has one `instant_website` object. [*Optional*]
+
+<h2 class="tags" id="facebook_page">listing.facebook_page</h2>
+
+Returns [facebook_page object]({{ '/objects/facebook_page' | prepend: site.baseurl }}) of a listing. A `listing` has one `facebook_page` object. [*Optional*]
+
+<h2 class="tags" id="twitter_account">listing.twitter_account</h2>
+
+Returns [twitter_account object]({{ '/objects/twitter_account' | prepend: site.baseurl }}) of a listing. A `listing` has one `twitter_account` object. [*Optional*]
