@@ -195,7 +195,7 @@ Generates a contact form on the contact template.
   </div>
   <div class="panel-body">
 {% highlight html %}{% raw %}
-<form accept-charset="UTF-8" method="post" class="contact-form" id="contact-form" action="/contact_us?locale=en&amp;theme=sample">
+<form accept-charset="UTF-8" method="post" class="contact-form" id="contact-form" action="/contact_us?locale=en&theme=sample">
 <div style="margin:0;padding:0;display:inline">
 <input name="utf8" type="hidden" value="✓">
 <input name="authenticity_token" type="hidden" value="cx6VZRkR8wuvy9G3eDbqnjRzUVTBb9ocLZ6X82ehy8A=">
@@ -230,7 +230,7 @@ Generates a reservation form on the reservation template.
   </div>
   <div class="panel-body">
 {% highlight html %}{% raw %}
-<form accept-charset="UTF-8" method="post" class="reservation-form" id="reservation-form" action="/reservation?locale=en&amp;theme=sample">
+<form accept-charset="UTF-8" method="post" class="reservation-form" id="reservation-form" action="/reservation?locale=en&theme=sample">
 <div style="margin:0;padding:0;display:inline">
 <input name="utf8" type="hidden" value="✓">
 <input name="authenticity_token" type="hidden" value="cx6VZRkR8wuvy9G3eDbqnjRzUVTBb9ocLZ6X82ehy8A=">
@@ -265,7 +265,7 @@ Generates a feedback form on the feedback template.
   </div>
   <div class="panel-body">
 {% highlight html %}{% raw %}
-<form accept-charset="UTF-8" method="post" class="feedback-form" id="feedback-form" action="/feedback?locale=en&amp;theme=sample">
+<form accept-charset="UTF-8" method="post" class="feedback-form" id="feedback-form" action="/feedback?locale=en&theme=sample">
 <div style="margin:0;padding:0;display:inline">
 <input name="utf8" type="hidden" value="✓">
 <input name="authenticity_token" type="hidden" value="cx6VZRkR8wuvy9G3eDbqnjRzUVTBb9ocLZ6X82ehy8A=">
