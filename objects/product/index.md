@@ -44,6 +44,43 @@ The <code>product</code> object has the following attributes:
   </div>
 </div>
 
+<h2 class="tags" id="features">product.features</h2>
+Returns an array of features. Each feature has `name` and `value`.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+<ul>
+  {% for feature in product.features %}
+    <li>
+      <span>{{ feature.name }}</span>
+      <span>{{ feature.value }}</span>
+    </li>
+  {% endfor %}
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<ul>
+  <li>
+    <span>Produced in</span>
+    <span>Cambodia</span>
+  </li>
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
 <h2 class="tags" id="photos">product.photos</h2>
 
 Returns an array of the product's photos. Use the [attachment_url]({{ '/filters/url-filters/' | prepend: site.baseurl }}) filter to link to the image on Yoolk's Content Delivery Network. [*Optional*]

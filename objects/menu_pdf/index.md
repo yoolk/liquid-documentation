@@ -11,7 +11,7 @@ The <code>menu_pdf</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
-        menu_pdf.url<
+        menu_pdf.url
       </li>
     </ul>
   </div>

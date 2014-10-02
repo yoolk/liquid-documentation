@@ -9,12 +9,12 @@
 
 - title: Tags
   subcategory:
-    - name: "CSRF Meta Tags"
-      href: "/csrf-meta-tags"
     - name: Control Flow Tags
       href: "/control-flow-tags"
     - name: Iteration Tags
       href: "/iteration-tags"
+    - name: Theme Tags
+      href: "/theme-tags"
     - name: Variable Tags
       href: "/variable-tags"
 
@@ -84,6 +84,10 @@
       href: "/cover_photos"
     - name: domains
       href: "/domains"
+    - name: paginate
+      href: "/paginate"
+    - name: part
+      href: "/part"
 
 - title: Filters
   subcategory:

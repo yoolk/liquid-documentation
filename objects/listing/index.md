@@ -278,7 +278,7 @@ Returns an array of [announcement objects]({{ '/objects/announcement' | prepend:
 
 <h2 class="tags" id="service_categories">listing.service_categories</h2>
 
-Returns an array of [service_category objects]({{ '/objects/service_category' | prepend: site.baseurl }}) of a listing. A `listing` has many `service_category` objects. A `service_category` has many `service` objects. [*Optional*]
+Returns an array of [service_category objects]({{ '/objects/s_category' | prepend: site.baseurl }}) of a listing. A `listing` has many `service_category` objects. A `service_category` has many `service` objects. [*Optional*]
 
 <h2 class="tags" id="services">listing.services</h2>
 
@@ -286,7 +286,7 @@ Returns an array of [service objects]({{ '/objects/service' | prepend: site.base
 
 <h2 class="tags" id="product_categories">listing.product_categories</h2>
 
-Returns an array of [product_category objects]({{ '/objects/product_category' | prepend: site.baseurl }}) of a listing. A `listing` has many `product_category` objects. A `product_category` has many `product` objects. [*Optional*]
+Returns an array of [product_category objects]({{ '/objects/p_category' | prepend: site.baseurl }}) of a listing. A `listing` has many `product_category` objects. A `product_category` has many `product` objects. [*Optional*]
 
 <h2 class="tags" id="products">listing.products</h2>
 
@@ -294,11 +294,11 @@ Returns an array of [product objects]({{ '/objects/product' | prepend: site.base
 
 <h2 class="tags" id="food_categories">listing.food_categories</h2>
 
-Returns an array of [food_category objects]({{ '/objects/food_category' | prepend: site.baseurl }}) of a listing. A `listing` has many `food_category` objects. A `food_category` has many `food` objects. [*Optional*]
+Returns an array of [food_category objects]({{ '/objects/f_category' | prepend: site.baseurl }}) of a listing. A `listing` has many `food_category` objects. A `food_category` has many `food` objects. [*Optional*]
 
 <h2 class="tags" id="foods">listing.foods</h2>
 
-Returns an array of [foods objects]({{ '/objects/foods' | prepend: site.baseurl }}) of a listing. A `listing` has many `food` objects. [*Optional*]
+Returns an array of [foods objects]({{ '/objects/food' | prepend: site.baseurl }}) of a listing. A `listing` has many `food` objects. [*Optional*]
 
 <h2 class="tags" id="logo">listing.logo</h2>
 
@@ -330,11 +330,11 @@ Returns [menu_pdf object]({{ '/objects/menu_pdf' | prepend: site.baseurl }}) of 
 
 <h2 class="tags" id="service_catalog_pdf">listing.service_catalog_pdf</h2>
 
-Returns [service_catalog_pdf object]({{ '/objects/service_catalog_pdf' | prepend: site.baseurl }}) of a listing. A `listing` has one `service_catalog_pdf` object. [*Optional*]
+Returns [service_catalog_pdf object]({{ '/objects/s_catalog_pdf' | prepend: site.baseurl }}) of a listing. A `listing` has one `service_catalog_pdf` object. [*Optional*]
 
 <h2 class="tags" id="product_catalog_pdf">listing.product_catalog_pdf</h2>
 
-Returns [product_catalog_pdf object]({{ '/objects/product_catalog_pdf' | prepend: site.baseurl }}) of a listing. A `listing` has one `product_catalog_pdf` object. [*Optional*]
+Returns [product_catalog_pdf object]({{ '/objects/p_catalog_pdf' | prepend: site.baseurl }}) of a listing. A `listing` has one `product_catalog_pdf` object. [*Optional*]
 
 <h2 class="tags" id="portal">listing.portal</h2>
 
