@@ -14,31 +14,16 @@ The <code>facebook_page</code> object has the following attributes:
         facebook_page.id
       </li>
       <li>
-        facebook_page.page_id
+        facebook_page.facebook_id
       </li>
       <li>
-        facebook_page.page_url
+        facebook_page.name
       </li>
       <li>
-        facebook_page.page_name
-      </li>
-      <li>
-        facebook_page.page_access_token
+        facebook_page.link
       </li>
       <li>
         facebook_page.cover_photo_url
-      </li>
-      <li>
-        facebook_page.installed_page_ids
-      </li>
-      <li>
-        facebook_page.photo_uploaded_status
-      </li>
-      <li>
-        facebook_page.is_published
-      </li>
-      <li>
-        facebook_page.last_photo_uploaded_at
       </li>
     </ul>
   </div>

@@ -11,13 +11,13 @@ The <code>twitter_account</code> object has the following attributes:
   <div class="panel-body">
     <ul>
       <li>
+        twitter_account.id
+      </li>
+      <li>
         twitter_account.username
       </li>
       <li>
         twitter_account.email
-      </li>
-      <li>
-        twitter_account.published
       </li>
       <li>
         twitter_account.profile_url
