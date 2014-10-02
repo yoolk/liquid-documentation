@@ -88,6 +88,10 @@
       href: "/paginate"
     - name: part
       href: "/part"
+    - name: facebook_page
+      href: "/facebook_page"
+    - name: twitter_account
+      href: "/twitter_account"
 
 - title: Filters
   subcategory:
