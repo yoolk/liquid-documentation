@@ -63,9 +63,11 @@ Returns an array of strings if the form was not submitted successfully. The stri
     <h3>Output</h3>
   </div>
   <div class="panel-body">
+{% highlight html %}
 Oops, sorry. We were unable to submit your inquiry because it contained 2 errors. Please correct the following and submit again:
 
-* sender You can't leave this empty
-* body You can't leave this empty
+- sender You can't leave this empty
+- body You can't leave this empty
+{% endhighlight %}
   </div>
 </div>
