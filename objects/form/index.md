@@ -5,7 +5,7 @@
 
 <h2 class="section-title">Form</h2>
 
-The <code>form</code> object has the following attributes:
+The `form` object can only be used within [form]({{ '/tags/theme-tags/#form' | prepend: site.baseurl }}) tag. It has the following attributes:
 
 <div class="panel">
   <div class="panel-body">
@@ -38,7 +38,7 @@ Returns <code>true</code> if a comment by the user was submitted successfully, o
 
 <h2 class="tags" id="image">form.errors</h2>
 
-Returns an array of strings if the form was not submitted successfully. The strings returned depend on which fields of the form were left empty or contained errors. Possible values are:
+Returns an array of error fields if the form was not submitted successfully. As shown below, the example loops through the error and print out the message on each field at the top of the form.
 
 <div class="panel">
   <div class="panel-header">

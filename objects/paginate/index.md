@@ -34,6 +34,9 @@ The [paginate]({{ '/tags/theme-tags/#paginate' | prepend: site.baseurl }}) tag's
       <li>
         <a href="#paginate.pages">paginate.pages</a>
       </li>
+      <li>
+        <a href="#paginate.collection">paginate.collection</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -119,3 +122,19 @@ Returns the number of items displayed per page.
 <h2 class="tags" id="paginate.pages">paginate.pages</h2>
 
 Returns the number of pages created by the pagination tag.
+
+<h2 class="tags" id="paginate.collection">paginate.collection</h2>
+
+Returns the current paginated collection. It must wrap a `for` tag block that loops through this collection.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django%}{% raw %}
+{% paginate listing.products by 5 %}
+  {% for product in paginate.collection %}
+    <!--show product details here -->
+  {% endfor %}
+{% endpaginate %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
