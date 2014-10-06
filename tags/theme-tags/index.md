@@ -126,8 +126,8 @@ The `paginate` tag works in conjunction with the `for` tag to split content into
   </div>
   <div class="panel-body">
 {% highlight django%}{% raw %}
-{% paginate collection.products by 5 %}
-  {% for product in collection.products %}
+{% paginate listing.products by 5 %}
+  {% for product in paginate.collection %}
     <!--show product details here -->
   {% endfor %}
 {% endpaginate %}
@@ -167,7 +167,7 @@ Allows output of Liquid code on a page without being parsed.
 
 <h2 class="tags" id="form">form</h2>
 
-Creates an HTML <code><form></code> element with all the necessary attributes (action, id, etc.) and <code>&#60;input&#62;</code> to submit the form successfully. Moreover, We have provide you <code>contact</code>, <code>feedback</code>, and <code>reservation</code> to pass through your <code>form</code> tag.
+Creates an HTML <code><form></code> element with all the necessary attributes (action, id, etc.) and <code>&#60;input&#62;</code> to submit the form successfully. Moreover, you can pass <code>contact</code>, <code>feedback</code>, and <code>reservation</code> to<code>form</code> tag.
 
 Find out more about [form]({{ '/objects/form' | prepend: site.baseurl }}) object.
 

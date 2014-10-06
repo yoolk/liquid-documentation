@@ -84,14 +84,14 @@
       href: "/cover_photos"
     - name: domains
       href: "/domains"
-    - name: paginate
-      href: "/paginate"
-    - name: part
-      href: "/part"
     - name: facebook_page
       href: "/facebook_page"
     - name: twitter_account
       href: "/twitter_account"
+    - name: paginate
+      href: "/paginate"
+    - name: part
+      href: "/part"
     - name: form
       href: "/form"
 
