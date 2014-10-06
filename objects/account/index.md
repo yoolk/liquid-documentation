@@ -36,6 +36,24 @@ The <code>account</code> object has the following attributes:
 
 Returns an image of a sign in account. Use the [attachment_url]({{ '/filters/url-filters/' | prepend: site.baseurl }}) filter to link to the image on Yoolk's Content Delivery Network. [*Optional*]
 
+<h5 class="sub-section-title">
+  Parameters: image sizes
+</h5>
+<table class="table" rules="all" frame="void">
+  <tr>
+    <th height="56">styles</th>
+    <th>size</th>
+  </tr>
+  <tr>
+    <td>small</td>
+    <td>auto x 161</td>
+  </tr>
+  <tr>
+    <td>medium</td>
+    <td>auto x 239</td>
+  </tr>
+</table>
+
 <div class="panel">
   <div class="panel-header">
     <h3>Input</h3>
