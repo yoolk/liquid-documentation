@@ -57,6 +57,9 @@ URL filters output links to assets. They are also used to create links for filte
       <li>
         <a href="#link_to_contact_us">link_to_contact_us</a>
       </li>
+      <li>
+        <a href="#link_to_sign_in">link_to_sign_in</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -323,3 +326,13 @@ Generate HTML anchor tag for contact us path, optional <code>options</code> is p
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+<h2 class="tags" id="link_to_sign_in">link_to_sign_in</h2>
+Generate HTML anchor tag for sign in path.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+{{ 'sign in' | link_to_sign_in }}
+# => <a href="/office">sign in</a>
+{% endraw %}{% endhighlight %}
