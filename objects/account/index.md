@@ -71,7 +71,7 @@ Returns an image of a sign in account. Use the [attachment_url]({{ '/filters/url
   </div>
   <div class="panel-body">
 {% highlight html %}{% raw %}
-<img src="http://s-yoolk-images1.yoolk.com/kh/person_avatar/medium/1367097277/1250047?1367097277" />
+<img src="http://s-staging-yoolk-assets.s3.amazonaws.com/global/people/medium/1388983947/168096.png?1388983947" />
 {% endraw %}{% endhighlight %}
   </div>
 </div>
