@@ -29,6 +29,9 @@ The <code>instant_website</code> object has the following attributes:
         instant_website.updated_at
       </li>
       <li>
+        <a href="#office_url">instant_website.office_url</a>
+      </li>
+      <li>
         <a href="#template">instant_website.template</a>
       </li>
       <li>
@@ -38,6 +41,18 @@ The <code>instant_website</code> object has the following attributes:
         <a href="#domains">instant_website.domains</a>
       </li>
     </ul>
+  </div>
+</div>
+
+<h2 class="tags" id="office_url">instant_website.office_url</h2>
+
+Returns office url of the instant website.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ instant_website.office_url }}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
