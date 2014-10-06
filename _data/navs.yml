@@ -94,6 +94,8 @@
       href: "/part"
     - name: form
       href: "/form"
+    - name: account
+      href: "/account"
 
 - title: Filters
   subcategory:
