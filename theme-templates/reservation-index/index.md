@@ -5,6 +5,6 @@
 
 <h2 class="section-title">reservation/index.liquid</h2>
 
-The reservation/index.liquid template is used to render the announcements page. The primary purpose of this page is to list the galleries within a collection.
+The reservation/index.liquid template is used to render the reservation page. It includes an HTML <code>&lt;form&gt;</code> that visitors use to with listing owner.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![reservation]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})

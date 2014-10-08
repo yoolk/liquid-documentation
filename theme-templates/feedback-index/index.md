@@ -5,6 +5,6 @@
 
 <h2 class="section-title">feedback/index.liquid</h2>
 
-The feedback/index.liquid template is used to render the announcements page. The primary purpose of this page is to list the feedback within a collection.
+The feedback/index.liquid template is used to render the feedback page. It includes an HTML <code>&lt;form&gt;</code> that visitors use to with listing owner.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![feedback]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
