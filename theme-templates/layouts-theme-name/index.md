@@ -5,6 +5,6 @@
 
 <h2 class="section-title">layouts/theme-name.liquid</h2>
 
-The layouts/theme-name.liquid template is used to render the announcements page. The primary purpose of this page is to list the galleries within a collection.
+The layouts/theme-name.liquid can be thought of as the master template; all other templates are rendered inside of layouts/theme-name.liquid. Any elements that are repeated in a theme (ex: site navigations, header, footer, etc.) should be placed inside layouts/theme-name.liquid.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![layouts]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
