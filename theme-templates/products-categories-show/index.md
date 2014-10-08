@@ -5,6 +5,6 @@
 
 <h2 class="section-title">products/categories/show.liquid</h2>
 
-The products/categories/show.liquid template is used to render the announcements page. The primary purpose of this page is to list the galleries within a collection.
+The products/categories/show.liquid template is used to render the products by category page. The primary purpose of this page is to list the products collection by specific category that has been provided.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![products by category]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})

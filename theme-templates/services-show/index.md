@@ -5,6 +5,6 @@
 
 <h2 class="section-title">services/show.liquid</h2>
 
-The services/show.liquid template is used to render the announcements page. The primary purpose of this page is to list the galleries within a collection.
+The services/show.liquid template is used to render the service page. The primary purpose of this page is to service detail information.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![service detail]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
