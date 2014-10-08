@@ -5,6 +5,6 @@
 
 <h2 class="section-title">home/index.liquid</h2>
 
-The home/index.liquid template is used to render the announcements page. The primary purpose of this page is to list the galleries within a collection.
+The home/index.liquid template renders the homepage of the listing website. The template is loaded when you go to the root ("/") of the website.
 
 ![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
