@@ -5,8 +5,8 @@ layout: default
   <dl>
     <dt class="nav-first-child">Liquid Documentation</dt>
     {% for nav in site.data.navs %}
-      {% assign nav_title = nav.title | downcase | prepend: '/' %}
-      <dt {% if page.dir contains nav_title %} {{'class="active"'}} {% endif %}> <a href="{{ nav_title | prepend: site.baseurl }}">{{ nav.title }} </a> </dt>
+      {% assign nav_title = nav.href | downcase %}
+      <dt {% if page.dir contains nav_title %} {{'class="active"'}} {% endif %}> <a href="{{ nav.href | prepend: site.baseurl }}">{{ nav.title }} </a> </dt>
       {% if page.dir contains nav_title %}
         <dd>
           <ul class="subnav">

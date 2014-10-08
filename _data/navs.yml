@@ -1,4 +1,5 @@
 - title: Basics
+  href: '/basics'
   subcategory:
     - name: Operators
       href: "/operators"
@@ -8,6 +9,7 @@
       href: "/truthy-and-falsy"
 
 - title: Tags
+  href: '/tags'
   subcategory:
     - name: Control Flow Tags
       href: "/control-flow-tags"
@@ -19,6 +21,7 @@
       href: "/variable-tags"
 
 - title: Objects
+  href: '/objects'
   subcategory:
     - name: listing
       href: "/listing"
@@ -98,6 +101,7 @@
       href: "/account"
 
 - title: Filters
+  href: '/filters'
   subcategory:
     - name: "Standard Filters"
       href: "/standard-filters"
@@ -115,3 +119,12 @@
       href: "/translate-filters"
     - name: "Miscellaneous Filters"
       href: "/misc-filters"
+- title: Theme Templates
+  href: '/theme-templates'
+  subcategory:
+    - name: Operators
+      href: "/operators"
+    - name: Types
+      href: "/types"
+    - name: Truthy and Falsy
+      href: "/truthy-and-falsy"
