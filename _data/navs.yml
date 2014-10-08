@@ -122,9 +122,45 @@
 - title: Theme Templates
   href: '/theme-templates'
   subcategory:
-    - name: Operators
-      href: "/operators"
-    - name: Types
-      href: "/types"
-    - name: Truthy and Falsy
-      href: "/truthy-and-falsy"
+    - name: about_us/index.liquid
+      href: "/about-us-index"
+    - name: announcements/index.liquid
+      href: "/announcements-index"
+    - name: announcements/show.liquid
+      href: "/announcements-show"
+    - name: brochures/index.liquid
+      href: "/brochures-index"
+    - name: contact_us/index.liquid
+      href: "/contact-us-index"
+    - name: feedback/index.liquid
+      href: "/feedback-index"
+    - name: galleries/index.liquid
+      href: "/galleries-index"
+    - name: galleries/show.liquid
+      href: "/galleries-show"
+    - name: home/index.liquid
+      href: "/home-index"
+    - name: layouts/theme_name.liquid
+      href: "/layouts-theme-name"
+    - name: map/index.liquid
+      href: "/map-index"
+    - name: menu/categories/show.liquid
+      href: "/menu-categories-show"
+    - name: menu/index.liquid
+      href: "/menu-index"
+    - name: people/index.liquid
+      href: "/people-index"
+    - name: products/categories/show.liquid
+      href: "/products-categories-show"
+    - name: products/index.liquid
+      href: "/products-index"
+    - name: products/show.liquid
+      href: "/products-show"
+    - name: reservation/index.liquid
+      href: "/reservation-index"
+    - name: services/categories/show.liquid
+      href: "/services-categories-show"
+    - name: services/index.liquid
+      href: "/services-index"
+    - name: services/show.liquid
+      href: "/services-show"
