@@ -136,8 +136,6 @@
       href: "/feedback-index"
     - name: galleries/index.liquid
       href: "/galleries-index"
-    - name: galleries/show.liquid
-      href: "/galleries-show"
     - name: home/index.liquid
       href: "/home-index"
     - name: layouts/theme_name.liquid
