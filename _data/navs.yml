@@ -148,6 +148,8 @@
       href: "/menu-categories-show"
     - name: menu/index.liquid
       href: "/menu-index"
+    - name: menu/foods/show.liquid
+      href: "/menu-foods-show"
     - name: people/index.liquid
       href: "/people-index"
     - name: products/categories/show.liquid
