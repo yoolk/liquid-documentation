@@ -5,6 +5,6 @@
 
 <h2 class="section-title">menu/foods/show.liquid</h2>
 
-The menu/foods/show.liquid template is used to render the announcements page. The primary purpose of this page is to list the galleries within a collection.
+The menu/foods/show.liquid template is used to render the food page. The primary purpose of this page is to food detail information.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![food detail]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})

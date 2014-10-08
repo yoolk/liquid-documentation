@@ -5,6 +5,6 @@
 
 <h2 class="section-title">menu/index.liquid</h2>
 
-The menu/index.liquid template is used to render the announcements page. The primary purpose of this page is to list the galleries within a collection.
+The menu/index.liquid template is used to render the foods page. The primary purpose of this page is to list the foods within a collection.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![foods]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})

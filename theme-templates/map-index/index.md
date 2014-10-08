@@ -5,6 +5,6 @@
 
 <h2 class="section-title">map/index.liquid</h2>
 
-The map/index.liquid template is used to render the announcements page. The primary purpose of this page is to list the galleries within a collection.
+As the name descript, The map/index.liquid template is used to render the google map page. The primary purpose of this page is to render google map from the specifies latitude and longtitude.
 
 ![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
