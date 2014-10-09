@@ -21,30 +21,30 @@ The locales folder provides an easy-to-use and extensible framework for translat
 <h5 class="sub-section-title">views</h5>
 The templates folder contains all other Liquid templates, including:
 
-* about_us/index.liquid
+* [home/index.liquid]({{ '/theme-templates/home-index' | prepend: site.baseurl }})
+* [about_us/index.liquid]({{ '/theme-templates/about-us-index' | prepend: site.baseurl }})
 * announcements/
-  * index.liquid
-  * show.liquid
-* brochures/index.liquid
-* contact_us/index.liquid
-* feedback/index.liquid
+  * [index.liquid]({{ '/theme-templates/announcements-index' | prepend: site.baseurl }})
+  * [show.liquid]({{ '/theme-templates/announcements-show' | prepend: site.baseurl }})
+* [brochures/index.liquid]({{ '/theme-templates/brochures-index' | prepend: site.baseurl }})
+* [contact_us/index.liquid]({{ '/theme-templates/contact-us-index' | prepend: site.baseurl }})
+* [feedback/index.liquid]({{ '/theme-templates/feedback-index' | prepend: site.baseurl }})
 * galleries/
-  * index.liquid
-  * show.liquid
-* home/index.liquid
-* layouts/theme_name.liquid
-* map/index.liquid
+  * [index.liquid]({{ '/theme-templates/galleries-index' | prepend: site.baseurl }})
+  * [show.liquid]({{ '/theme-templates/galleries-show' | prepend: site.baseurl }})
+* [layouts/theme_name.liquid]({{ '/theme-templates/layouts-theme-name' | prepend: site.baseurl }})
+* [map/index.liquid]({{ '/theme-templates/map-index' | prepend: site.baseurl }})
 * menu/
-  * categories/show.liquid
-  * foods/show.liquid
-  * index.liquid
-* people/index.liquid
+  * [categories/show.liquid]({{ '/theme-templates/menu-categories-show' | prepend: site.baseurl }})
+  * [foods/show.liquid]({{ '/theme-templates/menu-foods-show' | prepend: site.baseurl }})
+  * [index.liquid]({{ '/theme-templates/menu-index' | prepend: site.baseurl }})
+* [people/index.liquid]({{ '/theme-templates/people-index' | prepend: site.baseurl }})
 * products/
-  * categories/show.liquid
-  * index.liquid
-  * show.liquid
-* reservation/index.liquid
+  * [categories/show.liquid]({{ '/theme-templates/products-categories-show' | prepend: site.baseurl }})
+  * [index.liquid]({{ '/theme-templates/products-index' | prepend: site.baseurl }})
+  * [show.liquid]({{ '/theme-templates/products-show' | prepend: site.baseurl }})
+* [reservation/index.liquid]({{ '/theme-templates/reservation-index' | prepend: site.baseurl }})
 * services/
-  * categories/show.liquid
-  * index.liquid
-  * show.liquid
+  * [categories/show.liquid]({{ '/theme-templates/services-categories-show' | prepend: site.baseurl }})
+  * [index.liquid]({{ '/theme-templates/services-index' | prepend: site.baseurl }})
+  * [show.liquid]({{ '/theme-templates/services-show' | prepend: site.baseurl }})

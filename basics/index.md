@@ -23,7 +23,7 @@ Liquid is an open-source, Ruby-based template language created by Shopify. Yoolk
   </div>
 </div>
 
-Liquid uses a combination of tags, objects, and filters to load dynamic content. They are used inside Liquid template files, which are a group of files that make up a theme. For more information on the available templates, please see [Theme Development](#).
+Liquid uses a combination of tags, objects, and filters to load dynamic content. They are used inside Liquid template files, which are a group of files that make up a theme. For more information on the available templates, please see [Theme Development]({{ '/theme-templates' | prepend: site.baseurl }}).
 
 <div class="panel">
   <div class="panel-body">

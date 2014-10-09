@@ -5,6 +5,6 @@
 
 <h2 class="section-title">home/index.liquid</h2>
 
-The home/index.liquid template renders the homepage of the listing website. The template is loaded when you go to the root ("/") of the website.
+The `home/index.liquid` template renders the homepage of the listing website. The template is loaded when you go to the root ("/") of the website.
 
 ![announcements]({{ '/images/theme-templates/contact-us-index.png' | prepend: site.baseurl }})

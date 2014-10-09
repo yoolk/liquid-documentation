@@ -5,6 +5,6 @@
 
 <h2 class="section-title">galleries/index.liquid</h2>
 
-The galleries/index.liquid template is used to render the galleries page. The primary purpose of this page is to list the galleries within a collection.
+The `galleries/index.liquid` template is used to render the `images` of current listing.
 
 ![galleries]({{ '/images/theme-templates/galleries-index.png' | prepend: site.baseurl }})

@@ -5,6 +5,6 @@
 
 <h2 class="section-title">products/index.liquid</h2>
 
-The products/index.liquid template is used to render the products page. The primary purpose of this page is to list the products within a collection.
+The `products/index.liquid` template is used to render the `products` of current listing.
 
 ![products]({{ '/images/theme-templates/products-index.png' | prepend: site.baseurl }})

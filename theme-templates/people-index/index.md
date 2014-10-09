@@ -5,6 +5,6 @@
 
 <h2 class="section-title">people/index.liquid</h2>
 
-The people/index.liquid template is used to render the people page. The primary purpose of this page is to list the people within a collection.
+The `people/index.liquid` template is used to render the `people` of current listing.
 
 ![people]({{ '/images/theme-templates/people-index.png' | prepend: site.baseurl }})

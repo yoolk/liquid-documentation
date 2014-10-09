@@ -5,6 +5,6 @@
 
 <h2 class="section-title">about_us/index.liquid</h2>
 
-The about_us/index.liquid template is used to render the about_us page. The primary purpose of this page is to list the catalog item within a collection.
+The `about_us/index.liquid` template is used to render the `catalog items` for the current listing.
 
 ![catalog items]({{ '/images/theme-templates/about-us-index.png' | prepend: site.baseurl }})

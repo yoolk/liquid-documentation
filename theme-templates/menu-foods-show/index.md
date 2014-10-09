@@ -5,6 +5,6 @@
 
 <h2 class="section-title">menu/foods/show.liquid</h2>
 
-The menu/foods/show.liquid template is used to render the food page. The primary purpose of this page is to food detail information.
+The `menu/foods/show.liquid` template is used to render the food details information. You can access the current `food` by invoking <code>{%raw%}{{ food }}{%endraw%}</code>.
 
 ![food detail]({{ '/images/theme-templates/menu-show.png' | prepend: site.baseurl }})

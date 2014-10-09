@@ -5,6 +5,6 @@
 
 <h2 class="section-title">brochures/index.liquid</h2>
 
-The brochures/index.liquid template is used to render the brochures page. The primary purpose of this page is to list the brochures within a collection.
+The `brochures/index.liquid` template is used to render the `brochures` of current listing.
 
 ![brochures]({{ '/images/theme-templates/brochures-index.png' | prepend: site.baseurl }})

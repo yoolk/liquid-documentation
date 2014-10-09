@@ -122,6 +122,8 @@
 - title: Theme Templates
   href: '/theme-templates'
   subcategory:
+    - name: home/index.liquid
+      href: "/home-index"
     - name: about_us/index.liquid
       href: "/about-us-index"
     - name: announcements/index.liquid
@@ -136,8 +138,6 @@
       href: "/feedback-index"
     - name: galleries/index.liquid
       href: "/galleries-index"
-    - name: home/index.liquid
-      href: "/home-index"
     - name: layouts/theme_name.liquid
       href: "/layouts-theme-name"
     - name: map/index.liquid
