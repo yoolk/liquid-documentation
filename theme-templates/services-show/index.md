@@ -7,4 +7,4 @@
 
 The services/show.liquid template is used to render the service page. The primary purpose of this page is to service detail information.
 
-![service detail]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![service detail]({{ '/images/theme-templates/services-show.png' | prepend: site.baseurl }})
