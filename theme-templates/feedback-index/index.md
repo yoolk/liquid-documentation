@@ -7,4 +7,4 @@
 
 The feedback/index.liquid template is used to render the feedback page. It includes an HTML <code>&lt;form&gt;</code> that visitors use to provide feedback to listing owner.
 
-![feedback]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![feedback]({{ '/images/theme-templates/feedback-index.png' | prepend: site.baseurl }})

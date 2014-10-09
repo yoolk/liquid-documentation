@@ -7,4 +7,4 @@
 
 The people/index.liquid template is used to render the people page. The primary purpose of this page is to list the people within a collection.
 
-![people]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![people]({{ '/images/theme-templates/people-index.png' | prepend: site.baseurl }})
