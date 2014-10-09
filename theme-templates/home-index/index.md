@@ -7,4 +7,4 @@
 
 The home/index.liquid template renders the homepage of the listing website. The template is loaded when you go to the root ("/") of the website.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![announcements]({{ '/images/theme-templates/contact-us-index.png' | prepend: site.baseurl }})

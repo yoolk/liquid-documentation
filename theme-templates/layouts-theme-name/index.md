@@ -7,4 +7,4 @@
 
 The layouts/theme-name.liquid can be thought of as the master template; all other templates are rendered inside of layouts/theme-name.liquid. Any elements that are repeated in a theme (ex: site navigations, header, footer, etc.) should be placed inside layouts/theme-name.liquid.
 
-![layouts]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![layouts]({{ '/images/theme-templates/contact-us-index.png' | prepend: site.baseurl }})
