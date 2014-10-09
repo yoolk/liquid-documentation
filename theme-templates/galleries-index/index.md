@@ -7,4 +7,4 @@
 
 The galleries/index.liquid template is used to render the galleries page. The primary purpose of this page is to list the galleries within a collection.
 
-![galleries]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![galleries]({{ '/images/theme-templates/galleries-index.png' | prepend: site.baseurl }})
