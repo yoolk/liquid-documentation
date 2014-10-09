@@ -7,4 +7,4 @@
 
 The brochures/index.liquid template is used to render the brochures page. The primary purpose of this page is to list the brochures within a collection.
 
-![brochures]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![brochures]({{ '/images/theme-templates/brochures-index.png' | prepend: site.baseurl }})
