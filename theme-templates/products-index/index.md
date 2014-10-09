@@ -7,4 +7,4 @@
 
 The products/index.liquid template is used to render the products page. The primary purpose of this page is to list the products within a collection.
 
-![products]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![products]({{ '/images/theme-templates/products-index.png' | prepend: site.baseurl }})

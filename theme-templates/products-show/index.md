@@ -7,4 +7,4 @@
 
 The products/show.liquid template is used to render the product page. The primary purpose of this page is to product detail information.
 
-![product detail]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![product detail]({{ '/images/theme-templates/products-show.png' | prepend: site.baseurl }})
