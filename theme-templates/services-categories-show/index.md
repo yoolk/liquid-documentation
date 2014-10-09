@@ -7,4 +7,4 @@
 
 The services/categories/show.liquid template is used to render the services by category page. The primary purpose of this page is to list the services collection by specific category that has been provided.
 
-![services by category]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![services by category]({{ '/images/theme-templates/services-categories-show.png' | prepend: site.baseurl }})

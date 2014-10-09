@@ -7,4 +7,4 @@
 
 The about_us/index.liquid template is used to render the about_us page. The primary purpose of this page is to list the catalog item within a collection.
 
-![catalog items]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![catalog items]({{ '/images/theme-templates/about-us-index.png' | prepend: site.baseurl }})

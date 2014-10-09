@@ -7,4 +7,4 @@
 
 The announcements/index.liquid template is used to render the announcements page. The primary purpose of this page is to list the announcements within a collection.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![announcements]({{ '/images/theme-templates/announcements-index.png' | prepend: site.baseurl }})

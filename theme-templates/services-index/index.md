@@ -7,4 +7,4 @@
 
 The services/index.liquid template is used to render the services page. The primary purpose of this page is to list the services within a collection.
 
-![services]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![services]({{ '/images/theme-templates/services-index.png' | prepend: site.baseurl }})

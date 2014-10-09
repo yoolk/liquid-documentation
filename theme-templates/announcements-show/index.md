@@ -7,4 +7,4 @@
 
 The announcements/show.liquid template is used to render the announcement detail page.
 
-![announcements]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![announcements]({{ '/images/theme-templates/announcements-show.png' | prepend: site.baseurl }})
