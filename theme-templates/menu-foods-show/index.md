@@ -7,4 +7,4 @@
 
 The menu/foods/show.liquid template is used to render the food page. The primary purpose of this page is to food detail information.
 
-![food detail]({{ '/images/theme-templates/ex_collection.jpg' | prepend: site.baseurl }})
+![food detail]({{ '/images/theme-templates/menu-show.png' | prepend: site.baseurl }})
