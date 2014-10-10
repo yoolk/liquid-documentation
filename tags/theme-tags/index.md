@@ -26,6 +26,9 @@ Theme Tags have various functions, including:
       <li>
         <a href="#form">form</a>
       </li>
+      <li>
+        <a href="#draft-stamp">Draft Stamp</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -273,5 +276,26 @@ Generates a feedback form on the feedback template.
 ...
 </form>
 {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="draft-stamp">Draft Stamp</h2>
+
+Allows output of draft image on the web document.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+
+{% highlight html %}{% raw %}
+{% draft_stamp %}
+# => <img alt="Draft" src="http://www.example.com/draft.png" style="position: absolute; top: 0; right: 0; z-index: 9999;" />
+
+{% draft_stamp 'new-draft.png' %}
+# => <img alt="New draft" src="http://www.example.com/new-draft.png" style="position: absolute; top: 0; right: 0; z-index: 9999;" />
+{% endraw %}{% endhighlight %}
+
   </div>
 </div>
