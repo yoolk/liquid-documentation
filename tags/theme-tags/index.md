@@ -27,7 +27,7 @@ Theme Tags have various functions, including:
         <a href="#form">form</a>
       </li>
       <li>
-        <a href="#draft-stamp">Draft Stamp</a>
+        <a href="#draft-stamp">draft_stamp</a>
       </li>
     </ul>
   </div>
@@ -279,9 +279,9 @@ Generates a feedback form on the feedback template.
   </div>
 </div>
 
-<h2 class="tags" id="draft-stamp">Draft Stamp</h2>
+<h2 class="tags" id="draft-stamp">draft_stamp</h2>
 
-Allows output of draft image on the web document.
+Allows output of draft stamp image on the web document. It outputs when the current listing doesn't have `live` instant_website_asset, and its domain is not a subdomain.
 
 <div class="panel">
   <div class="panel-header">
@@ -291,10 +291,10 @@ Allows output of draft image on the web document.
 
 {% highlight html %}{% raw %}
 {% draft_stamp %}
-# => <img alt="Draft" src="http://www.example.com/draft.png" style="position: absolute; top: 0; right: 0; z-index: 9999;" />
+# => <img alt="Draft" src="http://s-iw-frontend-statics.s3.amazonaws.com/assets/draft-5c840e93b5a77741e7f3e5c651b1c802.png" style="position: absolute; top: 0; right: 0; z-index: 9999;" />
 
-{% draft_stamp 'new-draft.png' %}
-# => <img alt="New draft" src="http://www.example.com/new-draft.png" style="position: absolute; top: 0; right: 0; z-index: 9999;" />
+{% draft_stamp 'sample/new-draft.png' %}
+# => <img alt="New draft" src="http://s-iw-frontend-statics.s3.amazonaws.com/assets/sample/draft-5c840e93b5a77741e7f3e5c651b1c802.png" style="position: absolute; top: 0; right: 0; z-index: 9999;" />
 {% endraw %}{% endhighlight %}
 
   </div>
