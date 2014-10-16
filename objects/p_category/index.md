@@ -23,6 +23,9 @@ The <code>product_category</code> object has the following attributes:
         <a href="#url">product_category.url</a>
       </li>
       <li>
+        <a href="#current?">product_category.current?</a>
+      </li>
+      <li>
         <a href="#products">product_category.products</a>
       </li>
       <li>
@@ -61,6 +64,41 @@ Returns the url of a product_category.
   <div class="panel-body">
 {% highlight html %}{% raw %}
 <a href="/products/9200-pc-laptops-netbooks">PC Laptops & Netbooks</a>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="current?">product_category.current?</h2>
+
+Returns true if this product_category is the one which is currently displayed.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+<ul class="nav">
+  {% for product_category in listing.product_categories %}
+    <li>
+      <a href="{{ product_category.url }}" {% if product_category.current? %}class="active"{% endif %}>{{ product_category.name }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<ul class="nav">
+  <li><a href="/products/1-shirt" class="active">Shirt</a></li>
+  <li><a href="/products/2-shoe">Shoe</a></li>
+</ul>
 {% endraw %}{% endhighlight %}
   </div>
 </div>

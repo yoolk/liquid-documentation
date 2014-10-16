@@ -20,6 +20,9 @@ The <code>gallery</code> object has the following attributes:
         <a href="#display_order">gallery.display_order</a>
       </li>
       <li>
+        <a href="#current?">gallery.current?</a>
+      </li>
+      <li>
         <a href="#images">gallery.images</a>
       </li>
       <li>
@@ -88,6 +91,41 @@ Returns an array of the gallery's [images]({{ '/objects/image/' | prepend: site.
   <div class="panel-body">
 {% highlight html %}{% raw %}
 <img src="http://s-yoolk-images1.yoolk.com/kh/gallery_images/medium/1367097277/1250047?1367097277" />
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="current?">gallery.current?</h2>
+
+Returns true if this gallery is the one which is currently displayed.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+<ul class="nav">
+  {% for gallery in listing.galleries %}
+    <li>
+      <a href="{{ gallery.url }}" {% if gallery.current? %}class="active"{% endif %}>{{ gallery.name }} ({{ gallery.images.count }})</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<ul class="nav">
+  <li><a href="/galleries/1" class="active">Album1</a></li>
+  <li><a href="/galleries/2">Album2</a></li>
+</ul>
 {% endraw %}{% endhighlight %}
   </div>
 </div>
