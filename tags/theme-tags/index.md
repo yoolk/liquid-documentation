@@ -29,6 +29,12 @@ Theme Tags have various functions, including:
       <li>
         <a href="#draft-stamp">draft_stamp</a>
       </li>
+      <li>
+        <a href="#content_for">content_for</a>
+      </li>
+      <li>
+        <a href="#yield">yield</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -297,5 +303,101 @@ Allows output of draft stamp image on the web document. It outputs when the curr
 # => <img alt="New draft" src="http://s-iw-frontend-statics.s3.amazonaws.com/assets/sample/draft-5c840e93b5a77741e7f3e5c651b1c802.png" style="position: absolute; top: 0; right: 0; z-index: 9999;" />
 {% endraw %}{% endhighlight %}
 
+  </div>
+</div>
+
+<h2 class="tags" id="content_for">content_for</h2>
+
+Stores a block of markup in an identifier for later use. In order to access this stored content in other templates or the layout, you would pass the identifier as an argument to `yield` tag.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% content_for 'not_authorized' %}
+  alert('You are not authorized to do that!')
+{% endcontent_for %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+You can then use `yield 'not_authorized'` anywhere in your templates.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% if current_account.nil? %}
+  {% yield 'not_authorized' %}
+{% endif %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+Note that `content_for` concatenates (default) the blocks it is given for a particular identifier in order. For example:
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% content_for 'navigation' %}
+ <li>{{ 'Home' | link_to '/' }}</li>
+{% endcontent_for %}
+
+And in other place:
+
+{% content_for 'navigation' %}
+ <li>{{ 'Sign in' | link_to '/office/sign_in' }}</li>
+{% endcontent_for %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+Then, in another template or layout, this code would render both links in order:
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+<ul>{% yield 'navigation' %}</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+If the `flush` parameter is true `content_for` replaces the blocks it is given. For example:
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% content_for 'navigation' %}
+  <li>{{ 'Home' | link_to '/' }}</li>
+{% endcontent_for %}
+
+Add some other content, or use a different template:
+
+{% content_for 'navigation' flush true %}
+  <li>{{ 'Sign in' | link_to '/office/sign_in' }}</li>
+{% endcontent_for %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+Then, in another template or layout, this code would render only the last link:
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+<ul>{% content_for 'navigation' %}</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="yield">yield</h2>
+
+Works in conjunction with `content_for` tag. It is used to retrieve the stored content.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% if current_account.nil? %}
+  {% yield 'not_authorized' %}
+{% endif %}
+{% endraw %}{% endhighlight %}
   </div>
 </div>
