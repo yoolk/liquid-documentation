@@ -550,6 +550,8 @@ Generate Google Image Map url base on provided options along with <code>listing<
     <h3>Output</h3>
   </div>
   <div class="panel-body">
+{% highlight django %}{% raw %}
 https://maps.googleapis.com/maps/api/staticmap?center=40.714728%2C-73.998672&maptype=roadmap&size=300x200&zoom=13&markers=color%3Ared%7C40.714728%2C-73.998672
+{% endraw %}{% endhighlight %}
   </div>
 </div>
