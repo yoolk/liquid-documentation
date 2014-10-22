@@ -555,3 +555,4 @@ https://maps.googleapis.com/maps/api/staticmap?center=40.714728%2C-73.998672&map
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+Find out more [HERE](https://developers.google.com/maps/documentation/staticmaps/#URL_Parameters).
