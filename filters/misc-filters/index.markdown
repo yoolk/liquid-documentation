@@ -24,6 +24,9 @@ Provides miscellaneous filters.
       <li>
         <a href="#default_pagination">default_pagination</a>
       </li>
+      <li>
+        <a href="#google_static_map_url">google_static_map_url</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -527,3 +530,29 @@ Creates a set of links for paginated results. Used in conjunction with the [pagi
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+<h5 class="sub-section-title" id="google_static_map_url">google_static_map_url</h5>
+Generate Google Image Map url base on provided options along with <code>listing</code> object which provide latitude and longtitude.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ listing | google_static_map_url: size: '300x200' }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+https://maps.googleapis.com/maps/api/staticmap?center=40.714728%2C-73.998672&maptype=roadmap&size=300x200&zoom=13&markers=color%3Ared%7C40.714728%2C-73.998672
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+Find out more [HERE](https://developers.google.com/maps/documentation/staticmaps/#URL_Parameters).
