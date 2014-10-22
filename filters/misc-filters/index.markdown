@@ -532,7 +532,7 @@ Creates a set of links for paginated results. Used in conjunction with the [pagi
 </div>
 
 <h5 class="sub-section-title" id="google_static_map_url">google_static_map_url</h5>
-Generate Google Image Map url base on provided options along with <code>listing</code> object which provide latitude and longtitude.
+Generate google static map url for a <code>listing</code> object with the provided options such as: `maptype`, `size`, .... Find out more [HERE](https://developers.google.com/maps/documentation/staticmaps/#URL_Parameters).
 
 <div class="panel">
   <div class="panel-header">
@@ -555,4 +555,3 @@ https://maps.googleapis.com/maps/api/staticmap?center=40.714728%2C-73.998672&map
 {% endraw %}{% endhighlight %}
   </div>
 </div>
-Find out more [HERE](https://developers.google.com/maps/documentation/staticmaps/#URL_Parameters).
