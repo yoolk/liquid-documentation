@@ -47,10 +47,10 @@ The <code>listing</code> object has the following attributes:
         <a href="#show_map_on_web">listing.show_map_on_web</a>
       </li>
       <li>
-        <a href="#facebook_page_link">listing.facebook_page_link</a>
+        <a href="#facebook_page_url">listing.facebook_page_url</a>
       </li>
       <li>
-        <a href="#twitter_link">listing.twitter_link</a>
+        <a href="#twitter_url">listing.twitter_url</a>
       </li>
       <li>
         <a href="#created_at">listing.created_at</a>
@@ -218,13 +218,13 @@ Returns zoom_level of a listing.
 
 Returns true if it shows the map.
 
-<h2 class="tags" id="facebook_page_link">listing.facebook_page_link</h2>
+<h2 class="tags" id="facebook_page_url">listing.facebook_page_url</h2>
 
-Returns facebook page url. [*Optional*]
+Returns facebook page url of a listing. [*Optional*]
 
-<h2 class="tags" id="twitter_link">listing.twitter_link</h2>
+<h2 class="tags" id="twitter_url">listing.twitter_url</h2>
 
-Returns twitter url. [*Optional*]
+Returns twitter url of a listing. [*Optional*]
 
 <h2 class="tags" id="created_at">listing.created_at</h2>
 
