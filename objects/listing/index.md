@@ -58,6 +58,9 @@ The <code>listing</code> object has the following attributes:
       <li>
         <a href="#updated_at">listing.updated_at</a>
       </li>
+      <li>
+        <a href="#multilinguals">listing.multilinguals</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -365,3 +368,7 @@ Returns [facebook_page object]({{ '/objects/facebook_page' | prepend: site.baseu
 <h2 class="tags" id="twitter_account">listing.twitter_account</h2>
 
 Returns [twitter_account object]({{ '/objects/twitter_account' | prepend: site.baseurl }}) of a listing. A `listing` has one `twitter_account` object. [*Optional*]
+
+<h2 class="tags" id="multilinguals">listing.multilinguals</h2>
+
+Returns [multilinguals object]({{ '/objects/multilinguals' | prepend: site.baseurl }}) of a listing. A `listing` has many `multilinguals` object. [*Optional*]
