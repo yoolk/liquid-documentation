@@ -62,8 +62,8 @@ Returns [template]({{ '/objects/template' | prepend: site.baseurl }}) object whi
 
 <h2 class="tags" id="cover_photos">instant_website.cover_photos</h2>
 
-Returns [cover photos]({{ '/objects/cover_photos' | prepend: site.baseurl }}) object which are cover photos of a listing. [*Optional*]
+Returns [cover photos]({{ '/objects/cover_photo' | prepend: site.baseurl }}) object which are cover photos of a listing. [*Optional*]
 
 <h2 class="tags" id="domains">instant_website.domains</h2>
 
-Returns [domains]({{ '/objects/domains' | prepend: site.baseurl }}) object which are domains of a listing. [*Optional*]
+Returns [domains]({{ '/objects/domain' | prepend: site.baseurl }}) object which are domains of a listing. [*Optional*]

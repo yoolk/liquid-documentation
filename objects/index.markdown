@@ -21,5 +21,4 @@ To output an object's attribute on the page, wrap them in {% raw %}<code>{{</cod
 </div>
 
 <h2 id="global-objects" class="tags">Global Object</h2>
-<a href="{{ '/objects/listing/' | prepend: site.baseurl }}">Listing</a>
-can be used and accessed from **any file** in your theme, and are defined as **global object**, or global variable. It's the **only one** global object.
+**Global Object** can be used and accessed from **any file** in your theme, and are defined as **global objects**, or global variables. They are [listing]({{ '/objects/listing/' | prepend: site.baseurl }}), [request]({{ '/objects/request/' | prepend: site.baseurl }}), [current_account]({{ '/objects/account/' | prepend: site.baseurl }}), [current_domain]({{ '/objects/domain/' | prepend: site.baseurl }}), and [current_template]({{ '/objects/template/' | prepend: site.baseurl }}).

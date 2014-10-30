@@ -5,25 +5,26 @@
 
 <h2 class="section-title">request</h2>
 
-The <code>request</code> object has the following attributes:
+The <code>request</code> object contains a lot of useful information about the request coming in from the client. It has the following attributes:
 
 <div class="panel">
   <div class="panel-body">
     <ul>
-      <li>request.root_path</li>
-      <li>request.office_path</li>
-      <li>request.galleries_path</li>
-      <li>request.people_path</li>
-      <li>request.brochures_path</li>
-      <li>request.map_path</li>
-      <li>request.products_path</li>
-      <li>request.services_path</li>
-      <li>request.menu_path</li>
-      <li>request.announcements_path</li>
-      <li>request.about_us_path</li>
-      <li>request.contact_us_path</li>
-      <li>request.reservation_path</li>
-      <li>request.feedback_path</li>
+      <li>request.root_url</li>
+      <li>request.office_url</li>
+      <li>request.galleries_url</li>
+      <li>request.people_url</li>
+      <li>request.brochures_url</li>
+      <li>request.map_url</li>
+      <li>request.products_url</li>
+      <li>request.services_url</li>
+      <li>request.menu_url</li>
+      <li>request.announcements_url</li>
+      <li>request.about_us_url</li>
+      <li>request.contact_us_url</li>
+      <li>request.reservation_url</li>
+      <li>request.feedback_url</li>
+      <li>request.preview_mode?</li>
     </ul>
   </div>
 </div>

@@ -4,7 +4,7 @@ title: Types - Basics - Yoolk Instant Website Themes
 ---
 <h2 class="section-title">Types</h2>
 
-Liquid objects can return one of six types: String, Number, Boolean, Nil, Array, or EmptyDrop. Liquid variables can be initialized by using the assign or capture tags.
+Liquid objects can return one of six types: String, Number, Boolean, Nil, or Array. Liquid variables can be initialized by using the assign or capture tags.
 
 <div class="panel">
   <div class="panel-body">
