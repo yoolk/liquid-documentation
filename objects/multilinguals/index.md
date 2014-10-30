@@ -5,7 +5,7 @@
 
 <h2 class="section-title">Multilingual</h2>
 
-The <code>multilingual</code> has attributes the same as [<code>listing</code>]({{ '/objects/listing' | prepend: site.baseurl }}) object:
+The <code>multilingual</code> object has attributes the same as [<code>listing</code>]({{ '/objects/listing' | prepend: site.baseurl }}) object:
 
 
 <div class="panel">
