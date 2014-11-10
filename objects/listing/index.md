@@ -53,13 +53,13 @@ The <code>listing</code> object has the following attributes:
         <a href="#twitter_url">listing.twitter_url</a>
       </li>
       <li>
+        <a href="#multilinguals">listing.multilinguals</a>
+      </li>
+      <li>
         <a href="#created_at">listing.created_at</a>
       </li>
       <li>
         <a href="#updated_at">listing.updated_at</a>
-      </li>
-      <li>
-        <a href="#multilinguals">listing.multilinguals</a>
       </li>
     </ul>
   </div>
@@ -158,7 +158,7 @@ The <code>listing</code> object has the following associations:
         <a href="#product_catalog_pdf">listing.product_catalog_pdf</a>
       </li>
       <li>
-        <a href="#v">listing.portal</a>
+        <a href="#portal">listing.portal</a>
       </li>
       <li>
         <a href="#instant_website">listing.instant_website</a>
@@ -371,4 +371,35 @@ Returns [twitter_account object]({{ '/objects/twitter_account' | prepend: site.b
 
 <h2 class="tags" id="multilinguals">listing.multilinguals</h2>
 
-Returns [multilinguals object]({{ '/objects/multilinguals' | prepend: site.baseurl }}) of a listing. A `listing` has many `multilinguals` object. [*Optional*]
+Returns an array of [listings object]({{ '/objects/listing' | prepend: site.baseurl }}) which are in other portals and its data is in other languages. [*Optional*]
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+<ul>
+  {% for multilingual in listing.multilinguals %}
+    <li>
+      {{ multilingual.language.name }}
+    </li>
+  {% endfor %}
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<ul>
+  <li>Khmer</li>
+  <li>English</li>
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
