@@ -9,6 +9,16 @@ Yoolk liquid themes are made up of Liquid template files, each serving their own
 
 <h2 class="tags">Theme Structure</h2>
 
+To generate theme inside your app:
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+$ rails g instant_website:theme theme_name
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
 A Yoolk liquid theme consists of three folders: __assets__, __locales__ and __views__.
 
 <h5 class="sub-section-title">assets</h5>
@@ -135,7 +145,7 @@ These two manifest files are included inside your layout by default. It's best a
 
 NOTE: You must namespace your assets directory so that it won't conflict with assets in other themes.
 
-<h2 class="tags">JS/CSS Libraries</h2>
+<h2 class="tags">JavaScript/StyleSheet Libraries</h2>
 
 To ease the development, **Yoolk InstantWebsite** added [assets-rails](https://github.com/yoolk/assets-rails) as dependency so that you can add any javascript and stylesheet libraries with versioning. Please, feel free to ask us to add more libraries.
 
@@ -161,4 +171,43 @@ To ease the development, **Yoolk InstantWebsite** added [assets-rails](https://g
   </div>
 </div>
 
-This allows you to require javascript and stylesheet libraries with the exact version so that your frontend stuffs will continue to work as times passed by.
+This allows you to require javascript and stylesheet libraries with the exact version so that your frontend stuffs will continue to work as times passed by. The good thing about this gem is that you don't have to copy those libries into your theme directories.
+
+<h2 class="tags">Multiple Styles</h2>
+
+It's possible to build a theme which have multiple __styles__. A __style__ could be different from each other by __css__ styling and __html__ markup. Below is the screenshot from __sample__ theme: __gray__ and __blue__ style.
+
+<h5 class="sub-section-title">gray</h5>
+![gray style]({{ '/images/theme-templates/style-gray.png' | prepend: site.baseurl }})
+
+<h5 class="sub-section-title">blue</h5>
+![blue style]({{ '/images/theme-templates/style-blue.png' | prepend: site.baseurl }})
+
+In order to support multiple styles, you need to do two easy steps:
+
+1-. Go to your theme layout file, update to use `request.theme_style_url` instead of hardcoding the css file. As you would guessed, we just need to switch the css file only. You could do the same thing for javascript files.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>app/themes/sample/views/layouts/sample.liquid</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ request.theme_style_url | stylesheet_link_tag }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+2-. Let's you have two styles: __gray__ and __blue__. You need to implement two manifest files: `all_gray.scss` and `all_blue.scss`. I'll take the __sample__ theme as an example, here.
+
+Be sure to check out these scss files inside the sample theme:
+
+* [app/themes/sample/assets/stylesheets/sample/all_gray.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/all_gray.scss)
+* [app/themes/sample/assets/stylesheets/sample/all_blue.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/all_blue.scss)
+* [app/themes/sample/assets/stylesheets/sample/shared/variables_gray.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/shared/variables_gray.scss)
+* [app/themes/sample/assets/stylesheets/sample/shared/variables_blue.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/shared/variables_blue.scss)
+* [app/themes/sample/assets/stylesheets/sample/sample.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/sample.scss)
+
+As you could see, the differences between is just only the __sass variables__. Anyway, you could do as you wish. Inside your liquid templates, you could access to the current `theme_name` and `style_name` inside `request` object so that you could make your liquid templates a bit dynamic; for example, you don't want to show cover photos in a specific `style`.
+
+__Note__: You should delete __all.scss__ file from your theme directory, as it's useless now.

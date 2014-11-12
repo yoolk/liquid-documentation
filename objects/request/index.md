@@ -25,6 +25,10 @@ The <code>request</code> object contains a lot of useful information about the r
       <li>request.reservation_url</li>
       <li>request.feedback_url</li>
       <li>request.preview_mode?</li>
+      <li>request.host</li>
+      <li>request.theme_name</li>
+      <li>request.theme_style_url</li>
+      <li>request.style_name</li>
     </ul>
   </div>
 </div>
