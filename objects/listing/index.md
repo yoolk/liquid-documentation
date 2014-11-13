@@ -98,6 +98,9 @@ The <code>listing</code> object has the following associations:
         <a href="#listing_categories">listing.listing_categories</a>
       </li>
       <li>
+        <a href="#short_descriptions">listing.short_descriptions</a>
+      </li>
+      <li>
         <a href="#catalog_items">listing.catalog_items</a>
       </li>
       <li>
@@ -271,7 +274,11 @@ Returns an array of [extra_communication objects]({{ '/objects/extra_communicati
 
 <h2 class="tags" id="listing_categories">listing.listing_categories</h2>
 
-Returns an array of [listing_category objects]({{ '/objects/listing_category' | prepend: site.baseurl }}) of a listing. A `listing` has many `listing_category` objects. [*Optional*]
+Returns an array of [listing_category objects]({{ '/objects/l_category' | prepend: site.baseurl }}) of a listing. A `listing` has many `listing_category` objects. [*Optional*]
+
+<h2 class="tags" id="short_descriptions">listing.short_descriptions</h2>
+
+Returns an array of [short_description objects]({{ '/objects/short_description' | prepend: site.baseurl }}) of a listing. A `listing` has many `short_description` objects. [*Optional*]
 
 <h2 class="tags" id="catalog_items">listing.catalog_items</h2>
 
