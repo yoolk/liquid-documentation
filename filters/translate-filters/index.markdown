@@ -9,6 +9,8 @@ Apply locale translation for the given `key`. `key` must be scoped with your the
 
 Be sure to check out the [sample theme](https://github.com/yoolk/yoolk_instant_website_sandbox/tree/master/app/themes/sample).
 
+**Locales Codes** varies based on [ISO 639](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes#Partial_ISO_639_table){:target="_blank"} standard.
+
 <div class="panel">
   <div class="panel-body">
 {% highlight yaml%}{% raw %}
