@@ -30,6 +30,9 @@ Theme Tags have various functions, including:
         <a href="#draft-stamp">draft_stamp</a>
       </li>
       <li>
+        <a href="#breadcrumb">breadcrumb</a>
+      </li>
+      <li>
         <a href="#content_for">content_for</a>
       </li>
       <li>
@@ -303,6 +306,43 @@ Allows output of draft stamp image on the web document. It outputs when the curr
 # => <img alt="New draft" src="http://s-iw-frontend-statics.s3.amazonaws.com/assets/sample/draft-5c840e93b5a77741e7f3e5c651b1c802.png" style="position: absolute; top: 0; right: 0; z-index: 9999;" />
 {% endraw %}{% endhighlight %}
 
+  </div>
+</div>
+
+<h2 class="tags" id="breadcrumb">breadcrumb</h2>
+
+Add breadcrumb element to your theme. It renders as `ol` tag with different `li` tags depending on the current page.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{% breadcrumb %}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<!-- On the product category page -->
+<ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/products">Products</a></li><li>Other Cars</li></ol>
+<!-- On the product detail page -->
+<ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/products">Products</a></li><li><a href="/products/112-other-cars">Other Cars</a></li><li>Range Rover</li></ol>
+<!-- On the service category page -->
+<ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/services">Services</a></li><li>Office Rental Services</li></ol>
+<!-- On the service detail page -->
+<ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/services">Services</a></li><li><a href="/services/kh1-office-rental-services">Office Rental Services</a></li><li>Rooftop</li></ol>
+<!-- On the food category page -->
+<ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/menu">Menu</a></li><li>Ice-cream</li></ol>
+<!-- On the food detail page -->
+<ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/menu">Menu</a></li><li><a href="/menu/40-ice-cream">Ice-cream</a></li><li>Florida Strawberry Ice Cream</li></ol>
+{% endraw %}{% endhighlight %}
   </div>
 </div>
 
