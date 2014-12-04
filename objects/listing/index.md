@@ -152,6 +152,12 @@ The <code>listing</code> object has the following associations:
         <a href="#alias_names">listing.alias_names</a>
       </li>
       <li>
+        <a href="#business_hours">listing.business_hours</a>
+      </li>
+      <li>
+        <a href="#summary_business_hours">listing.summary_business_hours</a>
+      </li>
+      <li>
         <a href="#menu_pdf">listing.menu_pdf</a>
       </li>
       <li>
@@ -347,6 +353,136 @@ Returns an array of [keyphrases objects]({{ '/objects/keyphrases' | prepend: sit
 <h2 class="tags" id="alias_names">listing.alias_names</h2>
 
 Returns an array of [alias_names object]({{ '/objects/alias_names' | prepend: site.baseurl }}) of a listing. A `listing` has many `alias_names` object. [*Optional*]
+
+<h2 class="tags" id="business_hours">listing.business_hours</h2>
+
+Returns an array of [business_hour object]({{ '/objects/business_hour' | prepend: site.baseurl }}) of a listing. A `listing` has many `business_hours` object. [*Optional*]
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+<table>
+  <tr>
+    {% for day_name in i18n.day_names %}
+      {% assign current = 'now' | date: '%A' %}
+      {% if current == day_name %}
+        <td class="active">{{ day_name }}</td>
+      {% else %}
+        <td>{{ day_name }}</td>
+      {% endif %}
+    {% endfor %}
+  </tr>
+  <tr>
+    {% assign business_hours = listing.business_hours | group_by: 'day_name' %}
+    {% for group_by in business_hours %}
+      <td>
+        {% for business_hour in group_by[1] %}
+          {% if business_hour.closed? %}
+            Closed
+          {% elsif business_hour.full_day? %}
+            24h
+          {% else %}
+            {{ business_hour | open_closed: '%I:%M %p-%I:%M %p' }}<br>
+          {% endif %}
+        {% endfor %}
+      </td>
+    {% endfor %}
+  </tr>
+</table>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<table>
+  <tbody>
+    <tr>
+      <td>Sunday</td>
+      <td>Monday</td>
+      <td>Tuesday</td>
+      <td>Wednesday</td>
+      <td class="active">Thursday</td>
+      <td>Friday</td>
+      <td>Saturday</td>
+    </tr>
+    <tr>
+      <td>
+        Closed
+      </td>
+      <td>
+        08:00 AM-12:00 PM<br>02:00 PM-05:00 PM
+      </td>
+      <td>
+        08:00 AM-12:00 PM<br>02:00 PM-05:00 PM
+      </td>
+      <td>
+        08:00 AM-12:00 PM<br>02:00 PM-05:00 PM
+      </td>
+      <td>
+        08:00 AM-12:00 PM<br>02:00 PM-05:00 PM
+      </td>
+      <td>
+        08:00 AM-12:00 PM<br>02:00 PM-05:00 PM
+      </td>
+      <td>
+        Closed
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="summary_business_hours">listing.summary_business_hours</h2>
+
+Returns an array of summary [business_hour object]({{ '/objects/business_hour' | prepend: site.baseurl }}) of a listing. Basically, it's grouped by `business_hour.open` and `business_hour.closed`, and it excludes the closed `business_hour`. [*Optional*]
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+  <ul>
+    {% for business_hour in listing.summary_business_hours %}
+      <li>
+        <span>{{ business_hour.abbr_day_name }}</span>
+        <span>{{ business_hour | open_closed: '%I:%M %p-%I:%M %p' }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<ul>
+  <li>
+    <span>Mon-Fri</span>
+    <span>08:00 AM-12:00 PM</span>
+  </li>
+  <li>
+    <span>Mon-Fri</span>
+    <span>02:00 PM-05:00 PM</span>
+  </li>
+</ul>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 <h2 class="tags" id="menu_pdf">listing.menu_pdf</h2>
 

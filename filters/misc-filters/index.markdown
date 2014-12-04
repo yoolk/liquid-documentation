@@ -27,6 +27,9 @@ Provides miscellaneous filters.
       <li>
         <a href="#google_static_map_url">google_static_map_url</a>
       </li>
+      <li>
+        <a href="#open_closed">open_closed</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -552,6 +555,31 @@ Generate google static map url for a <code>listing</code> object with the provid
   <div class="panel-body">
 {% highlight django %}{% raw %}
 https://maps.googleapis.com/maps/api/staticmap?center=40.714728%2C-73.998672&maptype=roadmap&size=300x200&zoom=13&markers=color%3Ared%7C40.714728%2C-73.998672
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h5 class="sub-section-title" id="open_closed">open_closed</h5>
+Format the display of the opening and closed hour of the `business_hour` object.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ business_hour | open_closed: '%I:%M %p-%I:%M %p' }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+08:00 AM-12:00 PM
 {% endraw %}{% endhighlight %}
   </div>
 </div>
