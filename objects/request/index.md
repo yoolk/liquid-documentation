@@ -44,6 +44,7 @@ The <code>request</code> object contains a lot of useful information about the r
       <li>request.theme_style_url</li>
       <li>request.style_name</li>
       <li>request.preview_mode?</li>
+      <li>request.js_class_name</li>
     </ul>
   </div>
 </div>
