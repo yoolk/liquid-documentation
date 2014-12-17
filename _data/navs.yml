@@ -84,9 +84,9 @@
     - name: template
       href: "/template"
     - name: cover photos
-      href: "/cover_photos"
+      href: "/cover_photo"
     - name: domains
-      href: "/domains"
+      href: "/domain"
     - name: facebook_page
       href: "/facebook_page"
     - name: twitter_account
