@@ -204,8 +204,8 @@ Be sure to check out these scss files inside the sample theme:
 
 * [app/themes/sample/assets/stylesheets/sample/all_gray.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/all_gray.scss)
 * [app/themes/sample/assets/stylesheets/sample/all_blue.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/all_blue.scss)
-* [app/themes/sample/assets/stylesheets/sample/shared/variables_gray.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/shared/variables_gray.scss)
-* [app/themes/sample/assets/stylesheets/sample/shared/variables_blue.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/shared/variables_blue.scss)
+* [app/themes/sample/assets/stylesheets/sample/shared/variables_gray.css.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/shared/variables_gray.css.scss)
+* [app/themes/sample/assets/stylesheets/sample/shared/variables_blue.css.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/shared/variables_blue.css.scss)
 * [app/themes/sample/assets/stylesheets/sample/sample.scss](https://github.com/yoolk/yoolk_instant_website_sandbox/blob/master/app/themes/sample/assets/stylesheets/sample/sample.scss)
 
 As you could see, the differences between is just only the __sass variables__. Anyway, you could do as you wish. Inside your liquid templates, you could access to the current `theme_name` and `style_name` inside `request` object so that you could make your liquid templates a bit dynamic; for example, you don't want to show cover photos in a specific `style`.
