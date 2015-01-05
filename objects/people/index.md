@@ -198,14 +198,14 @@ Is first line: true
   </div>
 </div>
 
-<h2 class="tags" id="is_male">communication.male?</h2>
+<h2 class="tags" id="is_male">person.male?</h2>
 
 Returns true only if person gender is `male`.
 
-<h2 class="tags" id="is_female">communication.female?</h2>
+<h2 class="tags" id="is_female">person.female?</h2>
 
 Returns true only if person gender is `female`.
 
-<h2 class="tags" id="full_name">communication.full_name</h2>
+<h2 class="tags" id="full_name">person.full_name</h2>
 
 Returns concatenate between first name and last name separate by a single space.
