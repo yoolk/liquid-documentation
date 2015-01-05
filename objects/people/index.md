@@ -49,6 +49,15 @@ The <code>person</code> object has the following attributes:
       <li>
         <a href="#communications">person.communications</a>
       </li>
+      <li>
+        <a href="#is_male">person.male?</a>
+      </li>
+      <li>
+        <a href="#is_female">person.female?</a>
+      </li>
+      <li>
+        <a href="#full_name">person.full_name</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -188,3 +197,15 @@ Is first line: true
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+<h2 class="tags" id="is_male">person.male?</h2>
+
+Returns true only if person gender is `male`.
+
+<h2 class="tags" id="is_female">person.female?</h2>
+
+Returns true only if person gender is `female`.
+
+<h2 class="tags" id="full_name">person.full_name</h2>
+
+Returns concatenate between first name and last name separate by a single space.
