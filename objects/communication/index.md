@@ -31,6 +31,27 @@ The <code>communication</code> object has the following attributes:
       <li>
         <a href="#updated_at">communication.updated_at</a>
       </li>
+      <li>
+        <a href="#is_email">communication.email?</a>
+      </li>
+      <li>
+        <a href="#is_telephone">communication.telephone?</a>
+      </li>
+      <li>
+        <a href="#is_website">communication.website?</a>
+      </li>
+      <li>
+        <a href="#is_fax">communication.fax?</a>
+      </li>
+      <li>
+        <a href="#is_facebook">communication.facebook?</a>
+      </li>
+      <li>
+        <a href="#is_twitter">communication.twitter?</a>
+      </li>
+      <li>
+        <a href="#is_address">communication.address?</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -62,3 +83,31 @@ Returns the timestamp of when the communication was created. Use the [date]({{ '
 <h2 class="tags" id="updated_at">communication.updated_at</h2>
 
 Returns the timestamp of when the communication was last updated. Use the [date]({{ '#' }}) filter to format the timestamp.
+
+<h2 class="tags" id="is_email">communication.email?</h2>
+
+Returns true only if communication type is `e-mail`.
+
+<h2 class="tags" id="is_telephone">communication.telephone?</h2>
+
+Returns true only if communication type is one of these <code>['tel', 'tel & fax', 'fax', 'mobile', 'mobile phone', 'toll free']</code> .
+
+<h2 class="tags" id="is_website">communication.website?</h2>
+
+Returns true only if communication type is `website`.
+
+<h2 class="tags" id="is_fax">communication.fax?</h2>
+
+Returns true only if communication type is one of these <code>['tel & fax', 'fax']</code>.
+
+<h2 class="tags" id="is_facebook">communication.facebook?</h2>
+
+Returns true only if communication type is `facebook`.
+
+<h2 class="tags" id="is_twitter">communication.twitter?</h2>
+
+Returns true only if communication type is `twitter`.
+
+<h2 class="tags" id="is_address">communication.address?</h2>
+
+Returns true only if communication type is `address`.
