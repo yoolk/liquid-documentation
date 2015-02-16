@@ -60,6 +60,15 @@ URL filters output links to assets. They are also used to create links for filte
       <li>
         <a href="#link_to_sign_in">link_to_sign_in</a>
       </li>
+      <li>
+        <a href="#link_to_links">link_to_links</a>
+      </li>
+      <li>
+        <a href="#link_to_videos">link_to_videos</a>
+      </li>
+      <li>
+        <a href="#link_to_attachments">link_to_attachments</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -336,3 +345,50 @@ Generate HTML anchor tag for sign in path.
 {{ 'sign in' | link_to_sign_in }}
 # => <a href="/office">sign in</a>
 {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="link_to_links">link_to_links</h2>
+Generate HTML anchor tag for links path, optional <code>options</code> is provided
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+{{ 'links' | link_to_links }}
+# => <a href="/links">links</a>
+
+{{ 'links' | link_to_links: class: "class_links", id: "id_links" }}
+# => <a class="class_links" href="/links" id="id_links">links</a>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="link_to_videos">link_to_videos</h2>
+Generate HTML anchor tag for videos path, optional <code>options</code> is provided
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+{{ 'videos' | link_to_videos }}
+# => <a href="/videos">videos</a>
+
+{{ 'videos' | link_to_videos: class: "class_videos", id: "id_videos" }}
+# => <a class="class_videos" href="/videos" id="id_videos">videos</a>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="link_to_attachments">link_to_attachments</h2>
+Generate HTML anchor tag for attachments path, optional <code>options</code> is provided
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+{{ 'attachments' | link_to_attachments }}
+# => <a href="/attachments">attachments</a>
+
+{{ 'attachments' | link_to_attachments: class: "class_attachments", id: "id_attachments" }}
+# => <a class="class_attachments" href="/attachments" id="id_attachments">attachments</a>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
