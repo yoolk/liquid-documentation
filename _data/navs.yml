@@ -101,6 +101,10 @@
       href: "/account"
     - name: request
       href: "/request"
+    - name: links
+      href: "/links"
+    - name: attachment
+      href: "/attachments"
 
 - title: Filters
   href: '/filters'
