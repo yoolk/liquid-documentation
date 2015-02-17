@@ -178,6 +178,12 @@ The <code>listing</code> object has the following associations:
       <li>
         <a href="#twitter_account">listing.twitter_account</a>
       </li>
+      <li>
+        <a href="#links">listing.links</a>
+      </li>
+      <li>
+        <a href="#attachments">listing.attachments</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -546,3 +552,11 @@ Returns an array of [listings object]({{ '/objects/listing' | prepend: site.base
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+<h2 class="tags" id="links">listing.links</h2>
+
+Returns [links object]({{ '/objects/links' | prepend: site.baseurl }}) of a listing. A `listing` has many `links` object. [*Optional*]
+
+<h2 class="tags" id="attachments">listing.attachments</h2>
+
+Returns [attachments object]({{ '/objects/attachments' | prepend: site.baseurl }}) of a listing. A `listing` has many `attachments` object. [*Optional*]
