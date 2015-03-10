@@ -5,7 +5,9 @@
 
 <h2 class="section-title">layouts/theme-name.liquid</h2>
 
-<h3>{% raw %}{{ content_for_header }}{% endraw %} and {% raw %}{{ content_for_layout }}{% endraw %}</h3>
+
+### **{% raw %}{{ content_for_header }}{% endraw %} and {% raw %}{{ content_for_layout }}{% endraw %}**
+
 There are two Liquid objects that are required in theme-name.liquid:
 
 * The _{% raw %}{{ content_for_header }}{% endraw %}_ variable must be placed between the opening and closing <head> tag. It inserts the necessary Yoolk Liquid scripts into the <head> which includes scripts for Google Analytics, SEO meta tags, CSRF meta tag, and more.
