@@ -17,6 +17,9 @@ The <code>product</code> object has the following attributes:
         <a href="#name">product.name</a>
       </li>
       <li>
+        <a href="#price">product.price</a>
+      </li>
+      <li>
         <a href="#description">product.description</a>
       </li>
       <li>

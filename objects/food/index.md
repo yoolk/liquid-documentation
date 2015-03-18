@@ -17,6 +17,9 @@ The <code>food</code> object has the following attributes:
         <a href="#name">food.name</a>
       </li>
       <li>
+        <a href="#price">food.price</a>
+      </li>
+      <li>
         <a href="#description">food.description</a>
       </li>
       <li>

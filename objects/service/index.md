@@ -17,6 +17,9 @@ The <code>service</code> object has the following attributes:
         <a href="#name">service.name</a>
       </li>
       <li>
+        <a href="#price">service.price</a>
+      </li>
+      <li>
         <a href="#description">service.description</a>
       </li>
       <li>
