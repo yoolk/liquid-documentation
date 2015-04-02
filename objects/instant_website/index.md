@@ -73,4 +73,4 @@ Returns [domains]({{ '/objects/domain' | prepend: site.baseurl }}) object which 
 
 <h2 class="tags" id="pages">instant_website.pages</h2>
 
-Returns [pages]({{ '/objects/page' | prepend: site.baseurl }}) object which are website pages of a listing. [*Optional*]
+Returns [pages]({{ '/objects/page' | prepend: site.baseurl }}) object which are website pages of a listing. These objects are the ordered menu navigation which the user can customized the label. By default, it's ordered by the previewed template or its template. [*Optional*]
