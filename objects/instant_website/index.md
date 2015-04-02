@@ -40,6 +40,9 @@ The <code>instant_website</code> object has the following attributes:
       <li>
         <a href="#domains">instant_website.domains</a>
       </li>
+      <li>
+        <a href="#pages">instant_website.pages</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -67,3 +70,7 @@ Returns [cover photos]({{ '/objects/cover_photo' | prepend: site.baseurl }}) obj
 <h2 class="tags" id="domains">instant_website.domains</h2>
 
 Returns [domains]({{ '/objects/domain' | prepend: site.baseurl }}) object which are domains of a listing. [*Optional*]
+
+<h2 class="tags" id="pages">instant_website.pages</h2>
+
+Returns [pages]({{ '/objects/page' | prepend: site.baseurl }}) object which are website pages of a listing. These objects are the ordered menu navigation which the user can customized the label. By default, it's ordered by the previewed template or its template. [*Optional*]

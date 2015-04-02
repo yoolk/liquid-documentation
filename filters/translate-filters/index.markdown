@@ -9,7 +9,7 @@ Apply locale translation for the given `key`. `key` must be scoped with your the
 
 Be sure to check out the [sample theme](https://github.com/yoolk/yoolk_instant_website_sandbox/tree/master/app/themes/sample).
 
-Valid **locale keys** are en, af, ar, az, bg, bn, bs, ca, cs, cy, da, de-AT, de-CH, de, el, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, eo, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-MX, es-PA, es-PE, es-US, es-VE, es, et, eu, fa, fi, fr-CA, fr-CH, fr, gl, he, hi-IN, hi, hr, hu, id, is, it-CH, it, ja, km, kn, ko, lo, lt, lv, mk, mn, ms, nb, ne, nl, nn, or, pl, pt-BR, pt, rm, ro, ru, sk, sl, sr, sv, sw, ta, th, tl, tr, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE.
+Valid **locale keys** are: en, af, ar, az, bg, bn, bs, ca, cs, cy, da, de-AT, de-CH, de, el, en-AU, en-CA, en-GB, en-IE, en-IN, en-NZ, en-US, en-ZA, eo, es-419, es-AR, es-CL, es-CO, es-CR, es-EC, es-MX, es-PA, es-PE, es-US, es-VE, es, et, eu, fa, fi, fr-CA, fr-CH, fr, gl, he, hi-IN, hi, hr, hu, id, is, it-CH, it, ja, km, kn, ko, lo, lt, lv, mk, mn, ms, nb, ne, nl, nn, or, pl, pt-BR, pt, rm, ro, ru, sk, sl, sr, sv, sw, ta, th, tl, tr, uk, ur, uz, vi, wo, zh-CN, zh-HK, zh-TW, zh-YUE.
 
 <div class="panel">
   <div class="panel-body">

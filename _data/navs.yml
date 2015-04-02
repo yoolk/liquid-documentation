@@ -105,6 +105,8 @@
       href: "/links"
     - name: attachment
       href: "/attachments"
+    - name: page
+      href: "/page"
 
 - title: Filters
   href: '/filters'
