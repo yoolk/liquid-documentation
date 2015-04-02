@@ -29,10 +29,10 @@ The <code>food</code> object has the following attributes:
         <a href="#properties">food.properties</a>
       </li>
       <li>
-        <a href="#cover_photo">food.cover_photo</a>
+        <a href="#photos">food.photos</a>
       </li>
       <li>
-        <a href="#photos">food.photos</a>
+        <a href="#cover_photo">food.cover_photo</a>
       </li>
       <li>
         <a href="#created_at">food.created_at</a>
@@ -137,6 +137,31 @@ Returns an array of the food's photos. Use the [attachment_url]({{ '/filters/url
     <td>994 x auto</td>
   </tr>
 </table>
+
+<h2 class="tags" id="cover_photo">food.cover_photo</h2>
+Returns the first photo of a food.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ food.cover_photo | attachment_url: 'medium' | image_tag }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<img src="http://s-yoolk-images0.yoolk.com/kh/menu/foods/medium/1406022689/1145?1406022689" />
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 <h2 class="tags" id="url">food.url</h2>
 

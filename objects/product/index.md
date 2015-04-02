@@ -35,6 +35,9 @@ The <code>product</code> object has the following attributes:
         <a href="#photos">product.photos</a>
       </li>
       <li>
+        <a href="#cover_photo">product.cover_photo</a>
+      </li>
+      <li>
         <a href="#created_at">product.created_at</a>
       </li>
       <li>
@@ -137,6 +140,31 @@ Returns an array of the product's photos. Use the [attachment_url]({{ '/filters/
     <td>994 x auto</td>
   </tr>
 </table>
+
+<h2 class="tags" id="cover_photo">product.cover_photo</h2>
+Returns the first photo of a product.
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight django %}{% raw %}
+{{ product.cover_photo | attachment_url: 'medium' | image_tag }}
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Output</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<img src="http://s-yoolk-images0.yoolk.com/kh/product_catalog/product_images/medium/1406022689/1145?1406022689" />
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 <h2 class="tags" id="url">product.url</h2>
 
