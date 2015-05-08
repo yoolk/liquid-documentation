@@ -130,6 +130,10 @@
 - title: Theme Templates
   href: '/theme-templates'
   subcategory:
+    - name: Requirements
+      href: "/requirements"
+    - name: layouts/theme_name.liquid
+      href: "/layouts-theme-name"
     - name: home/index.liquid
       href: "/home-index"
     - name: about_us/index.liquid
@@ -146,8 +150,6 @@
       href: "/feedback-index"
     - name: galleries/index.liquid
       href: "/galleries-index"
-    - name: layouts/theme_name.liquid
-      href: "/layouts-theme-name"
     - name: map/index.liquid
       href: "/map-index"
     - name: menu/categories/show.liquid

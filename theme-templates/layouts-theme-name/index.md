@@ -18,3 +18,18 @@ There are two Liquid objects that are required in theme-name.liquid:
 The `layouts/<theme-name>.liquid` can be thought of as the master template; all other templates are rendered inside of `layouts/<theme-name>.liquid`. Any elements that are repeated in a theme (ex: site navigations, header, footer, etc.) should be placed inside `layouts/<theme-name>.liquid`.
 
 ![layouts]({{ '/images/theme-templates/contact-us-index.png' | prepend: site.baseurl }})
+
+<h2 class="section-title">Requirements for the Theme</h2>
+
+If you're looking to submit your theme to the Yoolk Theme, the **layouts/theme-name.liquid** template of your theme must meet the following conditions:
+
+* Logo or listing.name is in the header and links to the homepage
+* Main navigation is present and uses the default "Main Menu" link list
+* Main navigation has active and hover styles defined as necessary. Focus states are required
+* Use proper [breadcrumb]({{ '/tags/theme-tags/#breadcrumb' | prepend: site.baseurl }})
+* Links to log in for website owner are present
+  * If website owner is logged in, switch the link to point to the my office
+* Language dropdown is present if its data is in other languages.
+* Includes follow us icons in the header or footer
+* Must dynamically output proper SEO code for title, meta description, duplicate content, etc.
+* The doctype at the top of the layouts/theme-name.liquid file, specifying whether it's transitional or strict, (i.e.<!DOCTYPE html>)

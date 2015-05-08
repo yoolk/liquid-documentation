@@ -31,6 +31,7 @@ The locales folder provides an easy-to-use and extensible framework for translat
 <h5 class="sub-section-title">views</h5>
 The templates folder contains all other Liquid templates, including:
 
+* [layouts/theme_name.liquid]({{ '/theme-templates/layouts-theme-name' | prepend: site.baseurl }})
 * [home/index.liquid]({{ '/theme-templates/home-index' | prepend: site.baseurl }})
 * [about_us/index.liquid]({{ '/theme-templates/about-us-index' | prepend: site.baseurl }})
 * announcements/
@@ -42,7 +43,6 @@ The templates folder contains all other Liquid templates, including:
 * galleries/
   * [index.liquid]({{ '/theme-templates/galleries-index' | prepend: site.baseurl }})
   * [show.liquid]({{ '/theme-templates/galleries-show' | prepend: site.baseurl }})
-* [layouts/theme_name.liquid]({{ '/theme-templates/layouts-theme-name' | prepend: site.baseurl }})
 * [map/index.liquid]({{ '/theme-templates/map-index' | prepend: site.baseurl }})
 * menu/
   * [categories/show.liquid]({{ '/theme-templates/menu-categories-show' | prepend: site.baseurl }})
