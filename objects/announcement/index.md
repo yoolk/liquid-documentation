@@ -3,7 +3,7 @@
   title: announcement - Objects - Yoolk Instant Website Themes
 ---
 
-<h2 class="section-title">Catalog Item</h2>
+<h2 class="section-title">Announcement</h2>
 
 The <code>announcement</code> object has the following attributes:
 
