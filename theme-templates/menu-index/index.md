@@ -11,7 +11,7 @@ The `menu/index.liquid` template is used to render the `foods` of current listin
 
 <h2 class="section-title">Template Considerations</h2>
 
-###_Filtering by tags_
+###_Filtering by categories_
 
 You can use food categories to filter a collection into smaller subsets of foods. For example, if you are in a collection and want to only show foods with the category "ice-cream", you can do so by appending the category's handle to the end of the foods's URL.
 

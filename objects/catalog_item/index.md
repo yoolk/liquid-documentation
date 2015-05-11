@@ -3,7 +3,7 @@
   title: catalog_item - Objects - Yoolk Instant Website Themes
 ---
 
-<h2 class="section-title">Announcement</h2>
+<h2 class="section-title">Catalog Item</h2>
 
 The <code>catalog_item</code> object has the following attributes:
 

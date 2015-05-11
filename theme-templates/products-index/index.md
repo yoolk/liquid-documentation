@@ -11,7 +11,7 @@ The `products/index.liquid` template is used to render the `products` of current
 
 <h2 class="section-title">Template Considerations</h2>
 
-###_Filtering by tags_
+###_Filtering by categories_
 
 You can use product categories to filter a collection into smaller subsets of products. For example, if you are in a collection and want to only show products with the category "cars", you can do so by appending the category's handle to the end of the products's URL.
 

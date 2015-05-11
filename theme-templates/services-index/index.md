@@ -11,7 +11,7 @@ The `services/index.liquid` template is used to render the services of current l
 
 <h2 class="section-title">Template Considerations</h2>
 
-###_Filtering by tags_
+###_Filtering by categories_
 
 You can use serivce categories to filter a collection into smaller subsets of serivces. For example, if you are in a collection and want to only show serivces with the category "car rental", you can do so by appending the category's handle to the end of the serivces's URL.
 

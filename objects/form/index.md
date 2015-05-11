@@ -36,7 +36,7 @@ Returns <code>true</code> if a comment by the user was submitted successfully, o
   </div>
 </div>
 
-<h2 class="tags" id="image">form.errors</h2>
+<h2 class="tags" id="errors">form.errors</h2>
 
 Returns an array of error fields if the form was not submitted successfully. As shown below, the example loops through the error and print out the message on each field at the top of the form.
 

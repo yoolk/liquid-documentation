@@ -22,6 +22,6 @@ If you're looking to submit your theme to the Yoolk Theme, the **menu/foods/show
 * Featured image is prominent
 * Secondary images of food, shown as thumbnails
   * Different image ratios should not break the layout
-  * Enlargeable via Lightbox or zooming
+  * Enlargeable via Lightbox or zooming with **large** style
 * Social buttons for Twitter, Facebook, Pinterest, and Google+
 * Output **image.alt** for all food images
