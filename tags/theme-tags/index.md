@@ -27,6 +27,9 @@ Theme Tags have various functions, including:
         <a href="#form">form</a>
       </li>
       <li>
+        <a href="#google_remarketing_tag">google_remarketing_tag</a>
+      </li>
+      <li>
         <a href="#draft-stamp">draft_stamp</a>
       </li>
       <li>
@@ -287,6 +290,9 @@ Generates a feedback form on the feedback template.
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+{% capture google_remarketing_tag %}{% include tags/google_remarketing_tag.md %}{% endcapture %}
+{{ google_remarketing_tag | markdownify }}
 
 <h2 class="tags" id="draft-stamp">draft_stamp</h2>
 
