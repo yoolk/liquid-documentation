@@ -37,12 +37,14 @@ The templates folder contains all other Liquid templates, including:
 * announcements/
   * [index.liquid]({{ '/theme-templates/announcements-index' | prepend: site.baseurl }})
   * [show.liquid]({{ '/theme-templates/announcements-show' | prepend: site.baseurl }})
+* [attachments/index.liquid]({{ '/theme-templates/attachments-index' | prepend: site.baseurl }})
 * [brochures/index.liquid]({{ '/theme-templates/brochures-index' | prepend: site.baseurl }})
 * [contact_us/index.liquid]({{ '/theme-templates/contact-us-index' | prepend: site.baseurl }})
 * [feedback/index.liquid]({{ '/theme-templates/feedback-index' | prepend: site.baseurl }})
 * galleries/
   * [index.liquid]({{ '/theme-templates/galleries-index' | prepend: site.baseurl }})
   * [show.liquid]({{ '/theme-templates/galleries-show' | prepend: site.baseurl }})
+* [links/index.liquid]({{ '/theme-templates/links-index' | prepend: site.baseurl }})
 * [map/index.liquid]({{ '/theme-templates/map-index' | prepend: site.baseurl }})
 * menu/
   * [categories/show.liquid]({{ '/theme-templates/menu-categories-show' | prepend: site.baseurl }})
@@ -58,6 +60,7 @@ The templates folder contains all other Liquid templates, including:
   * [categories/show.liquid]({{ '/theme-templates/services-categories-show' | prepend: site.baseurl }})
   * [index.liquid]({{ '/theme-templates/services-index' | prepend: site.baseurl }})
   * [show.liquid]({{ '/theme-templates/services-show' | prepend: site.baseurl }})
+* [videos/index.liquid]({{ '/theme-templates/videos-index' | prepend: site.baseurl }})
 
 <h2 class="tags">Asset Pipeline</h2>
 

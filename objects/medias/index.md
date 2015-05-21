@@ -20,6 +20,9 @@ The <code>media</code> object has the following attributes:
         media.updated_at
       </li>
       <li>
+        <a href="#title">media.title</a>
+      </li>
+      <li>
         <a href="#embed_script">media.embed_script</a>
       </li>
     </ul>
@@ -38,6 +41,22 @@ Returns an iframe of embed script. [*Optional*]
 {% highlight html %}{% raw %}
 {{ media.embed_script }}
 # => <iframe width="560" height="315" src="http://www.youtube.com/embed/DlayORza9gg" frameborder="0" allowfullscreen></iframe>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<h2 class="tags" id="title">media.title</h2>
+
+Returns an media's title. [*Optional*]
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>Input</h3>
+  </div>
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+{{ media.title }}
+# => 3 Adorable DIY Valentine's Day Gifts
 {% endraw %}{% endhighlight %}
   </div>
 </div>
