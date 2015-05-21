@@ -36,3 +36,5 @@ If you're looking to submit your theme to the Yoolk Theme, the **links/index.liq
   * `link.title` (links to link.link and target to `_blank`)
   * `link.link`
   * `link.description`
+
+* always open link object in new tab.

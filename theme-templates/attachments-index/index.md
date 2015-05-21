@@ -36,3 +36,10 @@ If you're looking to submit your theme to the Yoolk Theme, the **attachments/ind
   * `attachment.name` (links to attachment.url)
   * `attachment.file_size`
   * `attachment.updated_at`
+
+* The proper way to list attachment object is using table and always open in new blank tab.
+* You have to format attachment `file_size` and `updated_at` using `number_to_human_size` and `date` with format `%d %b %Y` respectively.
+{% highlight django%}{% raw %}
+{{ attachment.file_size  | number_to_human_size }}
+{{ attachment.updated_at | date: '%d %b %Y' }}
+{% endraw %}{% endhighlight %}

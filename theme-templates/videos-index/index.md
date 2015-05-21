@@ -33,7 +33,8 @@ There is no special requirements for medias collection since this collection is 
 
 If you're looking to submit your theme to the Yoolk Theme, the **videos/index.liquid** template of your theme must meet the following conditions:
 
-* videos are listed with the following attributes of the [videos]({{ '/objects/medias' | prepend: site.baseurl }}) variable output:
+* videos are listed as grid of 2 columns with the following attributes of the [videos]({{ '/objects/medias' | prepend: site.baseurl }}) variable output:
 
   * `video.embed_script`
   * `video.title`
+* Add video updated date with format `%b %d, %Y`.

@@ -142,6 +142,8 @@
       href: "/announcements-index"
     - name: announcements/show.liquid
       href: "/announcements-show"
+    - name: attachments/index.liquid
+      href: "/attachments-index"
     - name: brochures/index.liquid
       href: "/brochures-index"
     - name: contact_us/index.liquid
@@ -150,6 +152,8 @@
       href: "/feedback-index"
     - name: galleries/index.liquid
       href: "/galleries-index"
+    - name: links/index.liquid
+      href: "/links-index"
     - name: map/index.liquid
       href: "/map-index"
     - name: menu/categories/show.liquid
@@ -174,3 +178,5 @@
       href: "/services-index"
     - name: services/show.liquid
       href: "/services-show"
+    - name: videos/index.liquid
+      href: "/videos-index"
