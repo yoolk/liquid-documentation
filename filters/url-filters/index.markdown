@@ -69,6 +69,9 @@ URL filters output links to assets. They are also used to create links for filte
       <li>
         <a href="#link_to_attachments">link_to_attachments</a>
       </li>
+      <li>
+        <a href="#within">within</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -392,3 +395,31 @@ Generate HTML anchor tag for attachments path, optional <code>options</code> is 
 {% endraw %}{% endhighlight %}
   </div>
 </div>
+
+<h2 class="tags" id="within">within</h2>
+
+###_Product URL_
+
+Creates a product URL by prepending "/products-categories/product-category/" to a product URL, where "product_category" is the handle of the product category that is currently being viewed.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<a href="{{ product.url | within: product_category }}">{{ product.name }}</a>
+# => <a href="products-categories/1161-cars/products/2183-defender">Defender</a>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+###_Food URL_
+
+Creates a food URL by prepending "/menu-categories/food-category/" to a food URL, where "food_category" is the handle of the food category that is currently being viewed.
+
+<div class="panel">
+  <div class="panel-body">
+{% highlight html %}{% raw %}
+<a href="{{food.url | within: food_category}}">{{ food.name }}</a>
+# => <a href="menu-categories/1161-cars/menu/2183-combo-plater">Combo Plater</a>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>    

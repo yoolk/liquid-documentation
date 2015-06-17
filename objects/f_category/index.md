@@ -17,7 +17,7 @@ The <code>food_category</code> object has the following attributes:
         <a href="#name">food_category.name</a>
       </li>
       <li>
-        <a href="#url">food_category.url</a>
+        <a href="#url">food_category.foods_url</a>
       </li>
       <li>
         <a href="#current?">food_category.current?</a>
@@ -39,7 +39,7 @@ The <code>food_category</code> object has the following attributes:
 
 Returns an array of the food_category's [foods]({{ '/objects/food/' | prepend: site.baseurl }}). [*Optional*]
 
-<h2 class="tags" id="url">food_category.url</h2>
+<h2 class="tags" id="url">food_category.foods_url</h2>
 
 Returns the url of a food_category.
 
@@ -49,7 +49,7 @@ Returns the url of a food_category.
   </div>
   <div class="panel-body">
 {% highlight django %}{% raw %}
-<a href="{{ food_category.url }}">{{ food_category.name }}</a>
+<a href="{{ food_category.foods_url }}">{{ food_category.name }}</a>
 {% endraw %}{% endhighlight %}
   </div>
 </div>
@@ -79,7 +79,7 @@ Returns true if this food_category is the one which is currently displayed.
 <ul class="nav">
   {% for food_category in listing.food_categories %}
     <li>
-      <a href="{{ food_category.url }}" {% if food_category.current? %}class="active"{% endif %}>{{ food_category.name }}</a>
+      <a href="{{ food_category.foods_url }}" {% if food_category.current? %}class="active"{% endif %}>{{ food_category.name }}</a>
     </li>
   {% endfor %}
 </ul>
