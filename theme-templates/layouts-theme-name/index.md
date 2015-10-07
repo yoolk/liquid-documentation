@@ -6,9 +6,9 @@
 <h2 class="section-title">layouts/theme-name.liquid</h2>
 
 
-### **{% raw %}{{ content_for_header }}{% endraw %} and {% raw %}{{ content_for_layout }}{% endraw %}**
+### **{% raw %}{{ content_for_header }}{% endraw %}, {% raw %}{{ content_for_closing_body }}{% endraw %} and {% raw %}{{ content_for_layout }}{% endraw %}**
 
-There are two Liquid objects that are required in theme-name.liquid:
+There are three Liquid objects that are required in theme-name.liquid:
 
 * The _{% raw %}{{ content_for_header }}{% endraw %}_ variable must be placed between the opening and closing <head> tag. It inserts the necessary Yoolk Liquid scripts into the <head> which includes scripts for Google Analytics, SEO meta tags, CSRF meta tag, and more.
 
@@ -20,6 +20,34 @@ There are two Liquid objects that are required in theme-name.liquid:
 
 
 The `layouts/<theme-name>.liquid` can be thought of as the master template; all other templates are rendered inside of `layouts/<theme-name>.liquid`. Any elements that are repeated in a theme (ex: site navigations, header, footer, etc.) should be placed inside `layouts/<theme-name>.liquid`.
+
+There are a few steps to apply shopping cart in order to display cart icon at the top right of the page.
+
+* The _{% raw %}{% shopping_cart %}{% endraw %}_ tag should be placed between the opening and closing <body>
+
+* Required JavaScript/StyleSheet Libraries below:
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>sample/all.js.coffee</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django %}{% raw %}
+    #= require yoolk/jquery.shopping-cart
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <h3>sample/all.scss</h3>
+  </div>
+  <div class="panel-body">
+    {% highlight django %}{% raw %}
+    @import "yoolk/liquid/shopping-cart";
+    {% endraw %}{% endhighlight %}
+  </div>
+</div>
 
 ![layouts]({{ '/images/theme-templates/contact-us-index.png' | prepend: site.baseurl }})
 
