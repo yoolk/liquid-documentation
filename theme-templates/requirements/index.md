@@ -7,6 +7,7 @@
 If you're looking to build your theme to the Yoolk liquid themes, ensure that the following requirements are met:
 
 * Support with Facebook page screen **851px**.
+* Support full/crop images display base on setting (catalogs and galleries). See how to apply full/crop section in products page [here]({{ '/theme-templates/products-index' | prepend: site.baseurl }})
 * Fully Responsive (mobiles, tablets, desktops).
 * Be viewing in through both HTTP and HTTPS without causing any problem.
   * (ex: include font) should be used relative url: 

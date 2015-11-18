@@ -41,6 +41,39 @@ Yoolk limits the number of products that can be output per page to **12**. For t
   </div>
 </div>
 
+###_Full/Crop Image Usage_
+
+<div class="panel">
+  <div class="panel-body">
+    {% highlight django%}{% raw %}
+  <div class="boxify-item">
+  <div class="{{listing.instant_website.cropped_type}}-wrapper">
+    <div class="{{listing.instant_website.cropped_type}}-image">
+      <a href="{{ product.url | within: product_category }}">
+        <img src="{{ product.cover_photo | attachment_url: 'x_medium' }}" alt="{{ product.name}}" class="image-scale-center" />
+      </a>
+    </div>
+  </div>
+</div>
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
+Note: {{listing.instant_website.cropped_type}} will produced css class name: `[boxify-full or boxify-crop]` base on setting.
+
+
+Javascript section:
+
+* If you want to target a specific parent to resize to, use the parent parameter:
+
+<div class="panel">
+  <div class="panel-body"> 
+{% highlight django%}{% raw %}
+  $('.image-scale-center').resizeToParent({parent: '.boxify-crop-image'});
+{% endraw %}{% endhighlight %}
+  </div>
+</div>
+
 ###_Discount Badge_
 
 The discount badge will display inside product box when its have discount.
