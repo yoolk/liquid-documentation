@@ -106,5 +106,6 @@ If you're looking to submit your theme to the Yoolk Theme, the **products/show.l
 * Secondary images of product, shown as thumbnails
   * Different image ratios should not break the layout
   * Enlargeable via Lightbox or zooming with **large** style
-* Social buttons for Twitter, Facebook, Pinterest, and Google+
 * Output **image.alt** for all product images
+* Social buttons for Twitter, Facebook, Pinterest, and Google+
+* Ecommerce options: Payment, Delivery, Return Policy and Terms and Conditions
